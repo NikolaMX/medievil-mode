@@ -1,0 +1,38 @@
+{
+	"context": "server",
+	"identifier": "com.pa.nik.medieval_dev",
+	"display_name": "Medieval Server Local",
+	"description": "Adds a high-tech Energy-based Faction. Development Ongoing",
+	"author": "NikolaMX",
+	"date": "2025-10-03",
+	"build": "124610",
+	"version": "0.1",
+	"signature": "not yet implemented",
+	"forum": "",
+	"icon": "https://i.imgur.com/jtTEm7Y.gif",
+	"priority": 99,
+	"titansOnly": true,
+	"category": [
+		"titans",
+		"in-game",
+		"server",
+		"faction",
+		"unit",
+		"medieval",
+		"expansion"
+	],
+	"scenes": {
+		"shared_build": [
+			"coui://ui/mods/com.pa.nik.medieval/shared_build.js"
+		],
+		"icon_atlas": [
+			"coui://ui/mods/com.pa.nik.medieval/icon_atlas.js"
+		],
+		"live_game_players": [
+			"coui://ui/mods/com.pa.nik.medieval/live_game/players.js"
+		],
+		"live_game": [
+            "coui://ui/mods/com.pa.nik.medieval/mechanics.js"
+        ]
+	}
+}

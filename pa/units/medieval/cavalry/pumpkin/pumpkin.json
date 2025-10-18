@@ -1,0 +1,202 @@
+{
+    "si_name": "commander_pumpkin",
+    "display_name": "Pumpkin Guardian",
+    "description": "Undead. Devastating damage. The longer it remains alive, the more minions it will spawn.",
+    "armor_type": "AT_Custom9",
+    "build_metal_cost": 5000,
+    "max_health": 12500,
+    "wreckage_health_frac": 1.0,
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "navigation": {
+        "type": "amphibious",
+        "acceleration": 60,
+        "brake": -1,
+        "move_speed": 10,
+        "turn_speed": 180,
+        "turn_in_place": true,
+        "park_stamp": {
+            "shape": "sphere",
+            "cost": 10,
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious-large",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "hover",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "water-hover",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "hover-large",
+                    "stamp_type": "simple"
+                },
+                {
+                    "move_type": "deepwater",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "underwater",
+                    "stamp_type": "structure"
+                }
+            ]
+        }
+    },
+    "physics": {
+        "radius": 9,
+        "sync_radius_to_extents": true,
+        "air_friction": 1
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 16.6
+    },
+    "strategic_icon_priority": 0,
+    "tools": [
+        {
+            "spec_id": "/pa/units/medieval/cavalry/pumpkin/pumpkin_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": [
+                "socket_leftMuzzle",
+                "socket_rightMuzzle"
+            ],
+            "primary_weapon": true
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Custom8",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Amphibious"
+    ],
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/commander"
+        }
+    },
+    "events": {
+        "fired": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+        },
+        "teleported": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+        }
+    },
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0.8,
+                12
+            ]
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0.6,
+                -1.5,
+                4.2
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                0.024,
+                0.165,
+                0.48
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0.0,
+                -2.0,
+                4.0
+            ],
+            "radius": 8.0,
+            "color": [
+                1.6,
+                10,
+                28.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        }
+    ],
+    "model": {
+        "filename": "/pa/units/medieval/cavalry/pumpkin/pumpkin.papa",
+        "animations": {
+            "walk": "/pa/units/commanders/quad_base/quad_base_anim_walk.papa",
+            "idle": "/pa/units/commanders/quad_base/quad_base_anim_idle.papa",
+            "walk_stop": "/pa/units/commanders/quad_base/quad_base_anim_walkStop.papa",
+            "aim_up": "/pa/units/commanders/quad_base/quad_base_anim_aimUp.papa",
+            "aim_down": "/pa/units/commanders/quad_base/quad_base_anim_aimDown.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/commander_quad_anim_tree.json",
+        "walk_speed": 5.0
+    },
+    "mesh_bounds": [
+        10,
+        10,
+        12
+    ]
+}

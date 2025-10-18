@@ -1,0 +1,23 @@
+{
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": [
+        {
+            "layer": "WL_AnyLand",
+            "id": "/pa/units/medieval/infantry/crossbow/crossbow_ammo.json"
+        }
+    ],
+    "rate_of_fire": 0.2,
+    "idle_aim_delay": 1.0,
+    "max_range": 60,
+    "fire_delay": 0.0,
+    "yaw_rate": 60,
+    "pitch_rate": 360,
+    "yaw_range": 90,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ]
+}

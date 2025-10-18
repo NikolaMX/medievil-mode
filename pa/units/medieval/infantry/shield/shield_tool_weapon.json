@@ -1,0 +1,23 @@
+{
+  "ammo_id": [
+    {
+      "id": "/pa/units/medieval/infantry/shield/shield_ammo.json",
+      "layer": "WL_AnyLand"
+    }
+  ],
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "idle_aim_delay": 1.0,
+  "fire_delay": 0.1,
+  "max_range": 10,
+  "pitch_range": 40,
+  "pitch_rate": 360,
+  "rate_of_fire": 4,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 90,
+  "yaw_rate": 360
+}

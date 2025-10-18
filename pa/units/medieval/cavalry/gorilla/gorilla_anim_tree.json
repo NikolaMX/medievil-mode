@@ -1,0 +1,186 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "item",
+                        "name": "idle",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving_forward",
+                                    "target": "run",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving_forward",
+                                    "target": "run",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "run",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "run",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "firing",
+                                    "duration": 0.5
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "anim_complete": true,
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "firing",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "firing",
+                            "looping": true,
+                            "events": [
+                                {
+                                    "time": 0.40,
+                                    "type": "effect",
+                                    "parameters": {
+                                        "bone": "bone_rightWrist",
+                                        "spec": "/pa/units/land/titan_bot/titan_bot_footstep_02.pfx",
+                                        "effect_scale": 1.5,
+                                        "bone_offset": [
+                                            0,
+                                            -3,
+                                            0
+                                        ]
+                                    }
+                                },
+                                {
+                                    "time": 0.36,
+                                    "type": "effect",
+                                    "parameters": {
+                                        "bone": "bone_leftWrist",
+                                        "spec": "/pa/units/land/titan_bot/titan_bot_footstep_02.pfx",
+                                        "effect_scale": 1.5,
+                                        "bone_offset": [
+                                            0.0,
+                                            -3.0,
+                                            0.0
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving_forward",
+                                    "target": "run",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving_forward",
+                                    "target": "run",
+                                    "duration": 0.2
+                                }
+                            },
+                            {
+                                "transition_forward": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "anim_complete": true,
+                                    "duration": 0.5
+                                },
+                                "transition_reverse": {
+                                    "func": "not_moving",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ]
+            },
+            "dead": {
+                "type": "playback",
+                "looping": false,
+                "anim_name": "death01"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_upperBody",
+                "rotation_axis": "z"
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_upperBody",
+                "rotation_axis": "x"
+            }
+        }
+    ]
+}

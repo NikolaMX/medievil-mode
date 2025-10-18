@@ -1,0 +1,120 @@
+{
+  "si_name":"snake",
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "Undead Serpent",
+  "description": "!LOC:Undead Fast. Slow attack but will kill almost anything in one hit.",
+  "armor_type": "AT_Custom9",
+  "max_health": 1500,
+  "build_metal_cost": 2000,
+  "wreckage_health_frac": 0,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.5
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "guard_radius": 50,
+  "guard_layer": "WL_AnySurface",
+  "navigation": {
+    "aggressive_distance": 0.0,
+    "type": "amphibious",
+    "acceleration": 36,
+    "brake": 9,
+    "move_speed": 18,
+    "turn_speed": 90
+  },
+  "physics": {
+    "radius": 2.0
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 105
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 105
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/medieval/cavalry/snake/snake.papa",
+    "animations": {
+      "walk": "/pa/units/medieval/cavalry/snake/snake_anim_run2.papa",
+      "idle": "/pa/units/medieval/cavalry/snake/snake_anim_idle.papa",
+      "firing": "/pa/units/medieval/cavalry/snake/snake_anim_bite.papa"
+    },
+    "animtree": "/pa/units/medieval/cavalry/snake/snake_anim_tree.json",
+    "walk_speed": 100
+  },
+  "attack_range_frac": 0.5,
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/cavalry/snake/snake_tool_weapon.json",
+      "aim_bone": "spine.003",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "spine"
+      ]
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
+      "effect_spec": ""
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/assault_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/titan/bot"
+    }
+  },
+  "selection_icon": {
+    "diameter": 15.0
+  },
+  "mesh_bounds": [
+    6,
+    15,
+    14
+  ],
+  "TEMP_texelinfo": 4.07719
+}
