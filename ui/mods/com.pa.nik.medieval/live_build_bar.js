@@ -214,13 +214,27 @@ _.delay(delayedAssign,5000)
 
 if (model.BuildSet && model.BuildSet.tabsTemplate) {
     model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
-        ["i_m_factory", "!LOC:imperia mages"],
-        ["c_m_factory", "!LOC:cabal mages"],
-        ["i_i_factory", "!LOC:imperia infantry"],
+        
+        ["i_l_factory", "!LOC:imperia lightning"],
+        ["i_f_factory", "!LOC:imperia fire"],
+        ["i_w_factory", "!LOC:imperia wind"],
+
         ["t_i_factory", "!LOC:imperia mercenaries"],
-        ["c_i_factory", "!LOC:cabal infantry"],
-        ["a_c_factory", "!LOC:cabal archers"],
+        
+        ["i_i_factory", "!LOC:imperia infantry"],
         ["a_factory", "!LOC:imperia archers"],
+        ["c_factory", "!LOC:imperia cavalry"],
+        
+
+        ["c_m_factory", "!LOC:cabal mages"],        
+        ["c_s_factory", "!LOC:cabal specters"],
+        ["c_s_factory", "!LOC:cabal spiders"],
+        ["c_b_factory", "!LOC:cabal pumpkins"],
+
+        ["c_i_factory", "!LOC:cabal infantry"],
+        ["c_a_factory", "!LOC:cabal archers"],
+        ["c_c_factory", "!LOC:imperia cavalry"],
+
         ["bug_research", "!LOC:research"],
         ["bug_adv_research", "!LOC:research"],
         ["bug_research_2", "!LOC:research"]

@@ -100,6 +100,7 @@ var paeiouIcons = [
     "arcmage_tower",
     "arcmage_tower_c",
     "blood_shrine",
+    "blood_shrine",
     "lair",
     "witch_hut",
     
