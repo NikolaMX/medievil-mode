@@ -27,9 +27,8 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_Heavy",
+    "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1
@@ -38,7 +37,7 @@
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "aggressive_distance": 0.0,
-    "type": "amphibious",
+    "type": "land-small",
     "acceleration": 9,
     "brake": 9,
     "move_speed": 24,

@@ -1,0 +1,169 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Core Air Repair Pad",
+    "display_name": "!LOC:Air Repair Pad",
+    "description": "!LOC:Air Repair Pad - Repairs landed air units.",
+    "max_health": 690,
+    "build_metal_cost": 430,
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_LandHorizontal",
+    "area_build_type": "Line",
+    "area_build_separation": 2.0,
+    "alt_area_build_type": "Line",
+    "alt_area_build_separation": 4.0,
+    "storage": {
+        "energy": 100
+    },
+    "unit_types": [
+        "UNITTYPE_Custom11",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land",
+        "UNITTYPE_Fabber"
+    ],
+    "command_caps": [
+        "ORDER_Patrol",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist"
+    ],
+    "navigation": {
+        "type": "hover",
+        "acceleration": 0,
+        "brake": 0,
+        "move_speed": 0,
+        "turn_speed": 0
+    },
+    "physics": {
+        "type": "Structure",
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "shape": "Box",
+        "air_friction": 1.0,
+        "radius": 5.0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false
+    },
+    "guard_layer": "WL_Air",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 48.6
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/land/core_air_repair_pad/core_air_repair_pad.papa",
+            "animations": {},
+            "animtree": "/pa/anim/anim_trees/arm_air_repair_pad/air_repair_pad_anim_tree.json"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/tools/tao_air_repair_pad_build_arm/air_repair_pad_build_arm.json",
+            "aim_bone": "bone_platform"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "build": {
+            "cue": "/SE/Construction/Fab_contruction_beam_loop",
+            "flag": "build_target_changed",
+            "should_start_func": "has_build_target",
+            "should_stop_func": "no_build_target"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_scale": 0.5
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/structure/air"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_platform",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 18.0
+    },
+    "mesh_bounds": [
+        14.2,
+        13.4,
+        4.51
+    ],
+    "placement_size": [
+        16,
+        15
+    ],
+    "TEMP_texelinfo": 147.43,
+    "structure": {
+        "cost_stamp": {
+            "shape": "box",
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "amphibious-large",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "water-hover",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "hover-large",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "deepwater",
+                    "stamp_type": "structure"
+                },
+                {
+                    "move_type": "underwater",
+                    "stamp_type": "structure"
+                }
+            ]
+        }
+    }
+}

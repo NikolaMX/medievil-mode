@@ -1,7 +1,7 @@
 {
     "si_name": "commander_pumpkin",
     "display_name": "Pumpkin Guardian",
-    "description": "Undead. Devastating damage. The longer it remains alive, the more minions it will spawn.",
+    "description": "Undead. Immune to all Magic. double damage against all magical and undead enemies.",
     "armor_type": "AT_Custom9",
     "build_metal_cost": 5000,
     "max_health": 12500,
@@ -30,7 +30,7 @@
                 },
                 {
                     "move_type": "amphibious",
-                    "stamp_type": "structure"
+                    "stamp_type": "simple"
                 },
                 {
                     "move_type": "amphibious-large",
@@ -38,7 +38,7 @@
                 },
                 {
                     "move_type": "hover",
-                    "stamp_type": "structure"
+                    "stamp_type": "simple"
                 },
                 {
                     "move_type": "water-hover",
@@ -102,12 +102,14 @@
         "size": 1
     },
     "unit_types": [
-        "UNITTYPE_Custom8",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Offense",
-        "UNITTYPE_Land",
-        "UNITTYPE_Amphibious"
-    ],
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
+  ],
     "audio": {
         "selection_response": {
             "cue": "/SE/Selection/commander"

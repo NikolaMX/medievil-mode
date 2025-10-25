@@ -6,7 +6,7 @@
             "id": "/pa/units/medieval/infantry/sword_light/sword_light_ammo.json"
         }
     ],
-    "rate_of_fire": 2,
+    "rate_of_fire": 0.75,
     "idle_aim_delay": 1.0,
     "max_range": 15,
     "fire_delay": 0.4,

@@ -2,8 +2,9 @@
   "display_name": "!LOC:Shield bearer",
   "description": "!LOC:Heavy Armour. Slow and very durable, takes half damage from all long ranged attacks.",
   "TEMP_texelinfo": 20.8258,
-  "max_health": 170,
-  "build_metal_cost": 75,
+  "max_health": 120,
+  "build_metal_cost": 150,
+  "armor_type": "AT_Custom3",
   "wreckage_health_frac": 0,
   "attachable": {
     "offsets": {
@@ -54,9 +55,9 @@
     "acceleration": 50,
     "brake": 50,
     "group_preference": "front",
-    "move_speed": 10,
+    "move_speed": 8,
     "turn_speed": 120,
-    "type": "amphibious"
+    "type": "land-small"
   },
   "physics": {
     "radius": 2
@@ -102,8 +103,6 @@
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom8",
-    "UNITTYPE_Amphibious"
+    "UNITTYPE_Custom8"
   ]
 }

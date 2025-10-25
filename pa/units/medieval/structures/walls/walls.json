@@ -1,0 +1,161 @@
+{
+    "si_name": "wall",
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Fortification",
+    "display_name": "!LOC:Fortification",
+    "description": "!LOC:Advanced Barrier - Blocks units and projectiles.",
+    "max_health": 1500,
+    
+    "build_metal_cost": 50,
+    "atrophy_rate": 20.0,
+    "atrophy_cool_down": 0.5,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_LandHorizontal",
+    "area_build_separation": 0.1,
+    "alt_area_build_type": "Sphere",
+    "alt_area_build_separation": 0.1,
+    "alt_area_max_radius": 200.0,
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Custom9",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Land",
+        "UNITTYPE_Wall"
+    ],
+    "physics": {
+        "type": "Structure",
+        "shape": "Box",
+        "collision_layers": "WL_LandHorizontal",
+        "radius": 1,
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 1
+                }
+            ]
+        }
+    },
+    "structure": {
+        "cost_stamp": {
+            "shape": "box",
+            "type_data": [
+                {
+                    "move_type": "land-small",
+                    "stamp_type": "wall"
+                },
+                {
+                    "move_type": "amphibious",
+                    "stamp_type": "wall"
+                },
+                {
+                    "move_type": "deepwater",
+                    "stamp_type": "wall"
+                },
+                {
+                    "move_type": "underwater",
+                    "stamp_type": "wall"
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/medieval/structures/walls/arm_fortification_wall.papa"
+        }
+    ],
+       "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/barrier"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/barrier",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx",
+            "effect_scale": 1.25
+        }
+    },
+    "selection_icon": {
+        "diameter": 8.0
+    },
+    "mesh_bounds": [
+        6.05,
+        6.05,
+        7.1
+    ],
+    "placement_size": [
+        6.1,
+        6.1
+    ],
+    "TEMP_texelinfo": 18.151
+}

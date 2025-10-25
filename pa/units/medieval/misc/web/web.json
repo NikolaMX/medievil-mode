@@ -1,0 +1,185 @@
+{
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "Web Trap",
+    "description": "!LOC: Traps enemies in web",
+    "si_name": "empty",
+    "build_metal_cost": 100,
+    "max_health": 40000,
+    "usable": false,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_Underwater",
+    "armor_type": "AT_Structure",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Sub",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Custom8",
+        "UNITTYPE_NoBuild"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": ""
+        },
+        "fired": {
+            "audio_cue": ""
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/web/web.pfx"
+        },
+        "teleported": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+        }
+    },
+    
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": ""
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/medieval/misc/web/web_tool_weapon.json",
+            "aim_bone": "bone_root"
+        },
+        {
+            "spec_id": "/pa/units/medieval/misc/web/web_tool_weapon_web.json",
+            "aim_bone": "bone_aim",
+            "muzzle_bone": [
+                "bone__001",
+                "bone__002",
+                "bone__003",
+                "bone__004",
+                "bone__005",
+                "bone__006",
+                "bone__007",
+                "bone__008",
+                "bone__009",
+                "bone__010",
+                "bone__011",
+                "bone__012",
+                "bone__013",
+                "bone__014",
+                "bone__015",
+                "bone__016",
+                "bone__017",
+                "bone__018",
+                "bone__019",
+                "bone__020",
+                "bone__021",
+                "bone__022",
+                "bone__023",
+                "bone__024",
+                "bone__025",
+                "bone__026",
+                "bone__027",
+                "bone__028",
+                "bone__029",
+                "bone__030",
+                "bone__031",
+                "bone__032",
+                "bone__033",
+                "bone__034",
+                "bone__035",
+                "bone__036",
+                "bone__037",
+                "bone__038",
+                "bone__039",
+                "bone__040",
+                "bone__041",
+                "bone__042",
+                "bone__043",
+                "bone__044",
+                "bone__045",
+                "bone__046",
+                "bone__047",
+                "bone__048",
+                "bone__049",
+                "bone__050",
+                "bone__051",
+                "bone__052",
+                "bone__053",
+                "bone__054",
+                "bone__055",
+                "bone__056",
+                "bone__057",
+                "bone__058",
+                "bone__059",
+                "bone__060"
+            ],
+            "projectiles_per_fire": 60
+        }
+    ],
+    "navigation": {
+        "type": "air",
+        "acceleration": 1000,
+        "brake": -1,
+        "move_speed": 0.01,
+        "turn_speed": 180,
+        "vertical_speed": 0.01,
+        "hover_time": -1.0,
+        "bank_factor": 0,
+        "wobble_factor": 0.1,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0,
+        "add_to_spatial_db": true
+    },
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "ignore_radar": true,
+            "ignore_sight": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/medieval/misc/web/web.papa"
+    },
+    "selection_icon": {
+        "diameter": 0
+    },
+    "mesh_bounds": [
+        1,
+        1,
+        1
+    ],
+    "placement_size": [
+        1,
+        1
+    ],
+    "TEMP_texelinfo": 9.4567
+}

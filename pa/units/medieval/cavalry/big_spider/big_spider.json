@@ -1,0 +1,134 @@
+{
+  "display_name": "!LOC:Adult Arachnid",
+  "description": "!LOC:Beast. Places web traps that immobilize enemy units for an extended period. Other spiders can traverse the web.",
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "armor_type": "AT_Custom6",
+  "wreckage_health_frac": 0.0,
+  "spawn_layers": "WL_LandHorizontal",
+  "unit_types": [
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_Offense"
+  ],
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "build_metal_cost": 1400,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+  
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/grenadier_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/l_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/l_riot_bot/bullet_shells_left.pfx bone_pivot"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 700,
+  "mesh_bounds": [
+    12,
+    14,
+    14
+  ],
+  "model": {
+    "animations": {
+      "firing": "/pa/units/medieval/cavalry/big_spider/big_spider_anim_attack.papa",
+      "idle": "/pa/units/medieval/cavalry/big_spider/big_spider_idle.papa",
+      "walk": "/pa/units/medieval/cavalry/big_spider/big_spider_anim_walk.papa"
+    },
+    "animtree": "/pa/units/medieval/cavalry/spider/spider_anim_tree.json",
+    "filename": "/pa/units/medieval/cavalry/big_spider/big_spider.papa",
+    "walk_speed": 3
+  },
+  "navigation": {
+    "acceleration": 80,
+    "brake": -1,
+    "group_preference": "back",
+    "move_speed": 8,
+    "turn_speed": 240,
+    "type": "amphibious"
+  },
+  "physics": {
+    "radius": 2
+  },
+  "selection_icon": {
+    "diameter": 25
+  },
+  "tools": [
+    
+    {
+      "spec_id": "/pa/units/medieval/cavalry/big_spider/big_spider_tool_weapon_web.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_reactor"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 40
+        }
+      ]
+    }
+  },
+  "attack_range_frac": 0.9,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/bot_bomb"
+    }
+  },
+  "TEMP_texelinfo": 6.38702,
+  "death": {
+    "decals": [
+      "/pa/effects/decal/splat_yellow_decal.json"
+    ]
+  }
+}

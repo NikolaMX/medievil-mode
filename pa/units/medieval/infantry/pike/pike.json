@@ -21,15 +21,14 @@
       ]
     }
   },
-  "unit_types": [
+ "unit_types": [
     "UNITTYPE_Custom8",
-    "UNITTYPE_Bot",
+    "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_Tactical",
+    "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1
@@ -65,6 +64,11 @@
       ]
     }
   },
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  },
   "model": {
     "filename": "/pa/units/medieval/infantry/pike/pike.papa",
     "animations": {
@@ -73,7 +77,7 @@
       "firing": "/pa/units/medieval/infantry/pike/pike_anim_stab1.papa"
     },
     "animtree": "/pa/units/medieval/infantry/pike/bipedal_mech_anim_tree.json",
-    "walk_speed": 100
+    "walk_speed": 12
   },
   "attack_range_frac": 0.5,
   "tools": [

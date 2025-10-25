@@ -21,7 +21,7 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom8",
+        "UNITTYPE_Custom9",
         "UNITTYPE_Bomber",
         "UNITTYPE_Air",
         "UNITTYPE_Mobile",

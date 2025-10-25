@@ -1,0 +1,109 @@
+{
+    "base_spec": "/pa/units/commanders/quad_base/quad_base.json",
+    "display_name": "Pumpkin Commander",
+    "description": "Quadruped Pumpkin Commander",
+    "si_name": "commander_pumpkin",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0.8,
+                12
+            ]
+        }
+    },
+
+
+
+"buildable_types": "Structure & Custom9",
+"production": {
+    "energy": 20,
+    "metal": 20
+  },
+  "storage": {
+    "energy": 450,
+    "metal": 200
+  },
+  "max_health": 12500,
+  "build_metal_cost": 25000,
+  "tools": [
+    {
+      "spec_id": "/pa/units/commanders/commander_build_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    }
+],
+
+
+
+
+
+
+
+
+    "model": {
+        "filename": "/pa/units/commanders/quad_pumpkin/quad_pumpkin.papa"
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0.6,
+                -1.5,
+                4.2
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                0.9,
+                0.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0.0,
+                -2.0,
+                4.0
+            ],
+            "radius": 8.0,
+            "color": [
+                1.0,
+                0.8,
+                0.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        }
+    ],
+    "catalog_object_name": "QuadPumpkin",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_quad_pumpkin.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_quad_pumpkin_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_quad_pumpkin.png"
+        }
+    }
+}

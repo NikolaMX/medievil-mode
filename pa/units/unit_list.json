@@ -217,14 +217,24 @@
     "/pa/units/medieval/infantry/mage/mage.json",
     "/pa/units/medieval/infantry/firemage/firemage.json",
     "/pa/units/medieval/infantry/fogmage/fogmage.json",
+
     "/pa/units/medieval/infantry/darkmage/darkmage.json",
     "/pa/units/medieval/infantry/ghostmage/ghostmage.json",
+    "/pa/units/medieval/infantry/phantom/phantom.json",
+
+    "/pa/units/medieval/infantry/arcanist/arcanist.json",
+
+    "/pa/units/medieval/infantry/acolyte/acolyte.json",
+    "/pa/units/medieval/infantry/acolyte/acolyte_dead/acolyte_dead.json",
 
 
 
     "/pa/units/medieval/infantry/pike/pike.json",
     "/pa/units/medieval/infantry/zweihander/zweihander.json",
+    "/pa/units/medieval/infantry/champion/champion.json",
 
+
+    "/pa/units/medieval/infantry/builder/builder.json",
     "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
     "/pa/units/medieval/infantry/sword_dox/sword_dox.json",
     "/pa/units/medieval/infantry/mace/mace.json",
@@ -234,6 +244,7 @@
     "/pa/units/medieval/infantry/assassin/assassin2/assassin2.json",
     "/pa/units/medieval/infantry/dual_sword/dual_sword.json",
     "/pa/units/medieval/infantry/sword_light/sword_light.json",
+    "/pa/units/medieval/infantry/sword_light/sword_light_c.json",
     
 
     "/pa/units/medieval/infantry/javelin/javelin.json",
@@ -242,21 +253,32 @@
     "/pa/units/medieval/infantry/recurve/recurve.json",
     "/pa/units/medieval/infantry/crossbow/crossbow.json",
     "/pa/units/medieval/infantry/longbow/longbow.json",
+        "/pa/units/medieval/infantry/longbow/longbow_c.json",
 
 
 
     "/pa/units/medieval/cavalry/gorilla/gorilla.json",
     "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
     
+
+    "/pa/units/medieval/cavalry/larva/larva.json",
     "/pa/units/medieval/cavalry/spider/spider.json",
+    "/pa/units/medieval/cavalry/big_spider/big_spider.json",
+    "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+
     "/pa/units/medieval/cavalry/hound/hound.json",
     "/pa/units/medieval/cavalry/snake/snake.json",
     "/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
     "/pa/units/medieval/cavalry/goliath/goliath.json",
     "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json",
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
+    "/pa/units/medieval/cavalry/munchkin/munchkin.json",
+    "/pa/units/medieval/cavalry/boomkin/boomkin.json",
+
+
     "/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
-    
+    "/pa/units/medieval/cavalry/fire_elemental/fire_elemental.json",
+    "/pa/units/medieval/cavalry/wind_elemental/wind_elemental.json",
 
 
     "/pa/units/medieval/cavalry/light_cav/light_cav.json",
@@ -266,21 +288,55 @@
 
     "/pa/units/medieval/flying/eagle/eagle.json",
     "/pa/units/medieval/flying/creep/creep.json",
+    "/pa/units/medieval/flying/witch/witch.json",
 
 
 
 
 
     "/pa/units/medieval/structures/mana_shrine/mana_shrine.json",
+    "/pa/units/medieval/structures/catalyst/catalyst.json",
     "/pa/units/medieval/structures/spawn8/spawn8.json",
     "/pa/units/medieval/structures/spawn_cav/spawn_cav.json",
+    "/pa/units/medieval/structures/factory_infantry/factory_infantry.json",
+        "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
+    "/pa/units/medieval/structures/factory_ranged/factory_ranged.json",
+        "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",
+    "/pa/units/medieval/structures/factory_cav/factory_cav.json",  
+        "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
+    "/pa/units/medieval/structures/tavern/tavern.json",  
+        
+        
+    "/pa/units/medieval/structures/mage_tower/mage_tower.json",
+    "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
+    
+    "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+    "/pa/units/medieval/structures/lair/lair.json",
+    "/pa/units/medieval/structures/witch_hut/witch_hut.json",
+    
+    "/pa/units/medieval/structures/temple/temple.json",
+
+
+
+    "/pa/units/medieval/structures/observatory/observatory.json",
+
+    "/pa/units/medieval/structures/spikes/spikes.json",
+    "/pa/units/medieval/structures/walls/walls.json",
+    "/pa/units/medieval/structures/giga_wall/giga_wall.json",
+    "/pa/units/medieval/structures/attack_tower/attack_tower.json",
+
+    "/pa/units/medieval/structures/web_mine/web_mine.json",
 
 
 
     "/pa/units/medieval/misc/stun/stun.json",
+    "/pa/units/medieval/misc/stun_mini/stun_mini.json",
     "/pa/units/medieval/misc/eldot/eldot.json",
-    "/pa/units/medieval/misc/necro_heal/necro_heal.json"
-
+    "/pa/units/medieval/misc/necro_heal/necro_heal.json",
+    "/pa/units/medieval/misc/web/web.json",
+    "/pa/units/medieval/misc/web/webling/webling.json"
 
     
 

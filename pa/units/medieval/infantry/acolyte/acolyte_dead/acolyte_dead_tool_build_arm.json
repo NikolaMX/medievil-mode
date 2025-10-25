@@ -1,0 +1,9 @@
+{
+  "base_spec": "/pa/units/commanders/magic_fab_build_arm.json",
+  "construction_demand": {
+    "energy": 100,
+    "metal": 100
+  },
+  "pitch_rate": 180,
+  "yaw_rate": 180
+}

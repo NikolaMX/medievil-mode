@@ -1,11 +1,14 @@
 var paeiouIcons = [
     
     // Infantry
+"builder",
+
     "pike",
     "axe_dox",
     "sword_dox",
     "mace",
     "zweihander",
+    "champion",
 
     "ghost",
     "shield",
@@ -13,27 +16,43 @@ var paeiouIcons = [
     "assassin2",
     "dual_sword",
     "sword_light",
+    "sword_light_c",
     
     // Ranged
     "javelin",
     "crossbow",
     "recurve",
     "longbow",
+    "longbow_c",
     "axe_thrower",
 
 
     // Beasts
-    "hound",
+    
+
+    "larva",
     "spider",
+    "big_spider",
+    "jumping_spider",
+    
+    "hound",
     "gorilla",
     "gorilla_big",
+    "crossbow_bear",
+
     "snake",
     "mini_snake",
+    
     "goliath",
-    "crossbow_bear",
+    
     "pumpkin",
-    "bugsniper",
+    "munchkin",
+    "boomkin",
 
+    //Elementals
+    "bugsniper",
+    "fire_elemental",
+    "wind_elemental",
 
     // Cavalry
     "light_cav",
@@ -41,9 +60,13 @@ var paeiouIcons = [
     "recurve_cav",
 
     // Mages
+    "arcanist",
     "mage",
     "firemage",
     "fogmage",
+
+    "acolyte",
+    "acolyte_dead",
     "darkmage",
     "ghostmage",
 
@@ -51,14 +74,43 @@ var paeiouIcons = [
     // Flying
     "eagle",
     "creep",
+    "witch",
 
 
-    // Spawners
+    // Structures
+
+
+    //Economy
     "mana_shrine",
+    "catalyst",
+
+    //Production
     "spawn8",
     "spawn_cav",
+    "factory_infantry",
+    "factory_infantry_c",
+    "factory_ranged",
+    "factory_ranged_c",
+    "factory_cav",
+    "factory_cav_c",
+    "tavern",
+    "observatory",
+    "mage_tower",
+    "mage_tower_c",
+    "arcmage_tower",
+    "arcmage_tower_c",
+    "blood_shrine",
+    "lair",
+    "witch_hut",
+    
+    // Defenses
+    "spikes",
+    "walls",
+    "giga_wall",
+    "attack_tower",
 
-
+    //Mines
+    "web_mine",
 
     // Misc
     "empty", //stun

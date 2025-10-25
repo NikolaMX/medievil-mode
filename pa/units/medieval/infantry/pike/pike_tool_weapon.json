@@ -6,10 +6,10 @@
             "id": "/pa/units/medieval/infantry/pike/pike_ammo.json"
         }
     ],
-    "rate_of_fire": 0.5,
+    "rate_of_fire": 2,
     "idle_aim_delay": 1.0,
     "max_range": 30,
-    "fire_delay": 0.3,
+    "fire_delay": 0.1,
     "yaw_rate": 90,
     "pitch_rate": 360,
     "yaw_range": 90,

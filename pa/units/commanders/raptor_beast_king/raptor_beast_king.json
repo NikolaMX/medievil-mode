@@ -1,0 +1,119 @@
+{
+    "base_spec": "/pa/units/commanders/raptor_base/raptor_base.json",
+    "display_name": "Beast King Commander",
+    "si_name": "commander_beast_king",
+    "description": "Raptor Beast King Commander.",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                -0.2,
+                12.8
+            ]
+        }
+    },
+
+"buildable_types": "Structure & Custom8",
+"production": {
+    "energy": 20,
+    "metal": 20
+  },
+  "storage": {
+    "energy": 450,
+    "metal": 200
+  },
+  "max_health": 12500,
+  "build_metal_cost": 25000,
+  "tools": [
+    {
+      "spec_id": "/pa/units/commanders/commander_build_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    }
+],
+
+
+
+
+
+    "model": {
+        "filename": "/pa/units/commanders/raptor_beast_king/raptor_beast_king.papa"
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -3.652,
+                0.366
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -3.652,
+                0.366
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.4,
+                3.46,
+                -1.1
+            ],
+            "radius": 4.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_leftShoulder"
+        }
+    ],
+    "catalog_object_name": "RaptorBeastKing",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_raptor_beast_king.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_raptor_beast_king_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_raptor_beast_king.png"
+        }
+    }
+}

@@ -1,0 +1,208 @@
+{
+  "si_name":"wind_elemental",
+  "display_name": "!LOC:Wind Elemental",
+  "description": "!LOC:Magic. Force of Nature.",
+  "TEMP_texelinfo": 5.32966,
+   "max_health": 600,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        7.4
+      ]
+    }
+  },
+  "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/medieval/cavalry/wind_elemental/body.pfx",
+            "bone": "bone_turret",
+            "offset": [
+                0,
+                0.5,
+                -8.5
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/medieval/cavalry/wind_elemental/arms.pfx",
+            "bone": "bone_pitch",
+            "offset": [
+                0,-1.2,-9.9
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Selection/structure/energy",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Weapons/veh/tank_flame"
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 1000,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      "effect_spec":"/pa/units/medieval/cavalry/wind_elemental/flame.pfx bone_claw.l /pa/units/medieval/cavalry/fire_elemental/flame.pfx bone_claw.r"
+      
+    },
+   
+    "died": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      
+      "effect_scale": 1.2
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        0.0,
+        -0.7,
+        0.0
+      ],
+      "orientation": [
+        0.0,
+        35.0,
+        0.0
+      ],
+      "near_width": 1.5,
+      "near_height": 1.5,
+      "near_distance": 1.0,
+      "far_distance": 20.0,
+      "color": [
+        0.75,
+        1.0,
+        1.0
+      ],
+      "intensity": 1.4,
+      "bone": "bone_head"
+    }
+  ],
+  "lamps": [
+    {
+      "offset": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "radius": 1.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0,
+      "bone": "bone_head"
+    },
+    {
+      "offset": [
+        2.0,
+        -0.9,
+        0.625
+      ],
+      "radius": 1.5,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0,
+      "bone": "bone_head"
+    }
+  ],
+ 
+  "mesh_bounds": [
+    6.5,
+    7,
+    7.6
+  ],
+  "model": {
+    "filename": "/pa/units/medieval/cavalry/fire_elemental/empty.papa",
+    "animations": {
+      "walk": "/pa/units/medieval/cavalry/bugsniper/bug_sniper_anim_idle.papa",
+      "idle": "/pa/units/medieval/cavalry/bugsniper/bug_sniper_anim_idle.papa"
+    },
+    "walk_speed": 11,
+    "animtree": "/pa/units/medieval/cavalry/bugsniper/bipedal_mech_anim_tree.json"
+  },
+  "navigation": {
+    "type": "hover",
+    "acceleration": 120,
+    "brake": -1,
+    "move_speed": 12,
+    "turn_speed": 200,
+    "group_preference": "back"
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 3.5
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 200
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 11.0
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/cavalry/wind_elemental/wind_elemental_tool_weapon.json",
+      "aim_bone": "bone_turret",
+      "record_index": 0,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_claw.r",
+        "bone_claw.l"
+      ]
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom8"
+  ]
+}

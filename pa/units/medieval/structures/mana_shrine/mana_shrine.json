@@ -3,30 +3,38 @@
     "unit_name": "!Mana Shrine",
     "display_name": "!LOC:Mana Shrine",
     "description": "!LOC:Does something with mana, what is not decided yet.",
-    "max_health": 1000,
-    "build_metal_cost": 170,
+   
     "atrophy_rate": 2.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+     "max_health": 1000,
+    "build_metal_cost": 400,
     "feature_requirements": [
         "control_point"
     ],
     "replaceable_units": [
-        "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json"
+        "/pa/units/medieval/structures/catalyst/catalyst.json",
+        "/pa/units/medieval/structures/tavern/tavern.json",
+        "/pa/units/medieval/structures/mage_tower/mage_tower.json",
+        "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+        "/pa/units/medieval/structures/spawn_cav/spawn_cav.json",
+        "/pa/units/medieval/structures/spawn8/spawn8.json"
+
     ],
     "force_snap_to_feature_orientation": true,
     "area_build_type": "Sphere",
     "production": {
-        "metal": 7
+        "energy": 50
     },
     "consumption": {
         "energy": 0
     },
     "unit_types": [
+        "UNITTYPE_Custom9",
         "UNITTYPE_Custom8",
         "UNITTYPE_Structure",
         "UNITTYPE_Basic",
-        "UNITTYPE_MetalProduction",
+        "UNITTYPE_EnergyProduction",
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabBuild",
         "UNITTYPE_Economy"
@@ -38,13 +46,13 @@
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 100
+                    "radius": 120
                 },
                 {
                     "layer": "underwater",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 100
+                    "radius": 120
                 }
             ]
         }

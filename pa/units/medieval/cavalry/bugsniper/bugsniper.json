@@ -1,4 +1,5 @@
 {
+  "si_name":"bugsniper",
   "display_name": "!LOC:Lightning Elemental",
   "description": "!LOC:Magic. Force of Nature.",
   "TEMP_texelinfo": 5.32966,
@@ -153,7 +154,7 @@
     "animtree": "/pa/units/medieval/cavalry/bugsniper/bipedal_mech_anim_tree.json"
   },
   "navigation": {
-    "type": "land-small",
+    "type": "hover",
     "acceleration": 120,
     "brake": -1,
     "move_speed": 12,

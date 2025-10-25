@@ -1,13 +1,13 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Fire Mage",
-    "description": "!LOC:Light armour. Summons a massive fireball that slowly chases enemies.",
+    "description": "!LOC: Arcane. Summons fire elementals while in combat. Moving away from the enemy will interrupt the spell.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
     "build_metal_cost": 2000,
     "show_in_orbital_layer": true,
-    "armor_type": "AT_Custom1",
+    "armor_type": "AT_Custom0",
     "attachable": {
         "offsets": {
             "root": [
@@ -24,12 +24,13 @@
     },
     "unit_types": [
         "UNITTYPE_Custom8",
-        "UNITTYPE_Tank",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Tactical",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Amphibious"
+        "UNITTYPE_Important"
     ],
     "command_caps": [
         "ORDER_Move",
@@ -91,7 +92,11 @@
         }
     ],
     "events": {
-        
+         "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_flame",
+            "effect_spec": "/pa/units/medieval/infantry/firemage/flame.pfx socket_leftMuzzle",
+            "effect_scale": 1.7
+        },
         "died": {
             "audio_cue": "/SE/Death/Bot",
             "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",

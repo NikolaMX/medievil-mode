@@ -1,0 +1,150 @@
+{
+  "display_name": "webling",
+  "description": "!LOC: Web. Stops enemies from moving",
+  "si_name": "empty",
+  "build_metal_cost": 100,
+  "max_health": 2000,
+  "usable": false,
+  "wreckage_health_frac": 0.0,
+  "armor_type": "AT_Hover",
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/bot_spark_impact",
+      "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/units/medieval/misc/web/web_small.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/misc/web/webling/webling_tool_weapon.json",
+      "aim_bone": "bone_root"
+    }
+  ],
+  "recon": {
+    "observable": {
+      "layer": "surface_and_air",
+      "ignore_radar": true,
+      "ignore_sight": true
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 5
+        }
+      ]
+    }
+  },
+  "death": {
+    "decal": [
+      "/pa/effects/decal/scorch_red.json"
+    ]
+  },
+  "model": {
+    "filename": "/pa/units/medieval/misc/stun/empty_model.papa"
+  },
+  "selection_icon": {
+    "diameter": 0
+  },
+  "TEMP_texelinfo": 9.4567,
+  "atrophy_rate": 20.0,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "mesh_bounds": [
+    1,
+    1,
+    1
+  ],
+  "physics": {
+    "type": "Structure",
+    "shape": "Box",
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "radius": 1,
+    "air_friction": 1.0,
+    "allow_pushing": false,
+    "push_sideways": false,
+    "allow_underground": false
+  },
+  "placement_size": [
+    4,
+    4
+  ],
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "structure": {
+    "cost_stamp": {
+      "shape": "box",
+      "type_data": [
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "land-small",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "amphibious-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "water-hover",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "deepwater",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "underwater",
+          "stamp_type": "wall"
+        }
+      ]
+    }
+  },
+  "unit_name": "Wall",
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Wall",
+    "UNITTYPE_NoBuild"
+  ]
+}

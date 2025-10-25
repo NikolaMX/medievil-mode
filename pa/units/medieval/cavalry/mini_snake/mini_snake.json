@@ -2,10 +2,10 @@
     "si_name": "mini_snake",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Mini Serpent",
-    "description": "!LOC:Undead. Fast. If it lives long enough will grow bigger.",
-    "armor_type": "AT_Custom9",
+    "description": "!LOC:Undead. Fast.",
+    "armor_type": "AT_Custom4",
     "max_health": 300,
-    "build_metal_cost": 2000,
+    "build_metal_cost": 200,
     "wreckage_health_frac": 0,
     "attachable": {
         "offsets": {
@@ -22,23 +22,22 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom8",
-        "UNITTYPE_Bot",
+        "UNITTYPE_Custom9",
+        "UNITTYPE_Tank",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
-        "UNITTYPE_Basic",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_CannonBuildable"
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
     ],
     "transportable": {
         "size": 1
     },
-    "guard_radius": 50,
+    "guard_radius": 0,
     "guard_layer": "WL_AnySurface",
     "navigation": {
-        "aggressive_distance": 0.0,
-        "type": "amphibious",
+        "aggressive_distance": 30.0,
+        "type": "land-small",
         "acceleration": 36,
         "brake": 9,
         "move_speed": 18,

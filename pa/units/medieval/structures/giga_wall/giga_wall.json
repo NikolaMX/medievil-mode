@@ -1,0 +1,72 @@
+{
+    "base_spec": "/pa/units/land/land_barrier/land_barrier.json",
+    "unit_name": "Giga Wall",
+    "display_name": "!LOC:Giga Wall",
+    "description": "!LOC:Blocks enemies and all projectiles.",
+    "max_health": 3000,
+    "build_metal_cost": 250,
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_LandHorizontal",
+    "area_build_type": "Line",
+    "area_build_separation": 1,
+    "alt_area_build_type": "Line",
+    "alt_area_build_separation": 4.0,
+    "wreckage_health_frac": 1.0,
+   
+    "unit_types": [
+        "UNITTYPE_Custom8",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land",
+        "UNITTYPE_Wall"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 58.3
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/medieval/structures/giga_wall/arm_metal_storage.papa"       
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/metal"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/effects/specs/default_building_explosion.pfx",
+            "effect_scale": 0.55
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/metal"
+        }
+    },
+    "selection_icon": {
+        "diameter": 26.0
+    },
+    "mesh_bounds": [
+        45.3,
+        5.3,
+        14
+    ],
+    "placement_size": [
+        42,
+        5
+    ],
+    "TEMP_texelinfo": 18.8748
+}

@@ -1,0 +1,143 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "unit_name": "Mercenary Taven",
+  "si_name": "tavern",
+  "display_name": "!LOC:Mercenary Taven",
+  "description": "!LOC:Produces Mercenary Units. Requires Mana to run.",
+  "max_health": 3000,
+  "build_metal_cost": 800,
+  "atrophy_rate": 2.5,
+  "atrophy_cool_down": 15,
+ 
+
+  
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+
+  "replaceable_units": [
+        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
+    ],
+    "area_build_type": "Sphere",
+  "force_snap_to_feature_orientation": true,
+   "feature_requirements": [
+    "control_point"
+  ],
+  "rolloff_dirs": [
+    
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+
+
+  "buildable_types": "Tank & Mobile & Tactical & FactoryBuild & (Custom8)",
+  "factory_cooldown_time": 3,
+  "wait_to_rolloff_time": 1,
+  "factory": {
+    "store_units": false,
+    "spawn_points": [
+      "bone_platform"
+    ],
+    "default_build_stance": "Continuous"
+  },
+  
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/tavern/tavern.papa",
+     
+      "animtree": "/pa/units/medieval/structures/factory_infantry/factory_1_anim_tree.json",
+      "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+    }
+  ],
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/structures/tavern/tavern_build_arm.json",
+      "aim_bone": "bone_root"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/factory"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_antinuke",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/structure/anti_nuke"
+    }
+  },
+  "selection_icon": {
+    "diameter": 45
+  },
+  "TEMP_texelinfo": 21.7597,
+  "placement_size": [
+    0.1,
+    0.1
+  ],
+  "mesh_bounds": [
+    26,
+    26,
+    25
+  ]
+}

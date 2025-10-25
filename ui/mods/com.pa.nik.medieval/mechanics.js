@@ -101,8 +101,8 @@ var automation = function () {
                         processWeaponUnits(worldView, army, chosenPlanet);
                         
                         // Original fab tower automation
-                        if (army.hasOwnProperty('/pa/units/structures/fab_complex/adv_fab_turret.json')) {
-                            doCommand(worldView, army['/pa/units/structures/fab_complex/adv_fab_turret.json'], chosenPlanet, advancedIdArray).then(function (result) { advancedIdArray = result });
+                        if (army.hasOwnProperty('/pa/units/medieval/infantry/acolyte/acolyte_dead/acolyte_dead.json')) {
+                            doCommand(worldView, army['/pa/units/medieval/infantry/acolyte/acolyte_dead/acolyte_dead.json'], chosenPlanet, advancedIdArray).then(function (result) { advancedIdArray = result });
                         }
                         
                     });
@@ -110,9 +110,9 @@ var automation = function () {
             }
         }
         
-        _.delay(automation, 5000);
+        _.delay(automation, 1000);
     } else {
-        _.delay(automation, 5000);
+        _.delay(automation, 1000);
     }
 };
 

@@ -7,11 +7,11 @@
 
   "armor_damage_map": {
     "AT_Structure": 1.0,
-    "AT_Air": 2.0,
+    "AT_Air": 1.0,
     "AT_Custom0": 1.0,
     "AT_Custom1": 1.0,
-    "AT_Custom2": 1.0,
-    "AT_Custom3": 2.0,
+    "AT_Custom2": 2.0,
+    "AT_Custom3": 1.0,
     "AT_Custom4": 1.0,
     "AT_Custom5": 1.0,
     "AT_Custom6": 1.0,

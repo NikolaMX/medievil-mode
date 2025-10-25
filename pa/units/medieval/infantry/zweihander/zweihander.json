@@ -23,13 +23,12 @@
   },
   "unit_types": [
     "UNITTYPE_Custom8",
-    "UNITTYPE_Bot",
+    "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_Tactical",
+    "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1
@@ -118,5 +117,10 @@
     2,
     8
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  }
 }

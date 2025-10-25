@@ -4,8 +4,8 @@
   "display_name": "Javelin Thrower",
   "description": "!LOC:Light Armor. Fast. Medium range. Long recharge after shooting.",
   "armor_type": "AT_Custom1",
-  "max_health": 70,
-  "build_metal_cost": 130,
+  "max_health": 85,
+  "build_metal_cost": 250,
   "wreckage_health_frac": 0,
   "attachable": {
     "offsets": {
@@ -24,12 +24,11 @@
   "unit_types": [
     "UNITTYPE_Custom8",
     "UNITTYPE_Bot",
+    "UNITTYPE_Artillery",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1
@@ -116,5 +115,10 @@
     2,
     8
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+   "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_red_decal.json"
+    ]
+  }
 }

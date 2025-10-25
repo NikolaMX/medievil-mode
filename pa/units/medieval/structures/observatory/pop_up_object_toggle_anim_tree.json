@@ -1,0 +1,118 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "playback",
+                "anim_name": "undeployed_idle",
+                "looping": true
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "sequence_entry",
+                        "name": "undeployed_idle_seq",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "undeployed_idle",
+                            "looping": true
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "has_energy",
+                                    "target": "deploy_seq"
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "undeploy_seq"
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "sequence_entry",
+                        "name": "deploy_seq",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "deploy",
+                            "looping": false
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "deployed_idle_loop_seq"
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "undeployed_idle_seq"
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "sequence_entry",
+                        "name": "deployed_idle_loop_seq",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "deployed_idle",
+                            "looping": true
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "no_energy_and_anim_complete",
+                                    "target": "undeploy_seq"
+                                },
+                                "transition_reverse": {
+                                    "func": "no_energy_and_anim_complete",
+                                    "target": "deploy_seq"
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "sequence_entry",
+                        "name": "undeploy_seq",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "undeploy",
+                            "looping": false
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "undeployed_idle_seq"
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "deployed_idle_loop_seq"
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ],
+                "transition_seek": {
+                    "func": "true_func",
+                    "true_target": "deployed_idle_loop_seq",
+                    "false_target": "deployed_idle_loop_seq"
+                }
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "item",
+                "anim_name": "deployed_idle",
+                "looping": true
+            }
+        }
+    }
+}

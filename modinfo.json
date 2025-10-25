@@ -22,17 +22,22 @@
 		"expansion"
 	],
 	"scenes": {
+		"icon_atlas": [
+			"coui://ui/mods/com.pa.nik.medieval/icon_atlas.js"
+		],
 		"shared_build": [
 			"coui://ui/mods/com.pa.nik.medieval/shared_build.js"
 		],
-		"icon_atlas": [
-			"coui://ui/mods/com.pa.nik.medieval/icon_atlas.js"
+		"live_game_build_bar": [
+			"coui://ui/mods/com.pa.nik.medieval/live_build_bar.js"
 		],
 		"live_game_players": [
 			"coui://ui/mods/com.pa.nik.medieval/live_game/players.js"
 		],
 		"live_game": [
-            "coui://ui/mods/com.pa.nik.medieval/mechanics.js"
+            "coui://ui/mods/com.pa.nik.medieval/mechanics.js",
+			"coui://ui/mods/com.pa.nik.medieval/research.js",
+			"coui://ui/mods/com.pa.nik.medieval/research_live_game.js"
         ]
 	}
 }
