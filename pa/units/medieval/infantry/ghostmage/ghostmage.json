@@ -25,7 +25,6 @@
     "unit_types": [
         "UNITTYPE_Custom9",
         "UNITTYPE_Tank",
-        "UNITTYPE_Important",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
