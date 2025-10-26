@@ -24,9 +24,11 @@
         "UNITTYPE_Custom9",
         "UNITTYPE_Bomber",
         "UNITTYPE_Air",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Tactical",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
-        "UNITTYPE_Advanced",
+        
         "UNITTYPE_FactoryBuild"
     ],
     "command_caps": [

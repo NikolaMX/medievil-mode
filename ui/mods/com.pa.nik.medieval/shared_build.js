@@ -24,51 +24,31 @@ var newBuild = {
     "/pa/units/medieval/infantry/fogmage/fogmage.json": ["e_w_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/wind_elemental/wind_elemental.json": ["e_w_factory", 0, { row: 2, column: 0 }],
 
+
+    
     //Dark
     "/pa/units/medieval/infantry/acolyte/acolyte.json": ["c_m_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 2, column: 1 }],
     
     //Ghost
-    "/pa/units/medieval/infantry/ghsot/ghost.json": ["c_s_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/ghsotmage/ghostmage.json": ["c_s_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/phantom/phantom.json": ["c_s_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/infantry/ghsot/ghost.json": ["c_g_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/infantry/ghsotmage/ghostmage.json": ["c_g_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/infantry/phantom/phantom.json": ["c_g_factory", 0, { row: 2, column: 2 }],
 
-//T1 Infantry
 
-    // Imperia
+//Imperia
+
+    //Infantry
     "/pa/units/medieval/infantry/builder/builder.json": ["i_i_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/sword_light/sword_light.json": ["i_i_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/infantry/dual_sword/dual_sword.json": ["i_i_factory", 0, { row: 1, column: 1 }],
     "/pa/units/medieval/infantry/shield/shield.json": ["i_i_factory", 0, { row: 2, column: 2 }],
     "/pa/units/medieval/infantry/mace/mace.json": ["i_i_factory", 0, { row: 2, column: 3 }],
     
-
-    // Cabal
-    "/pa/units/medieval/infantry/sword_light/sword_light_c.json": ["c_i_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/sword_dox/sword_dox.json": ["c_i_factory", 0, { row: 1, column: 0 }],
-    "/pa/units/medieval/infantry/axe_dox/axe_dox.json": ["c_i_factory", 0, { row: 2, column: 2 }],
-    "/pa/units/medieval/infantry/assassin/assassin.json": ["c_i_factory", 0, { row: 2, column: 3 }],      
-
-
-    "/pa/units/medieval/infantry/pike/pike.json": ["t_i_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_i_factory", 0, { row: 2, column: 2 }],
-    "/pa/units/medieval/infantry/champion/champion.json": ["t_i_factory", 0, { row: 1, column: 2 }],
-
-    
-
-
-
-
     //Archers
-    "/pa/units/medieval/infantry/longbow/longbow_c.json": ["c_a_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/crossbow/crossbow.json": ["c_a_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json": ["c_a_factory", 0, { row: 2, column: 2 }],
-
-
     "/pa/units/medieval/infantry/longbow/longbow.json": ["a_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/recurve/recurve.json": ["a_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/infantry/javelin/javelin.json": ["a_factory", 0, { row: 2, column: 2 }],
-
 
     //Cavalry
     "/pa/units/medieval/cavalry/light_cav/light_cav.json": ["c_factory", 0, { row: 2, column: 0 }],
@@ -76,24 +56,43 @@ var newBuild = {
     "/pa/units/medieval/cavalry/hound/hound.json": ["c_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json": ["c_factory", 0, { row: 2, column: 2 }],
     
+    //Mercanaries
+    "/pa/units/medieval/infantry/pike/pike.json": ["t_i_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_i_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/infantry/champion/champion.json": ["t_i_factory", 0, { row: 1, column: 2 }],
+
     //Beasts
     "/pa/units/medieval/cavalry/goliath/goliath.json": ["i_factory", 0, { row: 2, column: 6 }],
 
+
+//Cabal
+
+    //Infantry
+    "/pa/units/medieval/infantry/sword_light/sword_light_c.json": ["c_i_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/infantry/sword_dox/sword_dox.json": ["c_i_factory", 0, { row: 1, column: 0 }],
+    "/pa/units/medieval/infantry/axe_dox/axe_dox.json": ["c_i_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/infantry/assassin/assassin.json": ["c_i_factory", 0, { row: 2, column: 3 }],      
+
+    //Archers
+    "/pa/units/medieval/infantry/longbow/longbow_c.json": ["c_a_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/infantry/crossbow/crossbow.json": ["c_a_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json": ["c_a_factory", 0, { row: 2, column: 2 }],
+
+    //Riders
+    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json": ["c_c_factory", 0, { row: 2, column: 3 }],
+    "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json": ["c_c_factory", 0, { row: 2, column: 4 }],
+    
     //Spiders
     "/pa/units/medieval/cavalry/larva/larva.json": ["c_s_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/cavalry/spider/spider.json": ["c_s_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/big_spider/big_spider.json": ["c_s_factory", 0, { row: 0, column: 1 }],
     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json": ["c_s_factory", 0, { row: 1, column: 1 }],
 
-
-    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 2 }],
-    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json": ["c_c_factory", 0, { row: 2, column: 3 }],
-    "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json": ["c_c_factory", 0, { row: 2, column: 4 }],
-
+    //Snakes
     "/pa/units/medieval/cavalry/snake/snake.json": ["c_s_factory", 0, { row: 2, column: 4 }],
     "/pa/units/medieval/cavalry/mini_snake/mini_snake.json": ["c_s_factory", 0, { row: 1, column: 4 }],
     
-
     //Pumpkins
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json": ["c_b_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/cavalry/munchkin/munchkin.json": ["c_b_factory", 0, { row: 1, column: 0  }],
@@ -144,7 +143,7 @@ var newBuild = {
     "/pa/units/medieval/structures/mage_tower/mage_tower_c.json": ["c_build", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json": ["c_build", 0, { row: 1, column: 0 }],
 
-    "/pa/units/medieval/structures/splectral_shrine/splectral_shrine.json": ["c_build", 0, { row: 0, column: 4 }],
+    "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json": ["c_build", 0, { row: 0, column: 4 }],
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json": ["c_build", 0, { row: 0, column: 3 }],
     "/pa/units/medieval/structures/lair/lair.json": ["c_build", 0, { row: 0, column: 2 }],
     "/pa/units/medieval/structures/witch_hut/witch_hut.json": ["c_build", 0, { row: 0, column: 1 }],

@@ -233,7 +233,7 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
 
         ["c_i_factory", "!LOC:cabal infantry"],
         ["c_a_factory", "!LOC:cabal archers"],
-        ["c_c_factory", "!LOC:imperia cavalry"],
+        ["c_c_factory", "!LOC:cabal cavalry"],
 
         ["bug_research", "!LOC:research"],
         ["bug_adv_research", "!LOC:research"],

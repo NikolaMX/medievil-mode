@@ -8,11 +8,11 @@ model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_chargin
 //hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
 model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
-    "/pa/units/medieval/infantry/sword_dox/sword_dox.json",
+    
                     "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
                     "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
                     "/pa/units/land/bug_needler/bug_needler_fast.json",
-                    "/pa/units/medieval/cavalry/munchkin/munchkin.json",
+                    
                     "/pa/units/land/bug_hydra/bug_hydra.json",
                     "/pa/units/land/bug_boomer/bug_boomer_r.json",
                     "/pa/units/structure/bug_mine/bug_mine.json",
