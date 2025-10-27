@@ -1,0 +1,169 @@
+{
+  "display_name": "!LOC:Burrow Bear",
+  "description": "!LOC:Heavy Cavalry. Mele range. Can burrow underground for a short period of time, becoming invisble and significantly slower.",
+  "TEMP_texelinfo": 13,
+  "has_death_effects": true,
+  "wreckage_health_frac": 0,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        7.4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/sniper_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sniper"
+    }
+  },
+   "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 1700,
+  "events": {
+    "died": {
+      "effect_scale": 1.5
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "bone": "bone_turret",
+      "color": [
+        0.75,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1,
+      "near_height": 1.5,
+      "near_width": 1.5,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "lamps": [],
+  "max_health": 4000,
+  "mesh_bounds": [
+    10,
+    12,
+    12
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/medieval/cavalry/burrow_bear/l_bot_artillery_adv_idle.papa",
+      "walk": "/pa/units/medieval/cavalry/burrow_bear/burrow_bear_anim_walk.papa",
+      "turn_right": "/pa/units/medieval/cavalry/crossbow_bear/l_bot_artillery_adv_turning_right.papa",
+      "turn_left": "/pa/units/medieval/cavalry/crossbow_bear/l_bot_artillery_adv_turning_left.papa",
+      "death": "/pa/units/medieval/cavalry/crossbow_bear/l_bot_artillery_adv_death.papa",
+      "dead": "/pa/units/medieval/cavalry/crossbow_bear/l_bot_artillery_adv_dead.papa"
+    },
+    "animtree": "/pa/units/medieval/cavalry/burrow_bear/l_bot_artillery_adv_anim_tree.json",
+    "filename": "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.papa",
+    "walk_speed": 8
+  },
+  "navigation": {
+    "acceleration": 10,
+    "aggressive_distance": 90,
+    "brake": -1,
+    "group_preference": "front",
+    "move_speed": 12,
+    "turn_accel": 45,
+    "turn_speed": 45,
+    "turn_in_place": true
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 3.5,
+    "orient_interp_rate": 120.0
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 24
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired0",
+      "projectiles_per_fire": 1,
+      "record_index": 0,
+      "muzzle_bone": [
+        "bone_root"
+      ],
+      "spec_id": "/pa/units/medieval/cavalry/burrow_bear/burrow_bear_tool_burrow.json",
+      "secondary_weapon": true,
+      "show_range": false
+    },
+    {
+      "aim_bone": "bone_mini_turret",
+      "fire_event": "fired1",
+      "projectiles_per_fire": 2,
+      "record_index": 1,
+      "muzzle_bone": [
+        "socket_mini_muzzle_right",
+        "socket_mini_muzzle_left"
+      ],
+      "spec_id": "/pa/units/medieval/cavalry/burrow_bear/burrow_bear_tool_weapon.json",
+      "primary_weapon": true
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+   "unit_types": [
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

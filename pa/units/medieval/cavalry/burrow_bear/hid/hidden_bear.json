@@ -1,0 +1,148 @@
+{
+  "si_name": "hidden_bear",
+  "display_name": "!LOC:Burrow Bear",
+  "description": "!LOC:Heavy Cavalry. Mele range. Can burrow underground for a short period of time becoming invisble, unable to attack and significantly slower.",
+  "TEMP_texelinfo": 13,
+  "wreckage_health_frac": 0,
+  "has_death_effects": true,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        7.4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/sniper_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sniper"
+    }
+  },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 1700,
+  "events": {
+    "died": {
+      "effect_scale": 1.5
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire",
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 1000,
+  "model": {
+    "filename": "/pa/units/medieval/cavalry/burrow_bear/hid/hid.papa"
+  },
+  "navigation": {
+    "acceleration": 10,
+    "aggressive_distance": 90,
+    "brake": -1,
+    "group_preference": "front",
+    "move_speed": 8,
+    "turn_accel": 90,
+    "turn_speed": 90,
+    "turn_in_place": true
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 3.5,
+    "orient_interp_rate": 120.0
+  },
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 50
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 50
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 24
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/medieval/cavalry/burrow_bear/hid/drill_hit.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    }
+  ],
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired0",
+      "projectiles_per_fire": 1,
+      "record_index": 0,
+      "muzzle_bone": [
+        "bone_root"
+      ],
+      "spec_id": "/pa/units/medieval/cavalry/burrow_bear/hid/hidden_bear_tool_weapon.json",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/medieval/cavalry/burrow_bear/hid/drill_effect_tool_weapon.json",
+      "record_index": 1,
+      "fire_event": "fired1",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "secondary_weapon": true
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "spawn_unit_on_death": "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json"
+}
