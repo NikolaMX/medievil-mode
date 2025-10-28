@@ -1,0 +1,129 @@
+{
+  "display_name": "!LOC:Archer Tower",
+  "description": "!LOC:Rains arrows down on enemies from afar.",
+  "TEMP_texelinfo": 10.2184,
+  "alt_area_build_separation": 18.0,
+  "alt_area_build_type": "Line",
+  "area_build_separation": 36,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 7.5,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 500,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.6
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 3000,
+  "mesh_bounds": [
+    20,
+    20,
+    50
+  ],
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/arrow_tower/arrow_tower.papa",
+      "animtree": "/pa/units/medieval/structures/arrow_tower/arrow_tower_anim_tree.json",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 12.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/structures/arrow_tower/arrow_tower_tool_weapon.json",
+      "aim_bone": "bone_turret_1",
+      "record_index": 0,
+      "fire_event": "fired0",
+      "projectiles_per_fire": 4,
+      "muzzle_bone": [
+        "bone_turret_1",
+        "bone_turret_1",
+        "bone_turret_1",
+        "bone_turret_1"
+      ]
+    },
+    {
+      "spec_id": "/pa/units/medieval/structures/arrow_tower/arrow_tower_tool_weapon.json",
+      "aim_bone": "bone_turret_2",
+      "record_index": 1,
+      "fire_event": "fired1",
+      "projectiles_per_fire": 4,
+      "muzzle_bone": [
+        "bone_turret_2",
+        "bone_turret_2",
+        "bone_turret_2",
+        "bone_turret_2"
+      ]
+    },{
+      "spec_id": "/pa/units/medieval/structures/arrow_tower/arrow_tower_tool_weapon.json",
+      "aim_bone": "bone_turret_3",
+      "record_index": 2,
+      "fire_event": "fired2",
+      "projectiles_per_fire": 4,
+      "muzzle_bone": [
+        "bone_turret_3",
+        "bone_turret_3",
+        "bone_turret_3",
+        "bone_turret_3"
+      ]
+    },
+    {
+      "spec_id": "/pa/units/medieval/structures/arrow_tower/arrow_tower_tool_weapon.json",
+      "aim_bone": "bone_turret_4",
+      "record_index": 3,
+      "fire_event": "fired3",
+      "projectiles_per_fire": 4,
+      "muzzle_bone": [
+        "bone_turret_4",
+        "bone_turret_4",
+        "bone_turret_4",
+        "bone_turret_4"
+      ]
+    }
+  ],
+  "unit_name": "Archer Tower",
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Land",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild"
+  ]
+}

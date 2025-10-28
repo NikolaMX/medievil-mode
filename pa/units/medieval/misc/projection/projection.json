@@ -1,0 +1,124 @@
+{
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "phantom projection",
+    "description": "!LOC: Astral projection that deals damage to everything it passes through.",
+    "si_name": "empty",
+    "build_metal_cost": 100,
+    "max_health": 4000,
+    "usable": false,
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "armor_type": "AT_Hover",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Sub",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_NoBuild"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": ""
+        },
+        "fired": {
+            "audio_cue": ""
+        },
+        "died": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+        },
+        "teleported": {
+            "audio_cue": "",
+            "effect_spec": "/pa/units/medieval/misc/stun/none.pfx"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/medieval/misc/projection/phantom.pfx",
+            "bone": "bone_root"
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": ""
+        }
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "record_index": 0,
+            "spec_id": "/pa/units/medieval/misc/projection/projection_tool_heal.json"
+        },
+        {
+            "spec_id": "/pa/units/medieval/misc/projection/projection_tool_weapon.json",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "navigation": {
+        "type": "hover",
+        "acceleration": 1000,
+        "brake": 10,
+        "move_speed": 0.01,
+        "turn_speed": 180,
+        "vertical_speed": 0.01,
+        "hover_time": -1.0,
+        "bank_factor": 0,
+        "wobble_factor": 0.1,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 0,
+        "add_to_spatial_db": true
+    },
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 5
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/medieval/misc/stun/empty_model.papa"
+    },
+    "selection_icon": {
+        "diameter": 0
+    },
+    "mesh_bounds": [
+        0.1,
+        0.1,
+        0.1
+    ],
+    "TEMP_texelinfo": 9.4567
+}

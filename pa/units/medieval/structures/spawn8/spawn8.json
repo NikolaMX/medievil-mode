@@ -1,8 +1,8 @@
 {
     "si_name": "spawn8",
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Sword Dox Den",
-    "description": "!LOC:Periodically spawns Sword Dox.",
+    "display_name": "Acolyte Beacon",
+    "description": "!LOC:Periodically summons 1 Acolyte (Fab) and 7 bodyguards.",
     "max_health": 1000,
     "build_metal_cost": 1000,
     "atrophy_rate": 25,
@@ -10,22 +10,21 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "area_build_type": "Sphere",
     "feature_requirements": [
-        "control_point"
+        "metal_spot"
     ],
     "force_snap_to_feature_orientation": true,
-    "replaceable_units": [
-        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
-    ],
     "unit_types": [
-        "UNITTYPE_Custom8",
+        "UNITTYPE_Custom9",
         "UNITTYPE_Structure",
         "UNITTYPE_Artillery",
         "UNITTYPE_Defense",
         "UNITTYPE_FabBuild",
+        "UNITTYPE_CmdBuild",
         "UNITTYPE_Basic"
     ],
     "command_caps": [
-        "ORDER_Attack"
+        "ORDER_Attack",
+        "ORDER_FireSecondaryWeapon"
     ],
     "guard_layer": "WL_AnySurface",
     "recon": {
@@ -68,11 +67,18 @@
     "nearby_target_tick_update_interval": 15,
     "tools": [
         {
+            "spec_id": "/pa/units/medieval/structures/spawn8/spawn8_tool_weapon_acolyte.json",
+            "aim_bone": "bone_turret",
+            "projectiles_per_fire": 1,
+            "muzzle_bone": [
+                "socket_centerMuzzle"
+            ]
+        },
+        {
             "spec_id": "/pa/units/medieval/structures/spawn8/spawn8_tool_weapon.json",
             "aim_bone": "bone_turret",
-            "projectiles_per_fire": 8,
+            "projectiles_per_fire": 7,
             "muzzle_bone": [
-                "socket_centerMuzzle",
                 "socket_centerMuzzle.001",
                 "socket_centerMuzzle.002",
                 "socket_centerMuzzle.003",

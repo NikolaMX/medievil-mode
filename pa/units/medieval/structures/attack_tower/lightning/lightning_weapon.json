@@ -1,0 +1,34 @@
+{
+    "ammo_id": "/pa/units/medieval/structures/attack_tower/lightning/lightning_ammo.json",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "firing_arc_pitch": 360,
+
+
+    "ammo_source": "time",
+    "ammo_capacity": 5,
+    "ammo_demand": 0,
+    "ammo_per_shot": 1,
+    "start_fully_charged": true,
+    
+    
+    "firing_arc_yaw": 15,
+    "max_range": 30,
+    "fire_delay": 0,
+    "pitch_range": 360,
+    "pitch_rate": 360,
+    "rate_of_fire": 5,
+    
+    
+    "spread_fire": true,
+    "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
+    "yaw_range": 360,
+    "yaw_rate": 3600,
+    "target_priorities": [
+        "Commander",
+        "Titan & ( Land | Naval )",
+        "Artillery & Advanced & ( Land | Naval )",
+        "Nuke | NukeDefense",
+        "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1"
+      ]
+  }

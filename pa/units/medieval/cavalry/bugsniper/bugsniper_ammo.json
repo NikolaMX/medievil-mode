@@ -3,9 +3,24 @@
   "damage": 160,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/bot_spark_impact",
-      "effect_spec": "/pa/effects/specs/tesla_hit.pfx"
+      "audio_cue": "/SE/Impacts/bot_spark_impact"
     }
+  },
+    "armor_damage_map": {
+    "AT_Structure": 1.0,
+    "AT_Air": 1.0,
+    "AT_Hover": 1.0,
+    "AT_Custom0": 1.0,
+    "AT_Custom1": 1.0,
+    "AT_Custom2": 1.0,
+    "AT_Custom3": 1.0,
+    "AT_Custom4": 2.0,
+    "AT_Custom5": 2.0,
+    "AT_Custom6": 2.0,
+    "AT_Custom7": 1.0,
+    "AT_Custom8": 1.0,
+    "AT_Custom9": 1.0
+    
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
@@ -22,5 +37,5 @@
     "allow_underground": true
   },
   "splash_damage": 50,
-  "splash_radius": 10
+  "splash_radius": 4
 }

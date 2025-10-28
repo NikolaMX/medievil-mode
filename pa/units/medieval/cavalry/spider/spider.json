@@ -90,7 +90,7 @@
     ],
     "death": {
     "decals": [
-      "/pa/effects/decal/splat_yellow_decal.json"
+      "/pa/effects/decal/splat_yellow_small_decal.json"
     ]
   },
     "attack_range_frac": 0.9,
@@ -126,8 +126,8 @@
     },
     "TEMP_texelinfo": 6.38702,
     "mesh_bounds": [
-        5,
-        4,
-        1.6
+        7,
+        7,
+        3
     ]
 }

@@ -36,9 +36,13 @@ var paeiouIcons = [
     "jumping_spider",
     
     "hound",
+
+
     "gorilla",
     "gorilla_big",
     "crossbow_bear",
+    "burrow_bear",
+    "hidden_bear",
 
     "snake",
     "mini_snake",
@@ -69,6 +73,7 @@ var paeiouIcons = [
     "acolyte_dead",
     "darkmage",
     "ghostmage",
+    "phantom",
 
 
     // Flying
@@ -82,6 +87,7 @@ var paeiouIcons = [
 
     //Economy
     "mana_shrine",
+    "pylon",
     "catalyst",
 
     //Production
@@ -98,6 +104,9 @@ var paeiouIcons = [
     "mage_tower",
     "mage_tower_c",
     "arcmage_tower",
+    "firemage_tower",
+    "fogmage_tower",
+
     "arcmage_tower_c",
     "spectral_shrine",
     "blood_shrine",
@@ -109,6 +118,9 @@ var paeiouIcons = [
     "walls",
     "giga_wall",
     "attack_tower",
+    "arrow_tower",
+    "ballista",
+    
 
     //Mines
     "web_mine",

@@ -1,9 +1,10 @@
 {
-  "si_name":"wind_elemental",
+  "si_name": "wind_elemental",
   "display_name": "!LOC:Wind Elemental",
-  "description": "!LOC:Magic. Force of Nature.",
+  "description": "!LOC:Ghost. Hover. 4x dmg against Ghost units.",
   "TEMP_texelinfo": 5.32966,
-   "max_health": 600,
+  "max_health": 600,
+   "armor_type": "AT_Custom7",
   "attachable": {
     "offsets": {
       "root": [
@@ -19,35 +20,37 @@
     }
   },
   "fx_offsets": [
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/cavalry/wind_elemental/body.pfx",
-            "bone": "bone_turret",
-            "offset": [
-                0,
-                0.5,
-                -8.5
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/medieval/cavalry/wind_elemental/arms.pfx",
-            "bone": "bone_pitch",
-            "offset": [
-                0,-1.2,-9.9
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
-    ],
+    {
+      "type": "idle",
+      "filename": "/pa/units/medieval/cavalry/wind_elemental/body.pfx",
+      "bone": "bone_turret",
+      "offset": [
+        0,
+        0.5,
+        -8.5
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/units/medieval/cavalry/wind_elemental/arms.pfx",
+      "bone": "bone_pitch",
+      "offset": [
+        0,
+        -1.2,
+        -9.9
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
   "audio": {
     "loops": {
       "move": {
@@ -69,13 +72,10 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec":"/pa/units/medieval/cavalry/wind_elemental/flame.pfx bone_claw.l /pa/units/medieval/cavalry/fire_elemental/flame.pfx bone_claw.r"
-      
+      "effect_spec": "/pa/units/medieval/cavalry/wind_elemental/tp.pfx bone_claw.l /pa/units/medieval/cavalry/wind_elemental/tp.pfx bone_claw.r"
     },
-   
     "died": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      
       "effect_scale": 1.2
     }
   },
@@ -138,7 +138,6 @@
       "bone": "bone_head"
     }
   ],
- 
   "mesh_bounds": [
     6.5,
     7,
@@ -196,13 +195,19 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Tank",
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Bomber",
     "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Artillery",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom8"
-  ]
+    "UNITTYPE_Important"
+  ],
+  "death": {
+        "decals": [
+            "/pa/effects/decal/scorch_cyan_decal.json"
+        ]
+    }
 }

@@ -1,9 +1,10 @@
 {
   "si_name":"bugsniper",
   "display_name": "!LOC:Lightning Elemental",
-  "description": "!LOC:Magic. Force of Nature.",
+  "description": "!LOC:Ghost. Hover. 2x damage against Beasts and Cavalry.",
   "TEMP_texelinfo": 5.32966,
    "max_health": 600,
+   "armor_type": "AT_Custom7",
   "attachable": {
     "offsets": {
       "root": [
@@ -200,7 +201,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Artillery",
+    "UNITTYPE_LaserPlatform",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom8"

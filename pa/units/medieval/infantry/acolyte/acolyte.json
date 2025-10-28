@@ -22,7 +22,7 @@
             ]
         }
     },
-    "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom9",
+    "buildable_types": "(Land & Structure & Basic | Land & Structure & Advanced | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom9",
     "unit_types": [
         "UNITTYPE_Custom9",
         "UNITTYPE_Bot",

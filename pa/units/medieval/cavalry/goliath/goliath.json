@@ -1,33 +1,34 @@
-{   "si_name": "goliath",
-    "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Goliath",
-    "description": "Beast. Extremly durable. Devastating damage.",
-    "armor_type": "AT_Custom6",
-    "build_metal_cost": 5000,
-    "max_health": 7000,
-    "wreckage_health_frac": 1.0,
-    "command_caps": [
+{
+  "si_name": "goliath",
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "Goliath",
+  "description": "Beast. Extremly durable. Devastating damage.",
+  "armor_type": "AT_Custom6",
+  "build_metal_cost": 5000,
+  "max_health": 7000,
+  "wreckage_health_frac": 1.0,
+  "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist",
     "ORDER_Use"
   ],
-    "attachable": {
-        "offsets": {
-            "root": [
-                0,
-                0,
-                0
-            ],
-            "head": [
-                0,
-                0,
-                12.0
-            ]
-        }
-    },
-      "events": {
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        12.0
+      ]
+    }
+  },
+  "events": {
     "fired": {
       "effect_spec": ""
     },
@@ -36,28 +37,28 @@
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     }
   },
-    "tools": [
-        {
-            "spec_id": "/pa/units/medieval/cavalry/goliath/goliath_tool_weapon.json",
-            "aim_bone": "bone_turret",
-            "muzzle_bone": "bone_boom",
-            "primary_weapon": true
-        }
-    ],
-    "model": {
-        "filename": "/pa/units/medieval/cavalry/goliath/imperial_theta.papa",
-        "animations": {
-            "walk": "/pa/units/medieval/cavalry/goliath/goliath_anim_walk.papa",
-            "idle": "/pa/units/medieval/cavalry/goliath/goliath_anim_idle.papa",
-            "walk_stop": "/pa/units/medieval/cavalry/goliath/goliath_anim_walkStop.papa",
-            "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
-            "firing": "/pa/units/medieval/cavalry/goliath/goliath_anim_hit1.papa"
-        },
-        "animtree": "/pa/units/medieval/cavalry/goliath/goliath_anim_tree.json",
-        "walk_speed": 6
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/cavalry/goliath/goliath_tool_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "bone_boom",
+      "primary_weapon": true
+    }
+  ],
+  "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+  "model": {
+    "filename": "/pa/units/medieval/cavalry/goliath/imperial_theta.papa",
+    "animations": {
+      "walk": "/pa/units/medieval/cavalry/goliath/goliath_anim_walk.papa",
+      "idle": "/pa/units/medieval/cavalry/goliath/goliath_anim_idle.papa",
+      "walk_stop": "/pa/units/medieval/cavalry/goliath/goliath_anim_walkStop.papa",
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
+      "firing": "/pa/units/medieval/cavalry/goliath/goliath_anim_hit1.papa"
     },
-    "navigation": {
+    "animtree": "/pa/units/medieval/cavalry/goliath/goliath_anim_tree.json",
+    "walk_speed": 6
+  },
+  "navigation": {
     "type": "amphibious",
     "acceleration": 60,
     "brake": -1,
@@ -102,10 +103,10 @@
           "shape": "capsule",
           "radius": 150
         }
-    ]
+      ]
     }
-},
-"selection_icon": {
+  },
+  "selection_icon": {
     "diameter": 16.6
   },
   "physics": {
@@ -113,7 +114,7 @@
     "sync_radius_to_extents": true,
     "air_friction": 1
   },
-    "audio": {
+  "audio": {
     "loops": {
       "build": {
         "cue": "/SE/Construction/Commander_contruction_beam_loop",
@@ -136,67 +137,66 @@
     "UNITTYPE_Land",
     "UNITTYPE_Amphibious"
   ],
-  
-    "headlights": [
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                0,
-                -2.972,
-                -0.289
-            ],
-            "orientation": [
-                0.0,
-                45.0,
-                0.0
-            ],
-            "near_width": 5.0,
-            "near_height": 5.0,
-            "near_distance": 3.0,
-            "far_distance": 30.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 6.0,
-            "bone": "bone_spine",
-            "shadow_resolution": 128
-        }
-    ],
-    "lamps": [
-        {
-            "offset": [
-                0,
-                -2.972,
-                -0.289
-            ],
-            "radius": 2.0,
-            "color": [
-                1.0,
-                1.0,
-                1.0
-            ],
-            "intensity": 5.0,
-            "bone": "bone_spine"
-        },
-        {
-            "offset": [
-                0.07,
-                -3.85,
-                0.2
-            ],
-            "radius": 4.0,
-            "color": [
-                0.4,
-                1.0,
-                0.01
-            ],
-            "intensity": 2.0,
-            "bone": "bone_leftElbow"
-        }
-    ],
-    "mesh_bounds": [
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        0,
+        -2.972,
+        -0.289
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "near_width": 5.0,
+      "near_height": 5.0,
+      "near_distance": 3.0,
+      "far_distance": 30.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 6.0,
+      "bone": "bone_spine",
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "offset": [
+        0,
+        -2.972,
+        -0.289
+      ],
+      "radius": 2.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "bone": "bone_spine"
+    },
+    {
+      "offset": [
+        0.07,
+        -3.85,
+        0.2
+      ],
+      "radius": 4.0,
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "bone": "bone_leftElbow"
+    }
+  ],
+  "mesh_bounds": [
     10,
     10,
     12

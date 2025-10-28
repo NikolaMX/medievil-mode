@@ -26,6 +26,7 @@
         "UNITTYPE_Custom8",
         "UNITTYPE_Bot",
         "UNITTYPE_Tactical",
+        "UNITTYPE_LaserPlatform",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Advanced",

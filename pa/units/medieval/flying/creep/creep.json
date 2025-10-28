@@ -1,10 +1,10 @@
 {
     "si_name": "creep",
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "Creep",
-    "description": "!LOC: I DONT KNOW YET I WILL FILL THIS LATER.",
-    "max_health": 750,
-    "build_metal_cost": 6000,
+    "display_name": "Skylord",
+    "description": "!LOC:Flying. Devastating single target damage.",
+    "max_health": 2000,
+    "build_metal_cost": 2500,
     "armor_type": "AT_Air",
     "attachable": {
         "offsets": {
@@ -184,12 +184,12 @@
         }
     ],
     "selection_icon": {
-        "diameter": 12.0
+        "diameter": 18.0
     },
     "mesh_bounds": [
-        8,
-        8,
-        20
+        10,
+        10,
+        18
     ],
     "TEMP_texelinfo": 5.84968
 }

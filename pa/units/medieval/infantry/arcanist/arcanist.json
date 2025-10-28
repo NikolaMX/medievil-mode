@@ -22,7 +22,7 @@
             ]
         }
     },
-    "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom8",
+    "buildable_types": "(Land & Structure & Basic | Land & Structure & Advanced | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom8",
     "unit_types": [
         "UNITTYPE_Custom8",
         "UNITTYPE_Bot",
@@ -41,7 +41,6 @@
         "ORDER_Attack",
         "ORDER_Assist",
         "ORDER_Use",
-        "ORDER_FireSecondaryWeapon",
         "ORDER_Build",
         "ORDER_Reclaim",
         "ORDER_Repair"
@@ -152,5 +151,10 @@
         12.6,
         8.71255,
         15.6193
-    ]
+    ],
+    "death": {
+        "decals": [
+            "/pa/effects/decal/scorch_cyan_decal.json"
+        ]
+    }
 }

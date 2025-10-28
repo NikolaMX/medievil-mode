@@ -26,6 +26,7 @@
     "production": {
         "energy": 50
     },
+    "strategic_icon_priority": 5,
     "consumption": {
         "energy": 0
     },

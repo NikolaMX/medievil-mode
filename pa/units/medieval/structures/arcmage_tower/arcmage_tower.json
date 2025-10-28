@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Arcmage Tower",
-    "display_name": "!LOC:Arcmage Tower",
+    "unit_name": "ArLightning Mage Tower",
+    "display_name": "!LOC:ArLightning Mage Tower",
     "description": "!LOC:Summons Legendary Mages and conducts T3 research.",
     "si_name": "arcmage_tower",
     "max_health": 5000,
@@ -30,7 +30,14 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-    "buildable_types": "Custom8 & FactoryBuild & Important & Tactical",
+        "replaceable_units": [
+        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
+    ],
+  "force_snap_to_feature_orientation": true,
+   "feature_requirements": [
+    "control_point"
+  ],
+    "buildable_types": "Custom8 & FactoryBuild & Important & Tactical & LaserPlatform",
     "rolloff_dirs": [
         [
             0,
@@ -52,12 +59,13 @@
     ],
     "default_build_stance": "Continuous"
   },
+"placement_size": [
+        0.1,
+        0.1
+    ],
 
 
-
-    "physics": {
-        "collision_layers": "WL_AnySurface"
-    },
+    
     "recon": {
         "observer": {
             "items": [
@@ -244,9 +252,9 @@
         "diameter": 65
     },
     "mesh_bounds": [
-        50,
-        50,
-        50
-    ],
+        20,
+        20,
+        15
+        ],
     "TEMP_texelinfo": 37.4927
 }

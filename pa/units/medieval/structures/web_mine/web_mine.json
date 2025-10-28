@@ -147,6 +147,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Naval",
     "UNITTYPE_Defense",
+    "UNITTYPE_FabBuild",
     "UNITTYPE_CombatFabBuild",
     "UNITTYPE_CombatFabAdvBuild"
   ],

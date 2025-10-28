@@ -33,15 +33,14 @@
     
 
 
- "buildable_types": "Bot & Tactical & FactoryBuild & Custom8",
+ "buildable_types": "Land & Factory & Construction & Advanced & Heavy & Custom8",
   "factory_cooldown_time": 2,
   "wait_to_rolloff_time": 1,
   "factory": {
     "store_units": false,
     "spawn_points": [
       "zappwe"
-    ],
-    "default_build_stance": "Continuous"
+    ]
   },
   "tools": [
     {
@@ -60,7 +59,10 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-
+"placement_size": [
+        0.1,
+        0.1
+    ],
 
 
 
@@ -256,13 +258,10 @@
         "diameter": 55
     },
     "mesh_bounds": [
-        35,
-        35,
-        20
+      20,
+        20,
+        15
     ],
-    "placement_size": [
-        0.1,
-        0.1
-    ],
+ 
     "TEMP_texelinfo": 30
 }

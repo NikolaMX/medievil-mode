@@ -43,6 +43,14 @@
             0
         ]
     ],
+       "replaceable_units": [
+        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
+    ],
+  "force_snap_to_feature_orientation": true,
+   "feature_requirements": [
+    "control_point"
+  ],
+  
     "wait_to_rolloff_time": 0,
     "factory_cooldown_time": 4,
     "factory": {
@@ -52,9 +60,11 @@
         ],
         "default_build_stance": "Continuous"
     },
-    "physics": {
-        "collision_layers": "WL_AnySurface"
-    },
+    "placement_size": [
+        0.1,
+        0.1
+    ],
+   
     "recon": {
         "observer": {
             "items": [
@@ -240,9 +250,9 @@
         "diameter": 65
     },
     "mesh_bounds": [
-        50,
-        50,
-        50
+         20,
+        20,
+        15
     ],
     "TEMP_texelinfo": 37.4927
 }

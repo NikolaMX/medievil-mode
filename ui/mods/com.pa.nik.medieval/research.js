@@ -7,20 +7,58 @@ model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_chargin
 
 //hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
-model.unitsToLock = ["/pa/units/land/bug_grunt_big/bug_grunt_big.json",
-    
-                    "/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json",
-                    "/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json",
-                    "/pa/units/land/bug_needler/bug_needler_fast.json",
-                    
-                    "/pa/units/land/bug_hydra/bug_hydra.json",
-                    "/pa/units/land/bug_boomer/bug_boomer_r.json",
-                    "/pa/units/structure/bug_mine/bug_mine.json",
-                    "/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json",
-                    "/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json",
-                    "/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json",
-                    "/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json",
-                    "/pa/units/orbital/bug_advanced_orbital_radar/bug_advanced_orbital_radar.json",
+model.unitsToLock = [
+    //Cabal Initial Factories
+                    "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
+                    "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",
+                    "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
+    //Cabal Infantry
+                    "/pa/units/medieval/infantry/sword_dox/sword_dox.json",           
+                    "/pa/units/medieval/infantry/assassin/assassin.json",
+                    "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
+    //Cabal Archers
+                    "/pa/units/medieval/infantry/crossbow/crossbow.json",
+                    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
+    //Cabal Cav
+                    "/pa/units/medieval/cavalry/gorilla/gorilla.json",
+                    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
+                    "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json",
+                    "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json",
+
+
+    //Cabal Advanced Buildings
+                    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
+                    "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+                    "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
+                    "/pa/units/medieval/structures/lair/lair.json",
+                    "/pa/units/medieval/structures/witch_hut/witch_hut.json",
+
+
+    //Cabal Spiders
+                    "/pa/units/medieval/cavalry/big_spider/big_spider.json",
+                    "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+                    "/pa/units/medieval/flying/creep/creep.json",
+    //Cabal SpiderWeb
+                    "/pa/units/medieval/structures/web_mine/web_mine.json",
+    //Spider Research
+                    "/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
+                    "/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
+    //Cabal Cav Research
+                    "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
+    //Cabal Ranged Research
+                    "/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
+                    "/pa/units/medieval/research/cabal/ranged/ranged_t3.json",
+
+
+    //Cabal Pumpkins
+                    "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
+    //Cabal Dark Mages
+                    "/pa/units/medieval/flying/witch/witch.json",
+    //Cabal Ghosts
+                    "/pa/units/medieval/infantry/phantom/phantom.json",
+    //Cabal Snakes
+                    "/pa/units/medieval/cavalry/snake/snake.json",
+
                     ];
 
 //tracks locked units
@@ -43,11 +81,93 @@ model.unlockPairs = [
     true],//is a replace rather than just locks
 
      
-     //crusher unlock
-    ["/pa/units/medieval/infantry/ghostmage/ghostmage.json",
-    ["/pa/units/medieval/cavalry/munchkin/munchkin.json"],
-    ["/pa/units/medieval/infantry/ghostmage/ghostmage.json"],
-    false]
+     //Cabal Initial Factories
+    ["/pa/units/medieval/structures/spawn8/spawn8.json",
+    ["/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
+    "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json"
+                ],
+    [],
+    false],
+
+ //Cabal Axe
+    ["/pa/units/medieval/research/cabal/infantry/axe.json",
+    ["/pa/units/medieval/infantry/axe_dox/axe_dox.json",
+    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json"
+                ],
+    ["/pa/units/medieval/research/cabal/infantry/axe.json"],
+    false],
+//Cabal Cav T1 
+    ["/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json",
+    ["/pa/units/medieval/cavalry/gorilla/gorilla.json", 
+        "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
+        "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"
+                ],
+    ["/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json"],
+    false],
+//Cabal Cav T2
+    ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
+    ["/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
+        "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json"
+                ],
+    ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"],
+    false],
+
+
+//Cabal Ranged T1
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t1.json",
+    ["/pa/units/medieval/infantry/crossbow/crossbow.json",
+        "/pa/units/medieval/research/cabal/ranged/ranged_t2.json"
+                ],
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t1.json"],
+    false],
+//Cabal Ranged T2
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
+    ["/pa/units/medieval/infantry/assassin/assassin.json",
+        "/pa/units/medieval/research/cabal/ranged/ranged_t3.json"
+                ],
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json"],
+    false],
+//Cabal Ranged T3
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t3.json",
+    ["/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json"
+                ],
+    ["/pa/units/medieval/research/cabal/ranged/ranged_t3.json"],
+    false],
+
+
+     //Cabal Spiders T1
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t1.json",
+    ["/pa/units/medieval/structures/lair/lair.json",
+    "/pa/units/medieval/research/cabal/spiders/spiders_t2.json"
+                ],
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t1.json"],
+    false],
+     //Cabal Spiders T2
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
+    ["/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+        "/pa/units/medieval/structures/web_mine/web_mine.json",
+        "/pa/units/medieval/research/cabal/spiders/spiders_t3.json"    
+                ],
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t2.json"],
+    false],
+     //Cabal Spiders T3
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
+    ["/pa/units/medieval/flying/creep/creep.json",
+        "/pa/units/medieval/cavalry/big_spider/big_spider.json"   
+                ],
+    ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json"],
+    false],
+
+
+//=============UPGRADES==============
+
+//Cabal
+     //Infantry
+    ["/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
+    ["/pa/units/medieval/infantry/sword_dox/sword_dox.json"    
+                ],
+    ["/pa/units/medieval/infantry/sword_light/sword_light_c.json", "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json"],
+    false],
 
 
 ]

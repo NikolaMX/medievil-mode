@@ -1,0 +1,162 @@
+{
+  "display_name": "!LOC:Ballista",
+  "description": "!LOC:Medium range. Piercing shot.",
+  "TEMP_texelinfo": 13,
+  "has_death_effects": true,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        7.4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  
+  "audio": {
+    
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sniper"
+    }
+  },
+
+ 
+ 
+  "headlights": [
+    {
+      "bone": "bone_turret",
+      "color": [
+        0.75,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1,
+      "near_height": 1.5,
+      "near_width": 1.5,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+
+ 
+  
+  
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 3.5,
+    "orient_interp_rate": 120.0
+  },
+  
+  "selection_icon": {
+    "diameter": 20
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired0",
+      "projectiles_per_fire": 5,
+      "record_index": 0,
+      "muzzle_bone": [
+        "socket_muzzle",
+        "socket_muzzle1",
+        "socket_muzzle2",
+        "socket_muzzle3",
+        "socket_muzzle4"
+      ],
+      "spec_id": "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear_tool_weapon.json"
+    }
+  ],
+
+
+
+  
+
+  "alt_area_build_separation": 18.0,
+  "alt_area_build_type": "Line",
+  "area_build_separation": 36,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 7.5,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 350,
+  "max_health": 1500,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.6
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  
+  "mesh_bounds": [
+    8,
+    8,
+    6
+  ],
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/ballista/ballista.papa",
+      "animtree": "/pa/anim/anim_trees/defense_turret_anim_tree.json",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 130
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 130
+        }
+      ]
+    }
+  },
+ 
+  "spawn_layers": "WL_LandHorizontal",
+
+  "unit_name": "Laser Defense Tower",
+  "unit_types": [
+    "UNITTYPE_Custom8",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Land",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_CmdBuild"
+  ]
+
+}

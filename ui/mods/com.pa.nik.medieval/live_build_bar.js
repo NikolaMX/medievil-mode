@@ -227,13 +227,16 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
         
 
         ["c_m_factory", "!LOC:cabal mages"],        
-        ["c_s_factory", "!LOC:cabal specters"],
+        ["c_g_factory", "!LOC:cabal specters"],
         ["c_s_factory", "!LOC:cabal spiders"],
         ["c_b_factory", "!LOC:cabal pumpkins"],
 
         ["c_i_factory", "!LOC:cabal infantry"],
         ["c_a_factory", "!LOC:cabal archers"],
         ["c_c_factory", "!LOC:cabal cavalry"],
+
+
+        ["c_research", "!LOC:cabal unit unlocks"],
 
         ["bug_research", "!LOC:research"],
         ["bug_adv_research", "!LOC:research"],

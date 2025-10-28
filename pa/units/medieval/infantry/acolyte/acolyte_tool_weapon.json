@@ -1,10 +1,10 @@
 {
     "ammo_id": "/pa/units/medieval/infantry/acolyte/acolyte_ammo.json",
-    "auto_attack": true,
+ 
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,
   "idle_aim_delay": 0,
-  "max_range": 20,
+  "max_range": 30,
   "ammo_capacity": 1.5,
   "ammo_demand": 1.5,
   "ammo_per_shot": 1.5,
@@ -12,15 +12,26 @@
   "auto_fire_when_charged": false,
   "start_fully_charged": true,
   "fire_delay": 1.5,
-  "pitch_range": 0,
-  "pitch_rate": 0,
-  "rate_of_fire": 1,
-  "tool_type": "TOOL_Weapon",
-  "yaw_range": 0,
-  "yaw_rate": 0,
   "self_destruct": true,
-    "target_layers": [
-        "WL_LandHorizontal",
-        "WL_WaterSurface"
-    ]
-  }
+ 
+
+
+    
+
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "manual_fire": true,
+
+  "pitch_range": 90,
+  "pitch_rate": 3600,
+  "rate_of_fire": 1.0,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 3600
+}
+  

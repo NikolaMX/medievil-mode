@@ -1,0 +1,36 @@
+{
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": [
+        {
+            "layer": "WL_AnyLand",
+            "id": "/pa/units/medieval/infantry/recurve/recurve_ammo.json"
+        }
+    ],
+    
+    "arc_type": "ARC_Low",
+
+    "ammo_capacity": 1,
+    "ammo_demand": 1,
+    "ammo_per_shot": 1,
+    "ammo_source": "time",
+    "charge_ammo_when_targeting": true,
+    "start_fully_charged": false,
+
+    "rate_of_fire": 0.5,
+    "idle_aim_delay": 1.0,
+    "max_range": 150,
+    "min_firing_velocity": 50,
+    "max_firing_velocity": 300,
+    "firing_standard_deviation": 2,
+    "fire_delay": 0,
+    "yaw_rate": 360,
+    "pitch_rate": 360,
+    "yaw_range": 90,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Ghost Mage",
-    "description": "!LOC:Spectral. Summons ghosts at medium range. Invulnerable to most attacks.",
+    "description": "!LOC:Ghost. Summons ghosts at medium range.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
@@ -41,7 +41,7 @@
         "size": 1
     },
     "navigation": {
-        "type": "amphibious",
+        "type": "hover",
         "acceleration": 120,
         "brake": 120,
         "move_speed": 8,
@@ -72,7 +72,6 @@
     },
     "model": {
         "filename": "/pa/units/medieval/infantry/ghostmage/ghostmage.papa",
-        
         "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
         "walk_speed": 7.0
     },
@@ -92,25 +91,26 @@
                 "socket_leftMuzzle",
                 "socket_leftMuzzle",
                 "socket_leftMuzzle"
-
             ]
         }
     ],
-      "fx_offsets": [
-    {
-      "type": "idle",
-      "filename": "/pa/units/medieval/infantry/ghostmage/spine.pfx",
-      "bone": "bone_spine",
-      "offset": [
-          -0,
-          0.0,
-          0
-      ],
-      "orientation": [
-          0,0,0
-      ]
-  }
-],
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/medieval/infantry/ghostmage/spine.pfx",
+            "bone": "bone_spine",
+            "offset": [
+                -0,
+                0.0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
     "events": {
         "died": {
             "audio_cue": "/SE/Death/Bot",
@@ -138,5 +138,10 @@
         12.6,
         8.71255,
         15.6193
+    ],
+    "death": {
+    "decals": [
+      "/pa/effects/decal/scorch_white_decal.json"
     ]
+}
 }

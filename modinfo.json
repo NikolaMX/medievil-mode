@@ -22,6 +22,7 @@
 		"expansion"
 	],
 	"scenes": {
+		
 		"icon_atlas": [
 			"coui://ui/mods/com.pa.nik.medieval/icon_atlas.js"
 		],

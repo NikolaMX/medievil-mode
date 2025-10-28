@@ -1,13 +1,14 @@
 {
+    "si_name": "phantom",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Phantom Mage",
-    "description": "!LOC:Arcane. Attacks at medium range with lighning. Devastating damage in a small area.",
+    "description": "!LOC:Ghost. Attacks at medium range with lighning. Devastating damage in a small area.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
     "build_metal_cost": 2000,
     "show_in_orbital_layer": true,
-    "armor_type": "AT_Custom0",
+    "armor_type": "AT_Custom7",
     "attachable": {
         "offsets": {
             "root": [
@@ -22,16 +23,13 @@
             ]
         }
     },
-
-
     "unit_types": [
         "UNITTYPE_Custom9",
         "UNITTYPE_Tank",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Important"
+        "UNITTYPE_FactoryBuild"
     ],
     "command_caps": [
         "ORDER_Move",
@@ -44,7 +42,7 @@
         "size": 1
     },
     "navigation": {
-        "type": "land-small",
+        "type": "hover",
         "acceleration": 120,
         "brake": 120,
         "move_speed": 8,
@@ -73,13 +71,15 @@
             ]
         }
     },
-     "fx_offsets": [
+    "fx_offsets": [
         {
             "type": "idle",
             "filename": "/pa/units/medieval/infantry/phantom/phantom_body.pfx",
             "bone": "bone_turret",
             "offset": [
-                0,0,-7.9
+                0,
+                0,
+                -7.9
             ],
             "orientation": [
                 0,
@@ -92,7 +92,9 @@
             "filename": "/pa/units/medieval/infantry/phantom/phantom_arms.pfx",
             "bone": "bone_pitch",
             "offset": [
-                0,0,-9.6
+                0,
+                0,
+                -9.6
             ],
             "orientation": [
                 0,
@@ -105,28 +107,24 @@
         "filename": "/pa/units/medieval/infantry/phantom/phantom.papa",
         "animations": {
             "walk": "/pa/units/medieval/infantry/phantom/phantom_anim_walk.papa",
-            "idle": "/pa/units/medieval/infantry/phantom/phantom_idle.papa",
-            "walk_stop": "/pa/units/medieval/infantry/mage/mage_anim_walkStop.papa",
-            "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
+            "idle": "/pa/units/medieval/infantry/phantom/phantom_idle.papa"
         },
-        "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
+        "animtree": "/pa/units/medieval/cavalry/bugsniper/bipedal_mech_anim_tree.json",
         "walk_speed": 7.0
     },
     "teleportable": {},
     "tools": [
         {
             "spec_id": "/pa/units/medieval/infantry/phantom/phantom_tool_weapon.json",
-            "aim_bone": "bone_turret",
+            "aim_bone": "bone_pitch",
             "muzzle_bone": "bone_pitch",
             "primary_weapon": true
         }
     ],
-   
     "events": {
         "fired": {
             "audio_cue": "/SE/Weapons/air/titan_air_fire",
-            "effect_spec": "/pa/units/medieval/infantry/mage/lightning_muzzle.pfx socket_leftMuzzle"
+            "effect_spec": "/pa/units/medieval/infantry/mage/lightning_muzzle.pfx bone_pitch"
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
@@ -160,5 +158,10 @@
         12.6,
         8.71255,
         15.6193
-    ]
+    ],
+    "death": {
+        "decals": [
+            "/pa/effects/decal/scorch_cyan_decal.json"
+        ]
+    }
 }

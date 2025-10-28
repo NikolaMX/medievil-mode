@@ -1,9 +1,10 @@
 {
   "si_name":"fire_elemental",
   "display_name": "!LOC:Fire Elemental",
-  "description": "!LOC:Magic. Force of Nature.",
+  "description": "!LOC:Ghost. Hover. 2x damage against spiders and can clear spider webs.",
   "TEMP_texelinfo": 5.32966,
    "max_health": 600,
+   "armor_type": "AT_Custom7",
   "attachable": {
     "offsets": {
       "root": [
@@ -195,14 +196,15 @@
   "transportable": {
     "size": 1
   },
-  "unit_types": [
-    "UNITTYPE_Tank",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom8"
-  ]
+   "unit_types": [
+        "UNITTYPE_Custom8",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Important"
+    ]
 }

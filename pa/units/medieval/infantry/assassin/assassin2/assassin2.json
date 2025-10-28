@@ -130,5 +130,10 @@
     2,
     4
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+  "death": {
+        "decals": [
+            "/pa/effects/decal/scorch_darkred_decal.json"
+        ]
+    }
 }

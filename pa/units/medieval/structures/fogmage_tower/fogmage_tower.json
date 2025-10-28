@@ -1,0 +1,260 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Windmage Tower",
+    "display_name": "!LOC:Windmage Tower",
+    "description": "!LOC:Summons fire mages and beasts and conducts T3 research.",
+    "si_name": "fogmage_tower",
+    "max_health": 5000,
+    "build_metal_cost": 3000,
+    "atrophy_rate": 80.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnySurface",
+    "area_build_type": "Sphere",
+    "area_build_separation": 200,
+    "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom8"
+    ],
+    "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+        "replaceable_units": [
+        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
+    ],
+  "force_snap_to_feature_orientation": true,
+   "feature_requirements": [
+    "control_point"
+  ],
+    "buildable_types": "Custom8 & FactoryBuild & Important & Tactical & Bomber",
+    "rolloff_dirs": [
+        [
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0
+        ]
+    ],
+    "wait_to_rolloff_time": 0,
+    "factory_cooldown_time": 4,
+    "factory": {
+    "store_units": false,
+    "spawn_points": [
+      "bone_root"
+    ],
+    "default_build_stance": "Continuous"
+  },
+"placement_size": [
+        0.1,
+        0.1
+    ],
+
+
+    
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200,
+                    "uses_energy": true
+                },
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison.papa"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/radar"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/radar",
+            "effect_scale": 0.0
+        },
+        "fired": {
+            "effect_spec": "/pa/units/medieval/structures/arcmage_tower/edison_lightning_fired.pfx socket_muzzle"
+        }
+    },
+    "fx_offsets": [
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_center_bulb.pfx",
+            "bone": "bone_pfx_0",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "bone": "bone_pfx_1",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "bone": "bone_pfx_2",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "bone": "bone_pfx_3",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_4",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_5",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_6",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_7",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_8",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_9",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_10",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_11",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_12",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_13",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_14",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_15",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_dot.pfx",
+            "bone": "bone_pfx_16",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_dot.pfx",
+            "bone": "bone_pfx_17",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_dot.pfx",
+            "bone": "bone_pfx_18",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_19",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_20",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_21",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_22",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_23",
+            "type": "idle"
+        },
+        {
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_lightning.pfx",
+            "bone": "bone_pfx_24",
+            "type": "idle"
+        }
+    ],
+    "tools": [
+        
+        {
+            "spec_id": "/pa/units/medieval/structures/firemage_tower/firemage_tower_build_arm.json",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/radar"
+        }
+    },
+    "selection_icon": {
+        "diameter": 65
+    },
+    "mesh_bounds": [
+         20,
+        20,
+        15
+    ],
+    "TEMP_texelinfo": 37.4927
+}

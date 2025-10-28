@@ -1,8 +1,8 @@
 {
   "base_spec": "/pa/units/commanders/basic_fab_build_arm.json",
   "construction_demand": {
-    "energy": 0,
-    "metal": 10
+    "energy": 15,
+    "metal": 30
   },
   "pitch_rate": 180,
   "yaw_rate": 180

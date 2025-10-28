@@ -9,7 +9,11 @@ model.newUnits = []//replaces the id if an old unit is hotkeyed
 //factory map will link each factory id to a buildqueue
 //in order to track correctly this will be done on orders issued rather than factory selection
 factorySpecs = [
-    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+    "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+    "/pa/units/medieval/structures/mage_tower/mage_tower.json",
+
+    "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
+    
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json"
 ]
 
