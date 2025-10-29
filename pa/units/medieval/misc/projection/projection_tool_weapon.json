@@ -7,7 +7,7 @@
     "ammo_source": "time",
     "self_destruct": true,
     "auto_fire_when_charged": true,
-    "fire_delay": 5,
+    "fire_delay": 3,
     "firing_arc_pitch": 360,
     "firing_arc_yaw": 360,
     "max_range": 0,
