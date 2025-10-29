@@ -116,7 +116,7 @@ var newBuild = {
     "/pa/units/medieval/structures/pylon/pylon.json": ["i_economy", 0, { row: 2, column: 3 }],
 
     "/pa/units/medieval/structures/catalyst/catalyst.json": ["i_economy", 0, { row: 1, column: 4 }],
-    
+    "/pa/units/medieval/structures/metal_storage/metal_storage.json": ["i_economy", 0, { row: 2, column: 4 }],
 // Production
     
     "/pa/units/medieval/structures/spawn_cav/spawn_cav.json": ["i_build", 0, { row: 1, column: 1 }],
