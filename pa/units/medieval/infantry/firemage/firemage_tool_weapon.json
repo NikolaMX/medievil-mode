@@ -1,33 +1,35 @@
 {
-  "ammo_id": "/pa/units/medieval/infantry/firemage/firemage_ammo.json",
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": [
+        {
+            "layer": "WL_AnyLand",
+            "id": "/pa/units/medieval/infantry/firemage/firemage_ammo.json"
+        }
+    ],
+    "arc_type": "ARC_High",
 
-
-
-  "ammo_capacity": 900,
-    "ammo_demand": 30,
-    "ammo_per_shot": 900,
+    "ammo_capacity": 100,
+    "ammo_demand": 10,
+    "ammo_per_shot": 100,
     "ammo_source": "energy",
     "charge_ammo_when_targeting": true,
     "start_fully_charged": false,
 
-
-
-  "auto_attack": true,
-  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-  "firing_arc_pitch": 45,
-  "firing_arc_yaw": 45,
-  "idle_aim_delay": 0,
-  "max_range": 60,
-  "pitch_range": 45,
-  "pitch_rate": 360,
-  "rate_of_fire": 4,
-  "spread_fire": true,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
-  "yaw_range": 180,
-  "yaw_rate": 360
+    "rate_of_fire": 0.25,
+    "idle_aim_delay": 1.0,
+    "max_range": 150,
+    "min_firing_velocity": 50,
+    "max_firing_velocity": 300,
+    "firing_standard_deviation": 2,
+    "fire_delay": 0,
+    "yaw_rate": 60,
+    "pitch_rate": 360,
+    "yaw_range": 120,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ]
 }
-  
- 
