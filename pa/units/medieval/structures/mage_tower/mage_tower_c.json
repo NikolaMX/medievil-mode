@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Research Laboratory",
     "si_name": "mage_tower_c",
-    "display_name": "Mage Tower",
+    "display_name": "Research Laboratory",
     "description": "Unlock new units and Buildings",
     "max_health": 4000,
     "build_metal_cost": 1000,

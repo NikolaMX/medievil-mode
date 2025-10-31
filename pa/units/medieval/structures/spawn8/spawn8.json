@@ -4,7 +4,7 @@
     "display_name": "Acolyte Beacon",
     "description": "!LOC:Periodically summons 1 Acolyte (Fab) and 7 bodyguards.",
     "max_health": 1000,
-    "build_metal_cost": 1000,
+    "build_metal_cost": 500,
     "atrophy_rate": 25,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",

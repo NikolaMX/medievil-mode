@@ -37,7 +37,7 @@
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "aggressive_distance": 0.0,
-    "type": "land_small",
+    "type": "land-small",
     "acceleration": 36,
     "brake": 9,
     "move_speed": 18,
