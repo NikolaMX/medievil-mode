@@ -149,7 +149,7 @@
 
   "unit_name": "Laser Defense Tower",
   "unit_types": [
-    "UNITTYPE_Custom8",
+    "UNITTYPE_Custom9",
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",
     "UNITTYPE_Land",

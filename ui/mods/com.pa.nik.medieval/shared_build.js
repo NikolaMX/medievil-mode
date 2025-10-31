@@ -71,18 +71,21 @@ var newBuild = {
     "/pa/units/medieval/infantry/sword_light/sword_light_c.json": ["c_i_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/sword_dox/sword_dox.json": ["c_i_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/infantry/axe_dox/axe_dox.json": ["c_i_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/assassin/assassin.json": ["c_i_factory", 0, { row: 2, column: 2 }],      
+    "/pa/units/medieval/infantry/assassin/assassin.json": ["c_i_factory", 0, { row: 2, column: 2 }],
 
+    
     //Archers
     "/pa/units/medieval/infantry/longbow/longbow_c.json": ["c_a_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/crossbow/crossbow.json": ["c_a_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json": ["c_a_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/cavalry/mini_snake/mini_snake.json": ["c_a_factory", 0, { row: 2, column: 3 }],
 
     //Riders
-    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 2 }],
-    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json": ["c_c_factory", 0, { row: 2, column: 3 }],
-    "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json": ["c_c_factory", 0, { row: 2, column: 5 }],
-    "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json": ["c_c_factory", 0, { row: 2, column: 4 }],
+    "/pa/units/medieval/cavalry/snake/snake.json": ["c_c_factory", 0, { row: 0, column: 0 }],
+    "/pa/units/medieval/cavalry/gorilla/gorilla.json": ["c_c_factory", 0, { row: 2, column: 0 }],
+    "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json": ["c_c_factory", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json": ["c_c_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json": ["c_c_factory", 0, { row: 2, column: 3 }],
 
     //Spiders
     "/pa/units/medieval/flying/creep/creep.json": ["c_s_factory", 0, { row: 0, column: 0}],
@@ -92,15 +95,16 @@ var newBuild = {
     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json": ["c_s_factory", 0, { row: 1, column: 1 }],
     
 
-    //Snakes
-    "/pa/units/medieval/cavalry/snake/snake.json": ["c_s_factory", 0, { row: 1, column: 4 }],
-    "/pa/units/medieval/cavalry/mini_snake/mini_snake.json": ["c_s_factory", 0, { row: 2, column: 4 }],
+
     
-    //Pumpkins
+    
+    //Pumpkins and Snakes
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json": ["c_b_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/cavalry/munchkin/munchkin.json": ["c_b_factory", 0, { row: 1, column: 0  }],
+    
+    
+    
     "/pa/units/medieval/cavalry/boomkin/boomkin.json": ["c_b_factory", 0, { row: 2, column: 0 }],
-
     
 
 
@@ -162,29 +166,33 @@ var newBuild = {
 "/pa/units/medieval/structures/giga_wall/giga_wall.json": ["i_defense", 0, { row: 1, column: 0 }],
 "/pa/units/medieval/structures/attack_tower/attack_tower.json": ["i_defense", 0, { row: 1, column: 1 }],
 "/pa/units/medieval/structures/arrow_tower/arrow_tower.json": ["i_defense", 0, { row: 2, column: 1 }],
-"/pa/units/medieval/structures/ballista/ballista.json": ["i_defense", 0, { row: 2, column: 2 }],
+
 
 
 "/pa/units/medieval/structures/web_mine/web_mine.json": ["c_defense", 0, { row: 0, column: 0 }],
 "/pa/units/medieval/structures/walls/walls.json": ["c_defense", 0, { row: 1, column: 0 }],
 "/pa/units/medieval/structures/spikes/spikes.json": ["c_defense", 0, { row: 2, column: 0 }],
+"/pa/units/medieval/structures/ballista/ballista.json": ["c_defense", 0, { row: 1, column: 1 }],
 
 
 //Research
 
     //Cabal
 
-    //Infantry
-    "/pa/units/medieval/research/cabal/infantry/axe.json": ["c_research", 0, { row: 1, column: 0 }],
+    //Infantry + Burrow Bear
+    "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json": ["c_research", 0, { row: 0, column: 0 }],
+    "/pa/units/medieval/research/cabal/infantry/assassin.json": ["c_research", 0, { row: 1, column: 0 }],
+    "/pa/units/medieval/research/cabal/infantry/axe.json": ["c_research", 0, { row: 2, column: 0 }],
+    
 
 
-
-    //Ranged/Specialists
+    //Ranged + Snakes
     "/pa/units/medieval/research/cabal/ranged/ranged_t3.json": ["c_research", 0, { row: 0, column: 1 }],
     "/pa/units/medieval/research/cabal/ranged/ranged_t2.json": ["c_research", 0, { row: 1, column: 1 }],
     "/pa/units/medieval/research/cabal/ranged/ranged_t1.json": ["c_research", 0, { row: 2, column: 1 }],
 
      //Cavalry
+     "/pa/units/medieval/research/cabal/cavalry/snake.json": ["c_research", 0, { row: 0, column: 2 }],
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json": ["c_research", 0, { row: 1, column: 2 }],
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json": ["c_research", 0, { row: 2, column: 2 }],
 
@@ -198,7 +206,11 @@ var newBuild = {
 //Upgrades
 
     //Cabal
-"/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json": ["c_research", 0, { row: 0, column: 0 }]
+"/pa/units/medieval/upgrades/cabal/infantry/longbow.json": ["c_research", 0, { row: 0, column: 4 }],
+"/pa/units/medieval/upgrades/cabal/infantry/assassin.json": ["c_research", 0, { row: 1, column: 4 }],
+"/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json": ["c_research", 0, { row: 2, column: 4 }]
+
+
 
     //Imperia
     

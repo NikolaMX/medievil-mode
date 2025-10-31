@@ -3,7 +3,7 @@
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name":"!LOC:Cavalry T1 unlock",
-    "description":"!LOC:Allows you to build Chargers in the Cavalry factory.",
+    "description":"!LOC:Allows you to build Brutes in the Cavalry factory.",
     "si_name": "empty",
     "build_metal_cost": 500,
     "add_to_spatial_db": false,

@@ -15,10 +15,12 @@ model.unitsToLock = [
     //Cabal Infantry
                     "/pa/units/medieval/infantry/sword_dox/sword_dox.json",           
                     "/pa/units/medieval/infantry/assassin/assassin.json",
+                    "/pa/units/medieval/infantry/assassin/assassin_upg.json",
                     "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
     //Cabal Archers
                     "/pa/units/medieval/infantry/crossbow/crossbow.json",
                     "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
+                    "/pa/units/medieval/infantry/longbow/longbow_c_upg.json",
     //Cabal Cav
                     "/pa/units/medieval/cavalry/gorilla/gorilla.json",
                     "/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
@@ -40,15 +42,21 @@ model.unitsToLock = [
                     "/pa/units/medieval/flying/creep/creep.json",
     //Cabal SpiderWeb
                     "/pa/units/medieval/structures/web_mine/web_mine.json",
+
+
     //Spider Research
                     "/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
                     "/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
     //Cabal Cav Research
                     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
+                    "/pa/units/medieval/research/cabal/cavalry/snake.json",
     //Cabal Ranged Research
                     "/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
                     "/pa/units/medieval/research/cabal/ranged/ranged_t3.json",
 
+    //Cabal Stealth/Infantry Research
+                    "/pa/units/medieval/research/cabal/infantry/assassin.json",
+                    "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
 
     //Cabal Pumpkins
                     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
@@ -58,7 +66,7 @@ model.unitsToLock = [
                     "/pa/units/medieval/infantry/phantom/phantom.json",
     //Cabal Snakes
                     "/pa/units/medieval/cavalry/snake/snake.json",
-
+                    "/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
                     ];
 
 //tracks locked units
@@ -92,10 +100,27 @@ model.unlockPairs = [
  //Cabal Axe
     ["/pa/units/medieval/research/cabal/infantry/axe.json",
     ["/pa/units/medieval/infantry/axe_dox/axe_dox.json",
-    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json"
+    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
+    "/pa/units/medieval/research/cabal/infantry/assassin.json"
                 ],
     ["/pa/units/medieval/research/cabal/infantry/axe.json"],
     false],
+//Cabal Assassin
+["/pa/units/medieval/research/cabal/infantry/assassin.json",
+    ["/pa/units/medieval/infantry/assassin/assassin.json",
+        "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"
+                ],
+    ["/pa/units/medieval/research/cabal/infantry/assassin.json"],
+    false],
+//Cabal Burrow Bear
+["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
+    ["/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json",
+                ],
+    ["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"],
+    false],
+
+
+
 //Cabal Cav T1 
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json",
     ["/pa/units/medieval/cavalry/gorilla/gorilla.json", 
@@ -107,11 +132,16 @@ model.unlockPairs = [
 //Cabal Cav T2
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
     ["/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
-        "/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json"
+        "/pa/units/medieval/research/cabal/cavalry/snake.json"
                 ],
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"],
     false],
-
+//Cabal Cav T3
+    ["/pa/units/medieval/research/cabal/cavalry/snake.json",
+    ["/pa/units/medieval/cavalry/snake/snake.json"
+                ],
+    ["/pa/units/medieval/research/cabal/cavalry/snake.json"],
+    false],
 
 //Cabal Ranged T1
     ["/pa/units/medieval/research/cabal/ranged/ranged_t1.json",
@@ -122,14 +152,14 @@ model.unlockPairs = [
     false],
 //Cabal Ranged T2
     ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
-    ["/pa/units/medieval/infantry/assassin/assassin.json",
+    ["/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
         "/pa/units/medieval/research/cabal/ranged/ranged_t3.json"
                 ],
     ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json"],
     false],
 //Cabal Ranged T3
     ["/pa/units/medieval/research/cabal/ranged/ranged_t3.json",
-    ["/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json"
+    ["/pa/units/medieval/cavalry/crossbow_bear/crossbow_bear.json"
                 ],
     ["/pa/units/medieval/research/cabal/ranged/ranged_t3.json"],
     false],
@@ -162,13 +192,30 @@ model.unlockPairs = [
 //=============UPGRADES==============
 
 //Cabal
-     //Infantry
+
+//Infantry
+     //Swordsman -> Sword Dox Upgrade
     ["/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
     ["/pa/units/medieval/infantry/sword_dox/sword_dox.json"    
                 ],
     ["/pa/units/medieval/infantry/sword_light/sword_light_c.json", "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json"],
     false],
 
+
+    //Assassin speed upgrade
+     ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
+    ["/pa/units/medieval/infantry/assassin/assassin_upg.json"  
+                ],
+    ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
+    true],  
+
+
+    //Longbow fire arrows
+     ["/pa/units/medieval/upgrades/cabal/infantry/longbow.json",
+    ["/pa/units/medieval/infantry/longbow/longbow_c_upg.json"  
+                ],
+    ["/pa/units/medieval/infantry/longbow/longbow_c.json", "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"],
+    true],           
 
 ]
 

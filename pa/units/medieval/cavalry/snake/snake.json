@@ -2,7 +2,7 @@
   "si_name":"snake",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Undead Serpent",
-  "description": "!LOC:Undead Fast. Slow attack but will kill almost anything in one hit.",
+  "description": "!LOC:Undead. Fast. Slow attack but will kill almost anything in one hit.",
   "armor_type": "AT_Custom6",
   "max_health": 1500,
   "build_metal_cost": 2000,
@@ -23,11 +23,11 @@
   },
   "unit_types": [
     "UNITTYPE_Custom9",
-    "UNITTYPE_Tank",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Heavy",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
@@ -115,5 +115,10 @@
     15,
     14
   ],
-  "TEMP_texelinfo": 4.07719
+  "TEMP_texelinfo": 4.07719,
+  "death": {
+    "decals": [
+      "/pa/effects/decal/decal_bug_splat_big.json"
+    ]
+  }
 }

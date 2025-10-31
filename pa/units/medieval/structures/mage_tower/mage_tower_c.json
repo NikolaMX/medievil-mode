@@ -15,8 +15,8 @@
 
 
  "buildable_types": "Economy & SelfDestruct & FactoryBuild & Custom9",
-  "factory_cooldown_time": 2,
-  "wait_to_rolloff_time": 1,
+  "factory_cooldown_time": 5,
+  "wait_to_rolloff_time": 0,
   "factory": {
     "store_units": false,
     "spawn_points": [

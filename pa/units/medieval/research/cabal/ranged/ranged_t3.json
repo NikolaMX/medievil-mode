@@ -2,8 +2,8 @@
 
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name":"!LOC:Specialist T3 unlock",
-    "description":"!LOC:Allows you to build Burrowing Bears in the Cavalry factory.",
+    "display_name":"!LOC:Ballista T3 unlock",
+    "description":"!LOC:Allows you to build Ballista Bears in the Cavalry factory.",
     "si_name": "empty",
     "build_metal_cost": 1200,
     "add_to_spatial_db": false,

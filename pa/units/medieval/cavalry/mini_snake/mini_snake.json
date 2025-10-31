@@ -23,11 +23,11 @@
     },
     "unit_types": [
         "UNITTYPE_Custom9",
-        "UNITTYPE_Tank",
+        "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Land",
-        "UNITTYPE_Advanced",
+        "UNITTYPE_Artillery",
         "UNITTYPE_FactoryBuild"
     ],
     "transportable": {
@@ -117,5 +117,10 @@
         7.5,
         7
     ],
-    "TEMP_texelinfo": 4.07719
+    "TEMP_texelinfo": 4.07719,
+    "death": {
+    "decals": [
+      "/pa/effects/decal/decal_bug_splat_01.json"
+    ]
+  }
 }

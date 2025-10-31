@@ -242,6 +242,7 @@
     "/pa/units/medieval/infantry/ghost/ghost.json",
     "/pa/units/medieval/infantry/shield/shield.json",
     "/pa/units/medieval/infantry/assassin/assassin.json",
+    "/pa/units/medieval/infantry/assassin/assassin_upg.json",
     "/pa/units/medieval/infantry/assassin/assassin2/assassin2.json",
     "/pa/units/medieval/infantry/dual_sword/dual_sword.json",
     "/pa/units/medieval/infantry/sword_light/sword_light.json",
@@ -255,6 +256,7 @@
     "/pa/units/medieval/infantry/crossbow/crossbow.json",
     "/pa/units/medieval/infantry/longbow/longbow.json",
         "/pa/units/medieval/infantry/longbow/longbow_c.json",
+        "/pa/units/medieval/infantry/longbow/longbow_c_upg.json",
 
 
 
@@ -363,6 +365,8 @@
 
 
     "/pa/units/medieval/research/cabal/infantry/axe.json",
+     "/pa/units/medieval/research/cabal/infantry/assassin.json",
+     "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
 
     "/pa/units/medieval/research/cabal/spiders/spiders_t1.json",
     "/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
@@ -370,6 +374,7 @@
 
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json",
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
+    "/pa/units/medieval/research/cabal/cavalry/snake.json",
 
     "/pa/units/medieval/research/cabal/ranged/ranged_t1.json",
     "/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
@@ -377,8 +382,9 @@
 
 
 
-  "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json"
-
+  "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
+  "/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
+  "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"
 
   ]
 }
