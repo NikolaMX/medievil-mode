@@ -2,7 +2,7 @@
   "si_name":"crossbow",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Crossbow",
-  "description": "!LOC:Medium Armour. Double Damage against all Armoured. Medium range.",
+  "description": "!LOC:Medium Armour. Double damage against all Armoured. Medium range.",
   "armor_type": "AT_Custom2",
   "max_health": 85,
   "build_metal_cost": 200,

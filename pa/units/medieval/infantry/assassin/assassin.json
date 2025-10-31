@@ -2,7 +2,7 @@
   "si_name": "assassin",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Assassin",
-  "description": "!LOC:Unarmoured. Invisible until it attacks, will not attack without an order. Ignores armour. Very high damage single attack.",
+  "description": "!LOC:Unarmoured. Invisible until it attacks. Will not attack without an order. Ignores armour. Very high damage single attack.",
   "armor_type": "AT_Custom1",
   "max_health": 50,
   "build_metal_cost": 300,

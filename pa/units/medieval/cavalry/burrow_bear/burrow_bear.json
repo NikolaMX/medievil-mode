@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Burrow Bear",
-  "description": "!LOC:Heavy Cavalry. Mele range. Can burrow underground for a short period of time, becoming invisble and significantly slower.",
+  "description": "!LOC:Heavy Cavalry. Melee range. Can burrow underground for a short period of time, becoming invisible and significantly slower.",
   "TEMP_texelinfo": 13,
   "has_death_effects": true,
   "wreckage_health_frac": 0,
@@ -79,7 +79,7 @@
     }
   ],
   "lamps": [],
-  "max_health": 4000,
+  "max_health": 2000,
   "mesh_bounds": [
     10,
     12,

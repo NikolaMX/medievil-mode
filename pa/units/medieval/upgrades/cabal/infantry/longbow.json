@@ -3,7 +3,7 @@
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name":"!LOC:Longbow Upgrade",
-    "description":"!LOC:Longbows now fire flaming arrows, double dmg to buildings.",
+    "description":"!LOC:Longbows now fire flaming arrows, double damage to buildings.",
     "si_name": "empty",
     "build_metal_cost": 250,
     "add_to_spatial_db": false,

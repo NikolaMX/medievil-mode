@@ -1,7 +1,7 @@
 {
   "si_name": "wind_elemental",
   "display_name": "!LOC:Wind Elemental",
-  "description": "!LOC:Ghost. Hover. 4x dmg against Ghost units.",
+  "description": "!LOC:Ghost. Hover. 4x damage against Ghost units.",
   "TEMP_texelinfo": 5.32966,
   "max_health": 600,
    "armor_type": "AT_Custom7",
