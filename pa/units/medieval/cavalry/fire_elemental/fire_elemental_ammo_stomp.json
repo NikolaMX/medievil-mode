@@ -1,0 +1,33 @@
+{
+"ammo_type": "PBAOE",
+  "damage": 10,
+  "armor_damage_map": {
+    "AT_Structure": 0,
+    "AT_Air": 0,
+    "AT_Hover": 1000,
+    "AT_Custom0": 0,
+    "AT_Custom1": 0,
+    "AT_Custom2": 0,
+    "AT_Custom3": 0,
+    "AT_Custom4": 0,
+    "AT_Custom5": 0,
+    "AT_Custom6": 0,
+    "AT_Custom7": 0,
+    "AT_Custom8": 0,
+    "AT_Custom9": 0
+    
+  },
+  "sim_fire_effect": "/pa/units/medieval/cavalry/fire_elemental/fire_stomp_explosion_ent.json",
+ "burn_damage": 200,
+  "burn_radius": 20,
+
+  "damage_volume": {
+    "initial_radius": 0.0,
+    "radius_velocity": 35.0,
+    "radius_accel": -10.0,
+    "delay": 0.0
+},
+  "full_damage_splash_radius": 20,
+  "splash_damages_allies": false,
+  "splash_radius": 20
+}

@@ -77,7 +77,7 @@
     "animtree": "/pa/units/medieval/infantry/axe_dox/bipedal_mech_anim_tree.json",
     "walk_speed": 20
   },
-  "attack_range_frac": 0.5,
+  "attack_range_frac": 0.9,
   "tools": [
     {
       "spec_id": "/pa/units/medieval/infantry/axe_thrower/axe_thrower_tool_weapon.json",

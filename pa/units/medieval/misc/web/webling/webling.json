@@ -52,8 +52,7 @@
   "recon": {
     "observable": {
       "layer": "surface_and_air",
-      "ignore_radar": true,
-      "ignore_sight": true
+      "ignore_radar": true
     },
     "observer": {
       "items": [
@@ -66,9 +65,9 @@
       ]
     }
   },
-  "death": {
-    "decal": [
-      "/pa/effects/decal/scorch_red.json"
+ "death": {
+    "decals": [
+      "/pa/effects/decal/decal_bug_splat_big.json"
     ]
   },
   "model": {
@@ -143,7 +142,6 @@
   "unit_types": [
     "UNITTYPE_Custom8",
     "UNITTYPE_Structure",
-    "UNITTYPE_Basic",
     "UNITTYPE_Wall",
     "UNITTYPE_NoBuild"
   ]

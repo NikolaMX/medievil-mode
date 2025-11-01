@@ -1,0 +1,12 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 15
+        }
+    },
+    "spawn_response": {
+        "audio_cue": "",
+        "effect_spec": "/pa/units/medieval/cavalry/fire_elemental/flame_aoe.pfx"
+    }
+}

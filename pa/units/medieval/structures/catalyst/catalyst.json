@@ -21,7 +21,7 @@
     ],
   "force_snap_to_feature_orientation": true,
   "production": {
-    "metal": 10
+    "metal": 5
   },
   "consumption": {
         "energy": 0

@@ -1,0 +1,17 @@
+{
+  "ammo_id": "/pa/units/medieval/cavalry/fire_elemental/fire_elemental_ammo_stomp.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "max_range": 10,
+  "pitch_range": 180,
+  "pitch_rate": 720,
+  "rate_of_fire": 2,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Seafloor"
+  ],
+  "exclude_unit_types": "Land | Bot | Tank | Basic | Advanced | Mobile",
+  "yaw_range": 360,
+  "yaw_rate": 720
+}

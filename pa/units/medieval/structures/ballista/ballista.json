@@ -122,7 +122,7 @@
     {
       "layer": "WL_LandHorizontal",
       "filename": "/pa/units/medieval/structures/ballista/ballista.papa",
-      "animtree": "/pa/anim/anim_trees/defense_turret_anim_tree.json",
+      "animtree": "/pa/units/medieval/structures/ballista/defense_turret_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     }
   ],

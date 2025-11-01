@@ -79,10 +79,10 @@
   "tools": [
     {
       "spec_id": "/pa/units/medieval/infantry/dual_sword/dual_sword_tool_weapon.json",
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_turret",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
-        "socket_rightMuzzle"
+        "bone_turret"
       ]
     }
   ],

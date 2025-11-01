@@ -22,7 +22,7 @@
 
 "buildable_types": "Structure & Custom9",
 "production": {
-    "energy": 50,
+    "energy": 30,
     "metal": 30
   },
   "storage": {

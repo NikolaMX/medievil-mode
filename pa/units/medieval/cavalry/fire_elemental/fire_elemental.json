@@ -173,7 +173,7 @@
           "layer": "surface_and_air",
           "channel": "sight",
           "shape": "capsule",
-          "radius": 200
+          "radius": 90
         }
       ]
     }
@@ -191,6 +191,14 @@
         "bone_claw.r",
         "bone_claw.l"
       ]
+    },
+    {
+      "spec_id": "/pa/units/medieval/cavalry/fire_elemental/fire_elemental_tool_weapon_stomp.json",
+      "record_index": -1,
+      "fire_event": "fired",
+      "projectiles_per_fire": 1,
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
     }
   ],
   "transportable": {
