@@ -3,9 +3,9 @@
   {
     "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
     "display_name":"!LOC:Great Serpent Unlock",
-    "description":"!LOC:Allows you to build beast-slaying great serpents.",
+    "description":"!LOC:Allows you to build beast-slaying Great Serpents.",
     "si_name": "empty",
-    "build_metal_cost": 1000,
+    "build_metal_cost": 1200,
     "add_to_spatial_db": false,
     "model": {
       "filename": "/pa/units/medieval/misc/stun/empty_model.papa"

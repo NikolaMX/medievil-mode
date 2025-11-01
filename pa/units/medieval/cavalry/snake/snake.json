@@ -4,7 +4,7 @@
   "display_name": "Undead Serpent",
   "description": "!LOC:Undead. Fast. Slow attack but will kill almost anything in one hit.",
   "armor_type": "AT_Custom6",
-  "max_health": 1500,
+  "max_health": 3500,
   "build_metal_cost": 2000,
   "wreckage_health_frac": 0,
   "attachable": {

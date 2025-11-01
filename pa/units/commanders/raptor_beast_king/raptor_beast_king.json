@@ -20,12 +20,12 @@
 
 "buildable_types": "Structure & Custom8",
 "production": {
-    "energy": 20,
-    "metal": 20
+    "energy": 50,
+    "metal": 30
   },
   "storage": {
-    "energy": 450,
-    "metal": 200
+    "energy": 2500,
+    "metal": 1500
   },
   "max_health": 12500,
   "build_metal_cost": 25000,

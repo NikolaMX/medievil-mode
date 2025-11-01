@@ -128,6 +128,7 @@ var paeiouIcons = [
     // Misc
     "empty", //stun
     "eldot", //ligthning ministorm
+    "jumping_spider_ammo_jump",
     
 
     "unit_cannon_wreckage", //custom mana point

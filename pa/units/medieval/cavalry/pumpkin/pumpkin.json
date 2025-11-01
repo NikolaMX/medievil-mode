@@ -1,10 +1,10 @@
 {
     "si_name": "commander_pumpkin",
     "display_name": "Pumpkin Guardian",
-    "description": "Undead. Immune to all Magic. double damage against all magical and undead enemies.",
+    "description": "Undead. Immune to all Magic. Double damage against all magical and undead enemies.",
     "armor_type": "AT_Custom9",
     "build_metal_cost": 5000,
-    "max_health": 12500,
+    "max_health": 8000,
     "wreckage_health_frac": 1.0,
     "command_caps": [
         "ORDER_Move",

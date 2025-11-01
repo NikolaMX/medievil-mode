@@ -31,9 +31,8 @@
   "splash_damage": 100,
   "splash_damages_allies": false,
   "splash_radius": 3,
-
   "spawn_unit_on_death": "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
   "spawn_unit_on_death_with_velocity": false,
   "show_strategic_icon": true,
-  "si_name": "jumping_spider"
+  "si_name": "jumping_spider_ammo_jump"
 }

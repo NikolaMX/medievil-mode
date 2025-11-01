@@ -4,7 +4,7 @@
     "AT_Structure": 1.0
   },
 
-  "damage": 500,
+  "damage": 2500,
   "splash_damage": 500,
   "splash_radius": 5,
   "initial_velocity": 130.0,

@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 100,
+  "damage": 750,
   "armor_damage_map": {
     "AT_Custom0": 1.0,
     "AT_Custom1": 1.0,
