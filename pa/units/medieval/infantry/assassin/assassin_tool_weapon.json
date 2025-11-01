@@ -6,7 +6,7 @@
   "firing_arc_yaw": 5,
   "fire_delay":0.2,
   "idle_aim_delay": 0,
-  "max_range": 10,
+  "max_range": 15,
   "pitch_range": 90,
   "pitch_rate": 720,
   "rate_of_fire": 0.5,

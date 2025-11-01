@@ -236,11 +236,7 @@ if (model.BuildSet && model.BuildSet.tabsTemplate) {
         ["c_c_factory", "!LOC:cabal cavalry"],
 
 
-        ["c_research", "!LOC:cabal unit unlocks"],
-
-        ["bug_research", "!LOC:research"],
-        ["bug_adv_research", "!LOC:research"],
-        ["bug_research_2", "!LOC:research"]
+        ["c_research", "!LOC:cabal unit unlocks"]
     ]);
 }
 

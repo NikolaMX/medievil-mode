@@ -5,6 +5,7 @@ var paeiouIcons = [
 
     "pike",
     "axe_dox",
+    "axe_dox_ded",
     "sword_dox",
     "mace",
     "zweihander",

@@ -14,7 +14,7 @@
     
 
 
- "buildable_types": "Economy & SelfDestruct & FactoryBuild & Custom9",
+ "buildable_types": "(Economy & SelfDestruct & FactoryBuild & Custom9) | (Fabber & Tactical & Advanced & Custom9)",
   "factory_cooldown_time": 5,
   "wait_to_rolloff_time": 0,
   "factory": {

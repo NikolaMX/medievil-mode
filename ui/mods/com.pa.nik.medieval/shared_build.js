@@ -206,7 +206,8 @@ var newBuild = {
 //Upgrades
 
     //Cabal
-"/pa/units/medieval/upgrades/cabal/infantry/longbow.json": ["c_research", 0, { row: 0, column: 4 }],
+"/pa/units/medieval/upgrades/cabal/infantry/longbow.json": ["c_research", 0, { row: 0, column: 5 }],
+"/pa/units/medieval/upgrades/cabal/infantry/axe.json": ["c_research", 0, { row: 0, column: 4 }],
 "/pa/units/medieval/upgrades/cabal/infantry/assassin.json": ["c_research", 0, { row: 1, column: 4 }],
 "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json": ["c_research", 0, { row: 2, column: 4 }]
 

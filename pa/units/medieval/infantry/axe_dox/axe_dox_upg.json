@@ -123,5 +123,6 @@
         "decals": [
             "/pa/effects/decal/scorch_darkred_decal.json"
         ]
-    }
+    },
+    "spawn_unit_on_death": "/pa/units/medieval/infantry/axe_dox/axe_dox_upg/axe_dox.json"
 }

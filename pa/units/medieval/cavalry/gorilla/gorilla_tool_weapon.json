@@ -17,5 +17,5 @@
   "yaw_range": 90,
   "yaw_rate": 90,
 
-  "fire_delay": 0.6
+  "fire_delay": 0.0
 }

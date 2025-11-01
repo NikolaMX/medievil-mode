@@ -19,5 +19,5 @@
     "model": {
         "filename": "/pa/units/air/unit_shell_small/unit_shell_small.papa"
     },
-    "spawn_unit_on_death": "/pa/units/medieval/infantry/sword_dox/sword_dox.json"
+    "spawn_unit_on_death": "/pa/units/medieval/infantry/sword_light/sword_light.json"
 }

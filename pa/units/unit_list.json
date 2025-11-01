@@ -237,6 +237,8 @@
 
     "/pa/units/medieval/infantry/builder/builder.json",
     "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
+    "/pa/units/medieval/infantry/axe_dox/axe_dox_upg.json",
+    "/pa/units/medieval/infantry/axe_dox/axe_dox_ded/axe_dox_ded.json",
     "/pa/units/medieval/infantry/sword_dox/sword_dox.json",
     "/pa/units/medieval/infantry/mace/mace.json",
     "/pa/units/medieval/infantry/ghost/ghost.json",
@@ -384,6 +386,7 @@
 
   "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
   "/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
+  "/pa/units/medieval/upgrades/cabal/infantry/axe.json",
   "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"
 
   ]

@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "Brute",
+    "display_name": "Vrag",
     "description": "!LOC:Beast. Very Durable. Double damage against cavalry.",
-    "build_metal_cost": 800,
-    "max_health": 200,
+    "build_metal_cost": 600,
+    "max_health": 400,
     "armor_type": "AT_Custom6",
     "attachable": {
         "offsets": {
@@ -33,7 +33,7 @@
     },
     "guard_layer": "WL_AnySurface",
     "navigation": {
-        "type": "land-small",
+        "type": "amphibious-large",
         "acceleration": 120,
         "brake": -1,
         "move_speed": 16,
@@ -58,7 +58,7 @@
         },
         {
           "move_type": "hover",
-          "stamp_type": "structure"
+          "stamp_type": "simple"
         },
         {
           "move_type": "water-hover",
@@ -70,11 +70,11 @@
         },
         {
           "move_type": "deepwater",
-          "stamp_type": "structure"
+          "stamp_type": "simple"
         },
         {
           "move_type": "underwater",
-          "stamp_type": "structure"
+          "stamp_type": "simple"
         }
       ]
     }

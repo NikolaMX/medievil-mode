@@ -17,6 +17,7 @@ model.unitsToLock = [
                     "/pa/units/medieval/infantry/assassin/assassin.json",
                     "/pa/units/medieval/infantry/assassin/assassin_upg.json",
                     "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
+                    "/pa/units/medieval/infantry/axe_dox/axe_dox_upg.json",
     //Cabal Archers
                     "/pa/units/medieval/infantry/crossbow/crossbow.json",
                     "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
@@ -207,7 +208,16 @@ model.unlockPairs = [
     ["/pa/units/medieval/infantry/assassin/assassin_upg.json"  
                 ],
     ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
-    true],  
+    true],
+    
+    
+//Assassin speed upgrade
+     ["/pa/units/medieval/upgrades/cabal/infantry/axe.json",
+    ["/pa/units/medieval/infantry/axe_dox/axe_dox_upg.json"
+                ],
+    ["/pa/units/medieval/infantry/axe_dox/axe_dox.json", "/pa/units/medieval/upgrades/cabal/infantry/axe.json"],
+    true],
+    
 
 
     //Longbow fire arrows
