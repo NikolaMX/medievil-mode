@@ -69,7 +69,6 @@ var newBuild = {
 
     //Infantry
     "/pa/units/medieval/infantry/sword_light/sword_light_c.json": ["c_i_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/sword_dox/sword_dox.json": ["c_i_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/infantry/axe_dox/axe_dox.json": ["c_i_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/infantry/assassin/assassin.json": ["c_i_factory", 0, { row: 2, column: 2 }],
 

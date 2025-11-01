@@ -14,8 +14,7 @@
   "max_health": 1000,
   "build_metal_cost": 150,
    "feature_requirements": [
-    "metal_spot",
-    "control_point"
+    "metal_spot"
   ],
   "replaceable_units": [
         "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
