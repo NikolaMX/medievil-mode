@@ -1,5 +1,5 @@
 // Configuration for units that should automatically fire weapons
-var unitsToCommand = [["/pa/units/medieval/structures/spawn8/spawn8.json", "altFireSelf"],["/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json", "altFireSelf"],["/pa/units/medieval/infantry/lich/lich_res/lich_res.json", "altFireSelf"]];
+var unitsToCommand = [["/pa/units/medieval/structures/spawn8/spawn8.json", "altFireSelf"],["/pa/units/medieval/infantry/lich/lich_res/lich_res.json", "altFireSelf"]];
 
 // Weapon command function - handles automatic weapon firing
 function unitCommand(unitId, unitState, commandType){

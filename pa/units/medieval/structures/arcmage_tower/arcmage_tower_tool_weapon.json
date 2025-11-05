@@ -20,6 +20,7 @@
     "firing_standard_deviation": 3,
     "carpet_fire": true,
     "carpet_wait_for_full_ammo": false,
+    "auto_fire_when_charged": true,
     "physics": {
         "radius": 1,
         "gravity_scalar": 1,
