@@ -34,13 +34,11 @@ model.unitsToLock = [
                     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
                     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
                     "/pa/units/medieval/structures/lair/lair.json",
-                    "/pa/units/medieval/structures/witch_hut/witch_hut.json",
-
 
     //Cabal Spiders
                     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
                     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
-                    "/pa/units/medieval/flying/creep/creep.json",
+                    
     //Cabal SpiderWeb
                     "/pa/units/medieval/structures/web_mine/web_mine.json",
 
@@ -60,17 +58,26 @@ model.unitsToLock = [
                     "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
 
     //Cabal Pumpkins
+                    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
+                    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json",
+
+    //Cabal Pumpkins
                     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
+                    "/pa/units/medieval/flying/witch/witch.json",
+                    "/pa/units/medieval/structures/witch_hut/witch_hut.json",
     //Cabal Dark Mages
                     "/pa/units/medieval/infantry/acolyte/acolyte.json",
                     "/pa/units/medieval/infantry/lich/lich.json",
-                    "/pa/units/medieval/flying/witch/witch.json",
+                    "/pa/units/medieval/flying/creep/creep.json",
+                    
     //Cabal Mages Research
                     "/pa/units/medieval/research/cabal/mages/mages_t2.json",
                     "/pa/units/medieval/research/cabal/mages/mages_t3.json",
 
 
     //Cabal Ghosts
+                    "/pa/units/medieval/infantry/ghost/ghost.json",
+                    "/pa/units/medieval/infantry/ghostmage/ghostmage.json",
                     "/pa/units/medieval/infantry/phantom/phantom.json",
     //Cabal Snakes
                     "/pa/units/medieval/cavalry/snake/snake.json",
@@ -190,8 +197,7 @@ model.unlockPairs = [
     false],
      //Cabal Spiders T3
     ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
-    ["/pa/units/medieval/flying/creep/creep.json",
-        "/pa/units/medieval/cavalry/big_spider/big_spider.json"   
+    ["/pa/units/medieval/cavalry/big_spider/big_spider.json"   
                 ],
     ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json"],
     false],
@@ -213,16 +219,35 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/research/cabal/mages/mages_t2.json"],
     false],
-    //Witches
+    //Omen
     ["/pa/units/medieval/research/cabal/mages/mages_t3.json",
-    ["/pa/units/medieval/structures/witch_hut/witch_hut.json",
-       "/pa/units/medieval/flying/witch/witch.json"  
+    ["/pa/units/medieval/flying/creep/creep.json"  
                 ],
     ["/pa/units/medieval/research/cabal/mages/mages_t3.json"],
     false],
 
-
-
+//Pumpkins
+    //Pumpkin Shrine T1
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json",
+    ["/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+        "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json"
+                ],
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json"],
+    false],
+    //Pumpkin Witch T2
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
+    ["/pa/units/medieval/flying/witch/witch.json",
+        "/pa/units/medieval/structures/witch_hut/witch_hut.json",
+        "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json"
+                ],
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json"],
+    false],
+    //Pumpkin Guardian T3
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json",
+    ["/pa/units/medieval/cavalry/pumpkin/pumpkin.json" 
+                ],
+    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json"],
+    false],
 
 //=============UPGRADES==============
 

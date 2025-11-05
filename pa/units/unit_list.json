@@ -189,6 +189,10 @@
     "/pa/units/medieval/research/cabal/mages/mages_t2.json",
     "/pa/units/medieval/research/cabal/mages/mages_t3.json",
 
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json",
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json",
+
 
 
   "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",

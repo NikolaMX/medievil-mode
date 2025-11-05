@@ -1,9 +1,9 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "unit_name": "Blood Shrine",
-  "si_name": "blood_shrine",
-  "display_name": "!LOC:Pumpkin Shrine",
-  "description": "!LOC:Summons all sorts of other worldly horrors.",
+  "unit_name": "Spectral Shrine",
+  "si_name": "spectral_shrine",
+  "display_name": "!LOC:Spectral Shrine",
+  "description": "!LOC:Summons Ghosts and Spectral Units.",
   "max_health": 2000,
   "build_metal_cost": 800,
   "atrophy_rate": 2.5,
@@ -16,7 +16,7 @@
 
 
 
-  "buildable_types": "(Tank | Air) & Mobile & Advanced & FactoryBuild & (Custom9)",
+  "buildable_types": "Tank & Mobile & Basic & FactoryBuild & (Custom9)",
   "factory_cooldown_time": 0,
   "wait_to_rolloff_time": 0,
   "factory": {
@@ -70,7 +70,7 @@
   "model": [
     {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/medieval/structures/blood_shrine/pumpkin_shrine.papa",
+      "filename": "/pa/units/medieval/structures/spectral_shrine/arm_air_repair_pad.papa",
       "animations": {
         
       },
@@ -80,7 +80,7 @@
   ],
   "tools": [
     {
-      "spec_id": "/pa/units/medieval/structures/blood_shrine/blood_shrine_build_arm.json",
+      "spec_id": "/pa/units/medieval/structures/spectral_shrine/spectral_shrine_build_arm.json",
       "aim_bone": "bone_platform"
     }
   ],
@@ -118,8 +118,8 @@
     20
   ],
   "mesh_bounds": [
-    30,
-    24,
-    30
+    14,
+    13,
+    16
   ]
 }

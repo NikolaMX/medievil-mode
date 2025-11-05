@@ -28,14 +28,11 @@ var newBuild = {
     
     //Dark Mage Tower
     //Flying
-    "/pa/units/medieval/flying/witch/witch.json": ["c_m_factory", 0, { row: 0, column: 1 }],
+    "/pa/units/medieval/flying/creep/creep.json": ["c_m_factory", 0, { row: 0, column: 1 }],
     //DarkMage
     "/pa/units/medieval/infantry/lich/lich.json": ["c_m_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/infantry/acolyte/acolyte.json": ["c_m_factory", 0, { row: 2, column: 0 }],
-    
-    
-    
     //Ghost
     "/pa/units/medieval/infantry/ghost/ghost.json": ["c_g_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/ghostmage/ghostmage.json": ["c_g_factory", 0, { row: 2, column: 1 }],
@@ -93,7 +90,7 @@ var newBuild = {
     "/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json": ["c_c_factory", 0, { row: 2, column: 3 }],
 
     //Spiders
-    "/pa/units/medieval/flying/creep/creep.json": ["c_s_factory", 0, { row: 0, column: 0}],
+    
     "/pa/units/medieval/cavalry/larva/larva.json": ["c_s_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/cavalry/spider/spider.json": ["c_s_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/big_spider/big_spider.json": ["c_s_factory", 0, { row: 0, column: 1 }],
@@ -103,12 +100,12 @@ var newBuild = {
 
     
     
-    //Pumpkins and Snakes
+    //Pumpkins
+    "/pa/units/medieval/structures/witch_hut/witch_hut.json": ["c_b_factory", 0, { row: 0, column: 1 }],
+    "/pa/units/medieval/flying/witch/witch.json": ["c_b_factory", 0, { row: 1, column: 1 }],
+
     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json": ["c_b_factory", 0, { row: 0, column: 0 }],
-    "/pa/units/medieval/cavalry/munchkin/munchkin.json": ["c_b_factory", 0, { row: 1, column: 0  }],
-    
-    
-    
+    "/pa/units/medieval/cavalry/munchkin/munchkin.json": ["c_b_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/cavalry/boomkin/boomkin.json": ["c_b_factory", 0, { row: 2, column: 0 }],
     
 
@@ -163,7 +160,9 @@ var newBuild = {
     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json": ["c_build", 0, { row: 0, column: 4 }],
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json": ["c_build", 0, { row: 0, column: 3 }],
     "/pa/units/medieval/structures/lair/lair.json": ["c_build", 0, { row: 0, column: 2 }],
-    "/pa/units/medieval/structures/witch_hut/witch_hut.json": ["c_build", 0, { row: 0, column: 1 }],
+
+
+
 
 //Defenses
 "/pa/units/medieval/structures/giga_wall/giga_wall.json": ["i_defense", 0, { row: 1, column: 0 }],
@@ -210,6 +209,10 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/mages/mages_t2.json": ["c_m_factory", 0, { row: 1, column: 2 }],
     "/pa/units/medieval/research/cabal/mages/mages_t1.json": ["c_m_factory", 0, { row: 2, column: 2 }],
 
+    //Pumpkin
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json": ["c_m_factory", 0, { row: 0, column: 3 }],
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json": ["c_m_factory", 0, { row: 1, column: 3 }],
+    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json": ["c_m_factory", 0, { row: 2, column: 3 }],
 
 //Upgrades
 

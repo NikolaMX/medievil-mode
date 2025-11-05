@@ -8,18 +8,12 @@
     "armor_type": "AT_Air",
     "unit_types": [
         "UNITTYPE_Custom9",
-        "UNITTYPE_Bomber",
-        "UNITTYPE_Offense",
-        "UNITTYPE_Air",
-        
-       
-        
-        "UNITTYPE_Important",
-        "UNITTYPE_Tactical",
-        "UNITTYPE_Mobile",
-       
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild"
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
     
     ],
     "guard_radius": 120,
