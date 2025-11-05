@@ -52,6 +52,9 @@
         "sync_radius_to_extents": true
     },
     "recon": {
+        "observable": {
+      "layer": "mine"
+    },
         "observer": {
             "items": [
                 {
