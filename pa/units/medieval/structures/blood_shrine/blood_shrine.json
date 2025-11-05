@@ -70,7 +70,7 @@
   "model": [
     {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/medieval/structures/blood_shrine/pumpkin_shrine.papa",
+      "filename": "/pa/units/medieval/structures/blood_shrine/arm_air_repair_pad.papa",
       "animations": {
         
       },
@@ -120,6 +120,6 @@
   "mesh_bounds": [
     30,
     24,
-    30
+    16
   ]
 }
