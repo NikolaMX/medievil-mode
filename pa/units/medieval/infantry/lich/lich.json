@@ -42,6 +42,7 @@
     "transportable": {
         "size": 1
     },
+    "guard_layer": "WL_AnySurface",
     "navigation": {
         "type": "land-small",
         "acceleration": 120,
