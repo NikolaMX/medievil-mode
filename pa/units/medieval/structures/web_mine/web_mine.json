@@ -2,9 +2,9 @@
   "display_name": "!LOC:Web Trap",
   "description": "!LOC:Activates when enemies are nearby, catching them in web and disabling their movement.",
   "TEMP_texelinfo": 2.37699,
-  "alt_area_build_separation": 50.0,
+  "alt_area_build_separation": 20.0,
   "alt_area_build_type": "Sphere",
-  "alt_area_max_radius": 150.0,
+  "alt_area_max_radius": 20.0,
   "area_build_pattern": [
     [
       0,
@@ -65,10 +65,10 @@
       0
     ]
   ],
-  "area_build_separation": 50.0,
+  "area_build_separation": 20.0,
   "area_build_type": "Sphere",
   "area_max_radius": 150.0,
-  "build_metal_cost": 20,
+  "build_metal_cost": 300,
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

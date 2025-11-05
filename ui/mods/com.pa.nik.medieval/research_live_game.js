@@ -10,6 +10,7 @@ model.newUnits = []//replaces the id if an old unit is hotkeyed
 //in order to track correctly this will be done on orders issued rather than factory selection
 factorySpecs = [
     "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
 
     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",

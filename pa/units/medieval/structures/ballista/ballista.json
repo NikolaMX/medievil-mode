@@ -69,9 +69,9 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "fire_event": "fired0",
+      
       "projectiles_per_fire": 5,
-      "record_index": 0,
+    
       "muzzle_bone": [
         "socket_muzzle",
         "socket_muzzle1",

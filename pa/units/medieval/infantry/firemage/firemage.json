@@ -44,7 +44,7 @@
         "size": 1
     },
     "navigation": {
-        "type": "amphibious",
+        "type": "land-small",
         "acceleration": 120,
         "brake": 120,
         "move_speed": 8,
@@ -95,8 +95,8 @@
     "events": {
          "fired": {
             "audio_cue": "/SE/Weapons/veh/tank_flame",
-            "effect_spec": "/pa/units/medieval/infantry/firemage/flame.pfx socket_leftMuzzle",
-            "effect_scale": 1.7
+            
+            "effect_scale": 0.1
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",

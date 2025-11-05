@@ -1,0 +1,122 @@
+{
+  "display_name": "!LOC:Outpost",
+  "description": "!LOC:Grants extended vision and has a weak ranged attack",
+  "unit_name": "Outpost",
+  "TEMP_texelinfo": 10.2184,
+  "alt_area_build_separation": 18.0,
+  "alt_area_build_type": "Line",
+  "area_build_separation": 36,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 7.5,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 600,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.6
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 1000,
+  "mesh_bounds": [
+    10,
+    10,
+    25
+  ],
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/medieval/structures/point_tower/point_tower.papa",
+      "animtree": "/pa/units/medieval/structures/point_tower/point_tower_anim_tree.json",
+      "animations": {
+        "idle": "/pa/units/medieval/structures/point_tower/point_tower_anim_idle.papa"
+      },
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 300
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 300
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 18.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/structures/point_tower/point_tower_tool_weapon.json",
+      "aim_bone": "light",
+      "record_index": 0,
+      "fire_event": "fired0",
+      "projectiles_per_fire": 4,
+      "muzzle_bone": [
+        "light",
+        "light",
+        "light",
+        "light"
+      ]
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Land",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild"
+  ],
+  "headlights": [
+   
+    {
+      "bone": "light",
+      "shadow_resolution": 128,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        0.0,
+        0,
+        0
+      ],
+      "orientation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "near_width": 15.5,
+      "near_height": 15.5,
+      "near_distance": 20,
+      "far_distance": 150.0,
+      "color": [
+        3.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 6.0
+    }
+  ]
+}

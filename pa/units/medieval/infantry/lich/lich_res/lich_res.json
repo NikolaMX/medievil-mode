@@ -1,0 +1,121 @@
+{
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "display_name": "Resurecting Lich",
+    "description": "!LOC:About to come back to life",
+    "strategic_icon_priority": 0,
+    "wreckage_health_frac": 0,
+    "max_health": 100,
+    "passive_health_regen": -25,
+    "build_metal_cost": 20000,
+    "show_in_orbital_layer": true,
+    "armor_type": "AT_Custom9",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                10
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom9",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_NoBuild"
+    ],
+    "command_caps": [
+        "ORDER_Attack",
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 120,
+        "brake": 120,
+        "move_speed": 0,
+        "turn_speed": 0,
+        "turn_in_place": true
+    },
+    "physics": {
+        "radius": 9,
+        "sync_radius_to_extents": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 15
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 15
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/medieval/infantry/lich/lich_res/darkmage.papa",
+        "walk_speed": 7.0
+    },
+    "teleportable": {},
+    "tools": [
+        {
+            "spec_id": "/pa/units/medieval/infantry/lich/lich_res/lich_res_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "primary_weapon": true
+        }
+    ],
+    "events": {
+        "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+            "effect_scale": 1.7
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Commander_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/bot/Sub_Commander_move_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/sub_commander"
+        }
+    },
+    "selection_icon": {
+        "diameter": 15.0
+    },
+    "mesh_bounds": [
+        12.6,
+        8.71255,
+        15.6193
+    ]
+}

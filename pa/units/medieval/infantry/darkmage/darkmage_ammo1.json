@@ -13,7 +13,7 @@
     }
   },
   "flight_type": "Seeking",
-  "full_damage_splash_radius": 5,
+  "full_damage_splash_radius": 0,
   "fx_trail": {
     "filename": "/pa/units/medieval/infantry/darkmage/secondary_trail.json",
     "offset": [

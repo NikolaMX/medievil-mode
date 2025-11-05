@@ -2,8 +2,8 @@
   "si_name":"pike",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Pikeman",
-  "description": "!LOC:Light Armor. Slow. Long reach. Double damage against cavalry.",
-  "armor_type": "AT_Custom1",
+  "description": "!LOC:Unarmoured. Slow. Long reach. Double damage against cavalry and beasts.",
+  
   "max_health": 100,
   "build_metal_cost": 100,
   "wreckage_health_frac": 0,

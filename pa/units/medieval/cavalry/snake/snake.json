@@ -1,8 +1,8 @@
 {
   "si_name":"snake",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "Undead Serpent",
-  "description": "!LOC:Undead. Fast. Slow attack but will kill almost anything in one hit.",
+  "display_name": "Great Serpent",
+  "description": "!LOC:Beast. Fast. Slow attack but will kill almost anything in one hit.",
   "armor_type": "AT_Custom6",
   "max_health": 3500,
   "build_metal_cost": 2000,

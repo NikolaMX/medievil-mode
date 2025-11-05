@@ -1,10 +1,10 @@
 {
   "si_name":"heavy_cav",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "Heavy Cavalry",
-  "description": "!LOC:Heavy Armor. Fast. Devastating damage against light and medium infantry.",
+  "display_name": "Knight",
+  "description": "!LOC:Heavy Cavalry. Fast. Can break through infantry formations.",
   "armor_type": "AT_Custom5",
-  "max_health": 400,
+  "max_health": 600,
   "build_metal_cost": 600,
   "wreckage_health_frac": 0,
   "attachable": {

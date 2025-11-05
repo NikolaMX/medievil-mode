@@ -4,7 +4,7 @@
   "si_name": "builder",
   "TEMP_texelinfo": 4.07719,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "armor_type": "AT_Custom1",
+  
   "build_metal_cost": 100,
   "max_health": 100,
   "spawn_layers": "WL_LandHorizontal",

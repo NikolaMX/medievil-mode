@@ -1,8 +1,8 @@
 {
   "display_name": "!LOC:Jumping Arachnid",
-  "description": "!LOC:Beast. Can leap great distances to scale cliffs or pounce on enemies. Slow.",
+  "description": "!LOC:Spider. Can leap great distances to scale cliffs or pounce on enemies. Ignores 25% of armour. Slow.",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "armor_type": "AT_Custom6",
+  "armor_type": "AT_Custom8",
   "wreckage_health_frac": 0.0,
   "spawn_layers": "WL_LandHorizontal",
   "unit_types": [

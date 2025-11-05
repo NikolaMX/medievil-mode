@@ -1,8 +1,8 @@
 {
   "si_name":"light_cav",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "Light Cavalry",
-  "description": "!LOC:Medium Armor. Fastest land unit. Bonus damage against cavalry.",
+  "display_name": "Lancer",
+  "description": "!LOC:Light Cavalry. The fastest land unit. Double damage against cavalry.",
   "armor_type": "AT_Custom4",
   "max_health": 300,
   "build_metal_cost": 500,

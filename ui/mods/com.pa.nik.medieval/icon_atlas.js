@@ -73,6 +73,9 @@ var paeiouIcons = [
     "acolyte",
     "acolyte_dead",
     "darkmage",
+    "lich",
+    "lich_ded",
+    "lich_res",
     "ghostmage",
     "phantom",
 
@@ -121,6 +124,7 @@ var paeiouIcons = [
     "attack_tower",
     "arrow_tower",
     "ballista",
+    "point_tower",
     
 
     //Mines

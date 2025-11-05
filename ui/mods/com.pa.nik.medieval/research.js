@@ -62,7 +62,14 @@ model.unitsToLock = [
     //Cabal Pumpkins
                     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
     //Cabal Dark Mages
+                    "/pa/units/medieval/infantry/acolyte/acolyte.json",
+                    "/pa/units/medieval/infantry/lich/lich.json",
                     "/pa/units/medieval/flying/witch/witch.json",
+    //Cabal Mages Research
+                    "/pa/units/medieval/research/cabal/mages/mages_t2.json",
+                    "/pa/units/medieval/research/cabal/mages/mages_t3.json",
+
+
     //Cabal Ghosts
                     "/pa/units/medieval/infantry/phantom/phantom.json",
     //Cabal Snakes
@@ -84,9 +91,9 @@ model.lockedUnits = [];
 model.unlockPairs = [
 
     //alpha grunt
-    ["/pa/units/medieval/infantry/axe_dox/axe_dox.json",//trigger unit
-    ["/pa/units/medieval/infantry/sword_dox/sword_dox.json"],//units added
-    ["/pa/units/medieval/infantry/sword_light/sword_light.json", "/pa/units/medieval/infantry/axe_dox/axe_dox.json"],//units replaced/locked
+    [//trigger unit
+    [],//units added
+    [],//units replaced/locked
     true],//is a replace rather than just locks
 
      
@@ -190,6 +197,33 @@ model.unlockPairs = [
     false],
 
 
+//Cabal MAGES
+    //Acolyte + Necro
+    ["/pa/units/medieval/research/cabal/mages/mages_t1.json",
+    ["/pa/units/medieval/infantry/acolyte/acolyte.json",
+        "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
+       "/pa/units/medieval/research/cabal/mages/mages_t2.json"    
+                ],
+    ["/pa/units/medieval/research/cabal/mages/mages_t1.json"],
+    false],
+    //Arcmage
+    ["/pa/units/medieval/research/cabal/mages/mages_t2.json",
+    ["/pa/units/medieval/infantry/lich/lich.json",
+       "/pa/units/medieval/research/cabal/mages/mages_t3.json"    
+                ],
+    ["/pa/units/medieval/research/cabal/mages/mages_t2.json"],
+    false],
+    //Witches
+    ["/pa/units/medieval/research/cabal/mages/mages_t3.json",
+    ["/pa/units/medieval/structures/witch_hut/witch_hut.json",
+       "/pa/units/medieval/flying/witch/witch.json"  
+                ],
+    ["/pa/units/medieval/research/cabal/mages/mages_t3.json"],
+    false],
+
+
+
+
 //=============UPGRADES==============
 
 //Cabal
@@ -197,10 +231,19 @@ model.unlockPairs = [
 //Infantry
      //Swordsman -> Sword Dox Upgrade
     ["/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
-    ["/pa/units/medieval/infantry/sword_dox/sword_dox.json"    
+    ["/pa/units/medieval/infantry/sword_dox/sword_dox.json"   
                 ],
     ["/pa/units/medieval/infantry/sword_light/sword_light_c.json", "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json"],
     true],
+
+    //Assassin speed upgrade
+     ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",
+    ["/pa/units/medieval/infantry/assassin/assassin_upg.json"  
+                ],
+    ["/pa/units/medieval/infantry/assassin/assassin.json", "/pa/units/medieval/upgrades/cabal/infantry/assassin.json"],
+    true],
+    
+
 
     //Assassin speed upgrade
      ["/pa/units/medieval/upgrades/cabal/infantry/assassin.json",

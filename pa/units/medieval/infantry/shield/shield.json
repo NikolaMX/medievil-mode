@@ -1,9 +1,9 @@
 {
   "display_name": "!LOC:Shield bearer",
-  "description": "!LOC:Heavy Armour. Slow and very durable, takes half damage from all long ranged attacks.",
+  "description": "!LOC:Shielded. Slow and very durable, takes half damage from most long ranged attacks.",
   "TEMP_texelinfo": 20.8258,
   "max_health": 120,
-  "build_metal_cost": 150,
+  "build_metal_cost": 100,
   "armor_type": "AT_Custom3",
   "wreckage_health_frac": 0,
   "attachable": {

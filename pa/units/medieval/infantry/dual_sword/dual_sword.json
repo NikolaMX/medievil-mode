@@ -3,7 +3,6 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Dual Wielding Dox",
   "description": "!LOC:Unarmoured. Very high damage against unarmoured.",
-  "armor_type": "AT_Custom1",
   "max_health": 100,
   "build_metal_cost": 100,
   "wreckage_health_frac": 0,

@@ -1,6 +1,16 @@
 {
   "audio_loop": "/SE/Weapons/veh/vangaurd_fire",
-  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+
+  "armor_damage_map": {
+    "AT_Custom1": 1,
+    "AT_Custom2": 1,
+    "AT_Custom5": 1,
+    "AT_Custom6": 1
+    
+  },
+
+
   "burn_damage": 200,
   "burn_radius": 15,
   "damage": 1000,

@@ -2,8 +2,8 @@
   "si_name":"longbow",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Longbow Archer",
-  "description": "!LOC:Light Armor. Slow. Very long range. Needs time to aim.",
-  "armor_type": "AT_Custom1",
+  "description": "!LOC:Unarmoured. Slow. Very long range. Needs time to aim.",
+
   "max_health": 40,
   "build_metal_cost": 100,
   "wreckage_health_frac": 0,

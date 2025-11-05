@@ -9,19 +9,5 @@
   },
   "splash_damage": 300,
   "splash_damages_allies": false,
-  "splash_radius": 1,
-
-  "armor_damage_map": {
-    "AT_Custom0": 1.0,
-    "AT_Custom1": 1.0,
-    "AT_Custom2": 1.0,
-    "AT_Custom3": 1.0,
-    "AT_Custom4": 1.0,
-    "AT_Custom5": 1.0,
-    "AT_Custom6": 1.0,
-    "AT_Custom7": 1.0,
-    "AT_Custom8": 1.0,
-    "AT_Custom9": 1.0
-    
-  }
+  "splash_radius": 1
 }

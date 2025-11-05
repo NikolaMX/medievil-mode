@@ -3,7 +3,7 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Axe",
   "description": "!LOC:Unarmoured. Bonus damage vs Light. Great vs tight formations.",
-  "armor_type": "AT_Custom1",
+  
   "max_health": 60,
   "build_metal_cost": 150,
   "wreckage_health_frac": 0,

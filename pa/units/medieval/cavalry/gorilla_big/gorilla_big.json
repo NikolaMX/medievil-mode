@@ -1,10 +1,10 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "Massive Brute",
-    "description": "!LOC:Beast. Very Durable. Can break formations. Double damage against all infantry.",
+    "display_name": "Massive Vrag",
+    "description": "!LOC:Heavy Cavalry. Very Durable. Can break formations. Double damage against all infantry.",
     "build_metal_cost": 1500,
-    "max_health": 800,
-    "armor_type": "AT_Custom6",
+    "max_health": 1200,
+    "armor_type": "AT_Custom5",
     "attachable": {
         "offsets": {
             "root": [

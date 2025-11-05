@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Dark Mage",
+    "display_name": "Necromancer",
     "description": "!LOC:Undead. Attacks at close range and ignores armour. Can create storms that heal undead and hurt everyone else.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,

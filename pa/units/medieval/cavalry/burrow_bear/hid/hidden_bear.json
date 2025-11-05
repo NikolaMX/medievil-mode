@@ -1,8 +1,9 @@
 {
   "si_name": "hidden_bear",
-  "display_name": "!LOC:Burrow Bear",
+  "display_name": "!LOC:Burrowed Bear",
   "description": "!LOC:Heavy Cavalry. Mele range. Can burrow underground for a short period of time becoming invisble, unable to attack and significantly slower.",
   "TEMP_texelinfo": 13,
+  "armor_type": "AT_Custom5",
   "wreckage_health_frac": 0,
   "has_death_effects": true,
   "attachable": {

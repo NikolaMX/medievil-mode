@@ -1,7 +1,8 @@
 {
   "display_name": "!LOC:Ballista Bear",
-  "description": "!LOC:Heavy Cavalry. Medium range. Piercing shot.",
+  "description": "!LOC:Heavy Cavalry. Medium range. Piercing shot. Ignores Shields and Armour",
   "TEMP_texelinfo": 13,
+  "armor_type": "AT_Custom5",
   "has_death_effects": true,
   "attachable": {
     "offsets": {

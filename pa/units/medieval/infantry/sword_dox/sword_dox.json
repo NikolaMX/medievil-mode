@@ -3,7 +3,7 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Sword Dox",
   "description": "!LOC:Medium Armor. Versatile.",
-  "armor_type": "AT_Custom2",
+  "armor_type": "AT_Custom1",
   "max_health": 100,
   "build_metal_cost": 100,
   "wreckage_health_frac": 0,

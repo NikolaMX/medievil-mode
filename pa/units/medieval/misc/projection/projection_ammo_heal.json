@@ -1,5 +1,6 @@
 {
-  "ammo_type": "PBAOE", 
+  "ammo_type": "PBAOE",
+  "base_spec": "/pa/ammo/base_magic/base_magic.json",
   "damage": 20, 
   "fire_delay": 0,
   "damage_volume": {

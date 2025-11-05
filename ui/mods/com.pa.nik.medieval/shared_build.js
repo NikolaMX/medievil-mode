@@ -23,12 +23,18 @@ var newBuild = {
     //Wind
     "/pa/units/medieval/infantry/fogmage/fogmage.json": ["e_w_factory", 0, { row: 2, column: 1 }],
     "/pa/units/medieval/cavalry/wind_elemental/wind_elemental.json": ["e_w_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/flying/eagle/eagle.json": ["3_2_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/flying/eagle/eagle.json": ["e_w_factory", 0, { row: 2, column: 2 }],
 
     
-    //Dark
+    //Dark Mage Tower
+    //Flying
+    "/pa/units/medieval/flying/witch/witch.json": ["c_m_factory", 0, { row: 0, column: 1 }],
+    //DarkMage
+    "/pa/units/medieval/infantry/lich/lich.json": ["c_m_factory", 0, { row: 0, column: 0 }],
+    "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/infantry/acolyte/acolyte.json": ["c_m_factory", 0, { row: 2, column: 0 }],
-    "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 2, column: 1 }],
+    
+    
     
     //Ghost
     "/pa/units/medieval/infantry/ghost/ghost.json": ["c_g_factory", 0, { row: 2, column: 0 }],
@@ -107,9 +113,7 @@ var newBuild = {
     
 
 
-    //Flying
     
-    "/pa/units/medieval/flying/witch/witch.json": ["f_c_factory", 0, { row: 2, column: 1 }],
 
 //Structures
 
@@ -172,6 +176,7 @@ var newBuild = {
 "/pa/units/medieval/structures/walls/walls.json": ["c_defense", 0, { row: 1, column: 0 }],
 "/pa/units/medieval/structures/spikes/spikes.json": ["c_defense", 0, { row: 2, column: 0 }],
 "/pa/units/medieval/structures/ballista/ballista.json": ["c_defense", 0, { row: 1, column: 1 }],
+"/pa/units/medieval/structures/point_tower/point_tower.json": ["c_defense", 0, { row: 2, column: 1 }],
 
 
 //Research
@@ -200,6 +205,10 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/spiders/spiders_t2.json": ["c_research", 0, { row: 1, column: 3 }],
     "/pa/units/medieval/research/cabal/spiders/spiders_t1.json": ["c_research", 0, { row: 2, column: 3 }],
     
+    //Dark Mages
+    "/pa/units/medieval/research/cabal/mages/mages_t3.json": ["c_m_factory", 0, { row: 0, column: 2 }],
+    "/pa/units/medieval/research/cabal/mages/mages_t2.json": ["c_m_factory", 0, { row: 1, column: 2 }],
+    "/pa/units/medieval/research/cabal/mages/mages_t1.json": ["c_m_factory", 0, { row: 2, column: 2 }],
 
 
 //Upgrades

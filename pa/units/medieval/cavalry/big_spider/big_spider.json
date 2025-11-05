@@ -1,8 +1,8 @@
 {
-  "display_name": "!LOC:Adult Arachnid",
-  "description": "!LOC:Beast. Places web traps that immobilize enemy units for an extended period. Other spiders can traverse the web.",
+  "display_name": "!LOC:Web Mother",
+  "description": "!LOC:Spider. Places web traps that immobilize enemy units for an extended period. Other spiders can traverse the web.",
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "armor_type": "AT_Custom6",
+  "armor_type": "AT_Custom8",
   "wreckage_health_frac": 0.0,
   "spawn_layers": "WL_LandHorizontal",
   "unit_types": [

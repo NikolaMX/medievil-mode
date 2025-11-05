@@ -3,7 +3,7 @@
     "unit_name": "Arcmage Tower",
     "display_name": "!LOC:Arcmage Tower",
     "description": "!LOC:Summons Legendary Mages and conducts T3 research.",
-    "si_name": "arcmage_tower",
+    "si_name": "arcmage_tower_c",
     "max_health": 5000,
     "build_metal_cost": 3000,
     "atrophy_rate": 80.0,
@@ -30,7 +30,7 @@
         "ORDER_Assist",
         "ORDER_Use"
     ],
-    "buildable_types": "Custom9 & FactoryBuild & Important & Tactical",
+    "buildable_types": "Custom9 & Advanced & FactoryBuild & (Bot | Air) & Tactical",
     "rolloff_dirs": [
         [
             0,

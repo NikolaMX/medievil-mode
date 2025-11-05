@@ -1,7 +1,8 @@
 {
   "display_name": "!LOC:Burrow Bear",
-  "description": "!LOC:Heavy Cavalry. Melee range. Can burrow underground for a short period of time, becoming invisible and significantly slower.",
+  "description": "!LOC:Heavy Cavalry. Melee range. Can burrow underground for a short period of time, becoming invisible and significantly slower. Quadruple damage against structures.",
   "TEMP_texelinfo": 13,
+  "armor_type": "AT_Custom5",
   "has_death_effects": true,
   "wreckage_health_frac": 0,
   "attachable": {
@@ -101,6 +102,7 @@
   "navigation": {
     "acceleration": 10,
     "aggressive_distance": 90,
+    "type": "amphibious",
     "brake": -1,
     "group_preference": "front",
     "move_speed": 12,
