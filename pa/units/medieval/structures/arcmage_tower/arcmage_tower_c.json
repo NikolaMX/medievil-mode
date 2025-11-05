@@ -28,7 +28,8 @@
         "ORDER_Repair",
         "ORDER_Attack",
         "ORDER_Assist",
-        "ORDER_Use"
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
     ],
     "buildable_types": "Custom9 & Advanced & FactoryBuild & (Bot | Air) & Tactical",
     "rolloff_dirs": [
@@ -236,6 +237,14 @@
         }
     ],
     "tools": [
+        {
+            "spec_id": "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "projectiles_per_fire": 1,
+            "muzzle_bone": [
+                "bone_root"
+            ]
+        },
         {
             "spec_id": "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_build_arm.json",
             "aim_bone": "bone_root"
