@@ -3,7 +3,7 @@
     "display_name": "Witch Hut",
     "description": "!LOC:Produces 3 witches every 60s. Mobile.",
     "max_health": 3000,
-    "build_metal_cost": 1000,
+    "build_metal_cost": 3000,
     "attachable": {
         "offsets": {
             "root": [

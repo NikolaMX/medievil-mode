@@ -33,6 +33,11 @@ var newBuild = {
     "/pa/units/medieval/infantry/lich/lich.json": ["c_m_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 1, column: 0 }],
     "/pa/units/medieval/infantry/acolyte/acolyte.json": ["c_m_factory", 0, { row: 2, column: 0 }],
+    
+
+    //Flying
+    "/pa/units/medieval/flying/flying_serpent/flying_serpent.json": ["c_g_factory", 0, { row: 0, column: 2 }],
+
     //Ghost
     "/pa/units/medieval/infantry/ghost/ghost.json": ["c_g_factory", 0, { row: 2, column: 0 }],
     "/pa/units/medieval/infantry/ghostmage/ghostmage.json": ["c_g_factory", 0, { row: 2, column: 1 }],
@@ -213,6 +218,12 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json": ["c_m_factory", 0, { row: 0, column: 3 }],
     "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json": ["c_m_factory", 0, { row: 1, column: 3 }],
     "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json": ["c_m_factory", 0, { row: 2, column: 3 }],
+
+    //Ghosts
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json": ["c_m_factory", 0, { row: 0, column: 4 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json": ["c_m_factory", 0, { row: 1, column: 4 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_m_factory", 0, { row: 2, column: 4 }],
+
 
 //Upgrades
 

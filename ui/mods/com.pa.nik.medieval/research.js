@@ -76,9 +76,13 @@ model.unitsToLock = [
 
 
     //Cabal Ghosts
-                    "/pa/units/medieval/infantry/ghost/ghost.json",
-                    "/pa/units/medieval/infantry/ghostmage/ghostmage.json",
                     "/pa/units/medieval/infantry/phantom/phantom.json",
+                    "/pa/units/medieval/flying/flying_serpent/flying_serpent.json",
+    //Cabal Ghosts Research
+                    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
+                    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
+
+
     //Cabal Snakes
                     "/pa/units/medieval/cavalry/snake/snake.json",
                     "/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
@@ -247,6 +251,30 @@ model.unlockPairs = [
     ["/pa/units/medieval/cavalry/pumpkin/pumpkin.json" 
                 ],
     ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json"],
+    false],
+
+
+    
+//Ghosts
+    //Spectral Shrine T1
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json",
+    ["/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
+        "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json"
+                ],
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json"],
+    false],
+    //Pumpkin Witch T2
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
+    ["/pa/units/medieval/infantry/phantom/phantom.json",
+        "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json"
+                ],
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json"],
+    false],
+    //Pumpkin Guardian T3
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
+    ["/pa/units/medieval/flying/flying_serpent/flying_serpent.json" 
+                ],
+    ["/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json"],
     false],
 
 //=============UPGRADES==============

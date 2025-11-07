@@ -12,6 +12,7 @@ factorySpecs = [
     "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
     "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+    "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
 
     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",

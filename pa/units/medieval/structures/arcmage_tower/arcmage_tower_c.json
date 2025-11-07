@@ -106,7 +106,8 @@
             "effect_scale": 0.0
         },
         "fired": {
-            "effect_spec": "/pa/units/medieval/structures/arcmage_tower/edison_lightning_fired.pfx socket_muzzle"
+            "effect_spec": "/pa/units/medieval/structures/arcmage_tower/edison_lightning_fired.pfx socket_muzzle",
+            "audio_cue": ""
         }
     },
     "fx_offsets": [

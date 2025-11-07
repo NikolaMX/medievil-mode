@@ -31,7 +31,7 @@
         "ORDER_Use",
         "ORDER_FireSecondaryWeapon"
     ],
-    "buildable_types": "Custom9 & Basic & Tank",
+    "buildable_types": "Custom9 & Basic & (Tank | Air)",
     "rolloff_dirs": [
         [
             0,
@@ -94,7 +94,7 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/medieval/structures/spectral_shrine/arm_air_repair_pad.papa"
+            "filename": "/pa/units/medieval/structures/spectral_shrine/edison.papa"
         }
     ],
     "events": {

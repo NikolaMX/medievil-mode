@@ -16,7 +16,7 @@
 
 
 
-  "buildable_types": "(Tank | Air) & Mobile & Advanced & FactoryBuild & (Custom9)",
+  "buildable_types": "(Tank | Air) & Mobile & Advanced & FactoryBuild & (Custom9) - Tactical",
   "factory_cooldown_time": 0,
   "wait_to_rolloff_time": 0,
   "factory": {

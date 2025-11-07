@@ -97,7 +97,8 @@
     "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json",
     "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json",
 
-
+    
+    "/pa/units/medieval/flying/flying_serpent/flying_serpent.json",
     "/pa/units/medieval/flying/eagle/eagle.json",
     "/pa/units/medieval/flying/creep/creep.json",
     "/pa/units/medieval/flying/witch/witch.json",
@@ -193,7 +194,9 @@
     "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
     "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json",
 
-
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json",
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json",
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json",
 
   "/pa/units/medieval/upgrades/cabal/infantry/sword_dox.json",
   "/pa/units/medieval/upgrades/cabal/infantry/assassin.json",

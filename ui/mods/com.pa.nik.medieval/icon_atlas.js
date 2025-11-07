@@ -84,6 +84,7 @@ var paeiouIcons = [
     "eagle",
     "creep",
     "witch",
+    "flying_serpent",
 
 
     // Structures
