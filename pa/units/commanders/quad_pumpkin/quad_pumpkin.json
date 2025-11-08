@@ -29,7 +29,7 @@
     "energy": 2500,
     "metal": 1500
   },
-  "max_health": 12500,
+  "max_health": 7500,
   "build_metal_cost": 25000,
   "tools": [
     {

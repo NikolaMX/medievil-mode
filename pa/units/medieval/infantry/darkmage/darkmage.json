@@ -1,11 +1,11 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Necromancer",
-    "description": "!LOC:Undead. Attacks at close range and ignores armour. Can create storms that heal undead and hurt everyone else.",
+    "description": "!LOC:Undead. Attacks at close range and ignores armour. Can create storms that heal Undead units and hurt everyone else.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
-    "build_metal_cost": 2000,
+    "build_metal_cost": 1500,
     "show_in_orbital_layer": true,
     "armor_type": "AT_Custom9",
     "attachable": {

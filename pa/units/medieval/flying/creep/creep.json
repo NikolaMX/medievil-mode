@@ -5,7 +5,7 @@
     "description": "!LOC:Flying. Extremly Durable. Devastating single target damage.",
     "max_health": 2000,
     "build_metal_cost": 2500,
-    "armor_type": "AT_Air",
+    "armor_type": "AT_Custom9",
     "attachable": {
         "offsets": {
             "root": [

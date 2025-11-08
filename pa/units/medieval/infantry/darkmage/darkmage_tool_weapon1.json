@@ -4,9 +4,9 @@
   "max_range": 100,
 
   "ammo_source":"energy",
-  "ammo_capacity": 350,
-  "ammo_demand": 50,
-  "ammo_per_shot": 350,
+  "ammo_capacity": 150,
+  "ammo_demand": 25,
+  "ammo_per_shot": 150,
  
 
   

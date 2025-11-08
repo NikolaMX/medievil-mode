@@ -2,10 +2,10 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Arcmage Tower",
     "display_name": "!LOC:Arcmage Tower",
-    "description": "!LOC:Summons Legendary Mages and conducts T3 research.",
+    "description": "!LOC:Summons Undead Mages, heals Undead and Ghost units and conducts T3 research.",
     "si_name": "arcmage_tower_c",
     "max_health": 5000,
-    "build_metal_cost": 3000,
+    "build_metal_cost": 2000,
     "atrophy_rate": 80.0,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnySurface",
@@ -112,22 +112,22 @@
     },
     "fx_offsets": [
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_center_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_center_bulb_black.pfx",
             "bone": "bone_pfx_0",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb_black.pfx",
             "bone": "bone_pfx_1",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb_black.pfx",
             "bone": "bone_pfx_2",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb_black.pfx",
             "bone": "bone_pfx_3",
             "type": "idle"
         },
