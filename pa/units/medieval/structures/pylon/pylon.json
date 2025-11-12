@@ -70,7 +70,7 @@
 	"fx_offsets": [
 		{
 			"type": "idle",
-			"filename": "/pa/units/medieval/structures/energy_plant/energy_plant_idle.pfx",
+			"filename": "/pa/units/land/energy_plant/energy_plant_idle.pfx",
 			"offset": [
 				0,
 				0,

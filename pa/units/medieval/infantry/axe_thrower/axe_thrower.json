@@ -5,7 +5,7 @@
   "description": "!LOC:Bonus damage against light",
   "max_health": 120,
   "build_metal_cost": 150,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -65,10 +65,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/axe_thrower/axe_thrower.papa",
     "animations": {
-      "death01": "/pa/units/land/assault_bot/assault_bot_anim_death01.papa",
+      "death": "/pa/units/medieval/infantry/axe_dox/axe_dox_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/axe_thrower/axe_thrower_anim_run.papa",
       "idle": "/pa/units/land/assault_bot/assault_bot_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/axe_thrower/axe_thrower_anim_fire.papa"

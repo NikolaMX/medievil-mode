@@ -24,9 +24,7 @@
   "physics": {
     "add_to_spatial_db": true
   },
-  "death": {
-    "decals": [
-      "/pa/effects/decal/scorch_cyan_decal.json"
-    ]
-  }
+    "impact_decals": [
+     "/pa/effects/decal/scorch_cyan_decal.json"
+  ]
 }

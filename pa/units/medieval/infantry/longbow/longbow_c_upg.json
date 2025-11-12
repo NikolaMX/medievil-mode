@@ -5,7 +5,7 @@
   "description": "!LOC:Unarmoured. Slow. Very long range. Double damage against structures. Needs time to aim.",
   "max_health": 40,
   "build_metal_cost": 100,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -64,9 +64,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/longbow/longbow.papa",
     "animations": {
+      "death": "/pa/units/medieval/infantry/axe_dox/axe_dox_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/longbow/longbow_anim_run.papa",
       "idle": "/pa/units/medieval/infantry/longbow/longbow_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/longbow/longbow_anim_shoot.papa"

@@ -53,8 +53,7 @@
                             "node": {
                                 "type": "playback",
                                 "anim_name": "firing",
-                                "looping": false,
-                                "events": []
+                                "looping": false
                             },
                             "transitions": [
                                 {

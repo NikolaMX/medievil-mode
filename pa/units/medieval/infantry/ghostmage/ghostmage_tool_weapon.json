@@ -5,10 +5,6 @@
     "rate_of_fire": 10,
     "max_firing_velocity": 150,
     "min_firing_velocity": 100,
-    "ammo_source": "time",
-    "ammo_capacity": 48,
-    "ammo_demand": 1,
-    "ammo_per_shot": 48,
     "max_range": 50,
     "yaw_rate": 360,
     "pitch_rate": 360,
@@ -18,8 +14,6 @@
     "firing_arc_pitch": 5,
     "auto_attack": true,
     "firing_standard_deviation": 3,
-    "carpet_fire": true,
-    "carpet_wait_for_full_ammo": true,
     "physics": {
         "radius": 1,
         "gravity_scalar": 1,
@@ -30,5 +24,14 @@
         "WL_Seafloor",
         "WL_WaterSurface",
         "WL_Underwater"
-    ]
+    ],
+
+
+    "ammo_source": "time",
+    "ammo_capacity": 15,
+    "ammo_demand": 1,
+    "ammo_per_shot": 15,
+    "carpet_fire": true,
+    "charge_ammo_when_targeting": true,
+    "carpet_wait_for_full_ammo": true
 }

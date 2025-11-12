@@ -3,7 +3,7 @@
     "ammo_id": [
         {
             "layer": "WL_AnyLand",
-            "id": "/pa/units/medieval/cavalry/hound/hound.json"
+            "id": "/pa/units/medieval/cavalry/hound/hound_ammo.json"
         }
     ],
     "rate_of_fire": 3,

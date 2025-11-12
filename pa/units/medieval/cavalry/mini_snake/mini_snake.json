@@ -2,11 +2,11 @@
     "si_name": "mini_snake",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Mini Serpent",
-    "description": "!LOC:Undead. Fast. Double damage against Cavalry and Spiders",
-    "armor_type": "AT_Custom9",
+    "description": "!LOC:Light Cavalry. Fast. Double damage against Cavalry and Spiders",
+    "armor_type": "AT_Custom4",
     "max_health": 300,
     "build_metal_cost": 200,
-    "wreckage_health_frac": 0,
+    "wreckage_health_frac": 1,
     "attachable": {
         "offsets": {
             "root": [
@@ -64,9 +64,11 @@
             ]
         }
     },
+    "has_death_effects": true,
     "model": {
         "filename": "/pa/units/medieval/cavalry/mini_snake/snakeX.papa",
         "animations": {
+            "death": "/pa/units/medieval/cavalry/mini_snake/snake_anim_dead.papa",
             "walk": "/pa/units/medieval/cavalry/mini_snake/snake_anim_run2X.papa",
             "idle": "/pa/units/medieval/cavalry/mini_snake/snake_anim_idleX.papa",
             "firing": "/pa/units/medieval/cavalry/mini_snake/snake_anim_biteX.papa"

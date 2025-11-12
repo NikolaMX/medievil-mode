@@ -29,6 +29,7 @@ var newBuild = {
     //Dark Mage Tower
     //Flying
     "/pa/units/medieval/flying/creep/creep.json": ["c_m_factory", 0, { row: 0, column: 1 }],
+    "/pa/units/medieval/flying/flying_snake/flying_snake.json": ["c_m_factory", 0, { row: 1, column: 1 }],
     //DarkMage
     "/pa/units/medieval/infantry/lich/lich.json": ["c_m_factory", 0, { row: 0, column: 0 }],
     "/pa/units/medieval/infantry/darkmage/darkmage.json": ["c_m_factory", 0, { row: 1, column: 0 }],
@@ -66,8 +67,14 @@ var newBuild = {
     
     //Mercanaries
     "/pa/units/medieval/infantry/pike/pike.json": ["t_i_factory", 0, { row: 2, column: 1 }],
-    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_i_factory", 0, { row: 2, column: 2 }],
+    
     "/pa/units/medieval/infantry/champion/champion.json": ["t_i_factory", 0, { row: 1, column: 2 }],
+    "/pa/units/medieval/infantry/zweihander/zweihander.json": ["t_i_factory", 0, { row: 2, column: 2 }],
+
+    "/pa/units/medieval/infantry/pike/pike.json": ["t_i_factory", 0, { row: 1, column: 3 }],
+    "/pa/units/medieval/infantry/pike/pike.json": ["t_i_factory", 0, { row: 2, column: 3 }],
+    
+    
 
     //Beasts
     "/pa/units/medieval/cavalry/goliath/goliath.json": ["i_factory", 0, { row: 2, column: 6 }],
@@ -160,7 +167,7 @@ var newBuild = {
     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json": ["c_build", 0, { row: 2, column: 3 }],
     "/pa/units/medieval/structures/factory_cav/factory_cav_c.json": ["c_build", 0, { row: 2, column: 2 }], 
     
-    
+    "/pa/units/medieval/structures/healing_shrine/healing_shrine.json": ["c_build", 0, { row: 1, column: 1 }],
 
     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json": ["c_build", 0, { row: 0, column: 4 }],
     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json": ["c_build", 0, { row: 0, column: 3 }],

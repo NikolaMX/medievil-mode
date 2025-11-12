@@ -6,7 +6,7 @@
   "armor_type": "AT_Custom2",
   "max_health": 400,
   "build_metal_cost": 300,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -64,9 +64,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/zweihander/zweihander.papa",
     "animations": {
+      "death": "/pa/units/medieval/infantry/zweihander/zweihander_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/zweihander/zweihander_anim_walk.papa",
       "idle": "/pa/units/medieval/infantry/zweihander/zweihander_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/zweihander/zweihander_anim_slash1.papa"

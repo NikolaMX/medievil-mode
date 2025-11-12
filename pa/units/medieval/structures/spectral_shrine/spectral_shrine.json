@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Spectral Tower",
     "display_name": "!LOC:Spectral Tower",
-    "description": "!LOC:Summons Ghosts, heals Undead and Ghost units and conducts T3 research.",
+    "description": "!LOC:Summons Ghosts and conducts T3 research.",
     "si_name": "spectral_shrine",
     "max_health": 5000,
     "build_metal_cost": 2000,
@@ -242,15 +242,7 @@
         }
     ],
     "tools": [
-        {
-            "spec_id": "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_tool_weapon.json",
-            "aim_bone": "bone_turret",
-            "projectiles_per_fire": 1,
-            "muzzle_bone": [
-                "bone_turret"
-            ],
-            "secondary_weapon": true
-        },
+        
         {
             "spec_id": "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_build_arm.json",
             "aim_bone": "bone_root"

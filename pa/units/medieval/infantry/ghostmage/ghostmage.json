@@ -1,13 +1,16 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Ghost Mage",
-    "description": "!LOC:Ghost. Summons ghosts at medium range.",
+    "description": "!LOC:Ghost. Generates mana while in combat. Summons ghosts if it remains in continuous combat for 15 seconds.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 800,
     "build_metal_cost": 2000,
     "show_in_orbital_layer": true,
     "armor_type": "AT_Custom7",
+    "production": {
+    "energy": 50
+  },
     "attachable": {
         "offsets": {
             "root": [
@@ -81,7 +84,7 @@
             "spec_id": "/pa/units/medieval/infantry/ghostmage/ghostmage_tool_weapon.json",
             "aim_bone": "bone_turret",
             "primary_weapon": true,
-            "projectiles_per_fire": 8,
+            "projectiles_per_fire": 3,
             "muzzle_bone": [
                 "socket_leftMuzzle",
                 "socket_leftMuzzle",
@@ -92,7 +95,17 @@
                 "socket_leftMuzzle",
                 "socket_leftMuzzle"
             ]
-        }
+        },
+        {
+      "spec_id": "/pa/units/medieval/infantry/ghostmage/ghost_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        
+        "socket_leftMuzzle"
+      ]
+    }
+        
     ],
     "fx_offsets": [
         {

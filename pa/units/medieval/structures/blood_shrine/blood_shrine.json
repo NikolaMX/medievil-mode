@@ -10,9 +10,7 @@
   "atrophy_cool_down": 15,
   "area_build_type": "Line",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "feature_requirements": [
-    "metal_spot"
-  ],
+ 
 
 
 
@@ -71,9 +69,6 @@
     {
       "layer": "WL_LandHorizontal",
       "filename": "/pa/units/medieval/structures/blood_shrine/arm_air_repair_pad.papa",
-      "animations": {
-        
-      },
       "animtree": "/pa/units/medieval/structures/factory_infantry/factory_1_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     }
@@ -88,9 +83,7 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"
     },
-    "fired": {
-      "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
-    },
+ 
     "died": {
       "audio_cue": "/SE/Death/Factory",
       "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"

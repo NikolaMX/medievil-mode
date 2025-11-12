@@ -63,7 +63,7 @@
             "layer": "WL_LandHorizontal",
             "filename": "/pa/units/medieval/structures/mana_shrine/l_shield_gen.papa",
             "animations": {
-                "idle": "/pa/units/medieval/structures/mana_shrine/mana_shrine_anim_idle"
+                "idle": "/pa/units/medieval/structures/mana_shrine/mana_shrine_anim_idle.papa"
             },
             "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
         },

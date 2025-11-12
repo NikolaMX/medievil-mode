@@ -1,6 +1,7 @@
 {
   "display_name": "Spectral Wyrm",
   "description": "!LOC:Ghost. Fast. Durable. Attacks land and sea targets.",
+  "armor_type": "AT_Custom7",
   "audio": {
     "loops": {
       "move": {

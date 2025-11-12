@@ -34,6 +34,7 @@
 
     "/pa/units/medieval/infantry/pike/pike.json",
     "/pa/units/medieval/infantry/zweihander/zweihander.json",
+    "/pa/units/medieval/infantry/halbeard/halbeard.json",
     "/pa/units/medieval/infantry/champion/champion.json",
 
 
@@ -99,6 +100,7 @@
 
     
     "/pa/units/medieval/flying/flying_serpent/flying_serpent.json",
+    "/pa/units/medieval/flying/flying_snake/flying_snake.json",
     "/pa/units/medieval/flying/eagle/eagle.json",
     "/pa/units/medieval/flying/creep/creep.json",
     "/pa/units/medieval/flying/witch/witch.json",
@@ -121,6 +123,9 @@
     "/pa/units/medieval/structures/factory_cav/factory_cav.json",  
         "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
     "/pa/units/medieval/structures/tavern/tavern.json",  
+    
+    
+    "/pa/units/medieval/structures/healing_shrine/healing_shrine.json",
         
         
     "/pa/units/medieval/structures/mage_tower/mage_tower.json",

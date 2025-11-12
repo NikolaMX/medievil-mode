@@ -9,6 +9,7 @@ var paeiouIcons = [
     "sword_dox",
     "mace",
     "zweihander",
+    "halbeard",
     "champion",
 
     "ghost",
@@ -85,6 +86,7 @@ var paeiouIcons = [
     "creep",
     "witch",
     "flying_serpent",
+    "flying_snake",
 
 
     // Structures
@@ -119,6 +121,7 @@ var paeiouIcons = [
     "witch_hut",
     
     // Defenses
+    "healing_shrine",
     "spikes",
     "walls",
     "giga_wall",

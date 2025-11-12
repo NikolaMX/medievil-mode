@@ -6,7 +6,7 @@
   
   "max_health": 100,
   "build_metal_cost": 100,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -69,9 +69,11 @@
       "/pa/effects/decal/scorch_red_decal.json"
     ]
   },
+   "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/pike/pike.papa",
     "animations": {
+      "death": "/pa/units/medieval/infantry/pike/pike_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/pike/pike_anim_walk.papa",
       "idle": "/pa/units/medieval/infantry/pike/pike_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/pike/pike_anim_stab1.papa"

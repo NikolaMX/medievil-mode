@@ -125,8 +125,10 @@
                     }
                 ]
             },
-            "dead": {
-                "type": "bind_pose"
+           "dead": {
+                "type": "playback",
+                "looping": false,
+                "anim_name": "death"
             },
             "ghost": {
                 "type": "bind_pose"

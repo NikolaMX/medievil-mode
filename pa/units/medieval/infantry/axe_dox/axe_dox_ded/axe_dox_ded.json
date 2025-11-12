@@ -6,7 +6,7 @@
   
   "max_health": 60,
   "build_metal_cost": 150,
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
       "root": [
@@ -65,10 +65,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/axe_dox/axe_dox_ded/axe_dox.papa",
     "animations": {
-      "death01": "/pa/units/land/assault_bot/assault_bot_anim_death01.papa",
+      "death": "/pa/units/medieval/infantry/axe_dox/axe_dox_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/axe_dox/axe_dox_ded/axe_dox_anim_run.papa",
       "idle": "/pa/units/medieval/infantry/axe_dox/axe_dox_ded/axe_dox_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/axe_dox/axe_dox_ded/axe_dox_anim_stab.papa"

@@ -4,9 +4,8 @@
   "si_name": "builder",
   "TEMP_texelinfo": 4.07719,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  
-  "build_metal_cost": 100,
-  "max_health": 100,
+  "build_metal_cost": 150,
+  "max_health": 120,
   "spawn_layers": "WL_LandHorizontal",
   "attachable": {
     "offsets": {
@@ -33,12 +32,9 @@
         "should_start_func": "has_build_target",
         "should_stop_func": "no_build_target"
       },
-      "fired": {
-        "audio_cue": "/SE/Weapons/veh/tank_light_fire"
-      },
       "command_response": {
-      "cue": "/SE/Confirmation/bot/fab"
-    },
+        "cue": "/SE/Confirmation/bot/fab"
+      },
       "move": {
         "cue": "/SE/Movement/bot/T2_fab_loop",
         "flag": "vel_changed",
@@ -79,7 +75,6 @@
     "filename": "/pa/units/medieval/infantry/builder/builder.papa",
     "animtree": "/pa/anim/anim_trees/fabrication_bipedal_mech_anim_tree.json",
     "animations": {
-      
       "walk": "/pa/units/medieval/infantry/builder/builder_anim_run.papa",
       "idle": "/pa/units/medieval/infantry/builder/builder_anim_idle.papa"
     },
