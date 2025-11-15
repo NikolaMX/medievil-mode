@@ -1,22 +1,20 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "unit_name": "Spectral Shrine",
-  "si_name": "spectral_shrine",
-  "display_name": "!LOC:Spectral Shrine",
-  "description": "!LOC:Summons Ghosts and Spectral Units.",
+  "unit_name": "Serpent Shrine",
+  "si_name": "serpent_shrine",
+  "display_name": "!LOC:Serpent Shrine",
+  "description": "!LOC:Summons Snakes. Consumes Mana",
   "max_health": 2000,
   "build_metal_cost": 800,
   "atrophy_rate": 2.5,
   "atrophy_cool_down": 15,
   "area_build_type": "Line",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "feature_requirements": [
-    "metal_spot"
-  ],
+  
 
 
 
-  "buildable_types": "Tank & Mobile & Basic & FactoryBuild & (Custom9)",
+  "buildable_types": "(Tank | Air) & Mobile & Basic & Fighter & FactoryBuild & (Custom7)",
   "factory_cooldown_time": 0,
   "wait_to_rolloff_time": 0,
   "factory": {
@@ -28,7 +26,7 @@
   },
   
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
     "UNITTYPE_Bot",
@@ -68,19 +66,16 @@
     }
   },
   "model": [
-    {
+     {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/medieval/structures/spectral_shrine/arm_air_repair_pad.papa",
-      "animations": {
-        
-      },
+      "filename": "/pa/units/medieval/structures/blood_shrine/arm_air_repair_pad.papa",
       "animtree": "/pa/units/medieval/structures/factory_infantry/factory_1_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     }
   ],
   "tools": [
     {
-      "spec_id": "/pa/units/medieval/structures/spectral_shrine/spectral_shrine_build_arm.json",
+      "spec_id": "/pa/units/medieval/structures/serpent_shrine/serpent_shrine_build_arm.json",
       "aim_bone": "bone_platform"
     }
   ],

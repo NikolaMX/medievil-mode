@@ -1,0 +1,35 @@
+{
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": [
+        {
+            "layer": "WL_AnyLand",
+            "id": "/pa/units/medieval/infantry/composite/composite_ammo.json"
+        }
+    ],
+    "arc_type": "ARC_Low",
+
+    "ammo_capacity": 3,
+    "ammo_demand": 1,
+    "ammo_per_shot": 3,
+    "ammo_source": "time",
+    "charge_ammo_when_targeting": true,
+    "start_fully_charged": false,
+
+    "rate_of_fire": 0.3333,
+    "idle_aim_delay": 1.0,
+    "max_range": 130,
+    "min_firing_velocity": 100,
+    "max_firing_velocity": 300,
+    "firing_standard_deviation": 1,
+    "fire_delay": 1.5,
+    "yaw_rate": 60,
+    "pitch_rate": 360,
+    "yaw_range": 120,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ]
+}

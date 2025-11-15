@@ -33,10 +33,10 @@
   "transportable": {
     "size": 1
   },
-  "guard_radius": 50,
+  "guard_radius": 100,
   "guard_layer": "WL_AnySurface",
   "navigation": {
-    "aggressive_distance": 0.0,
+    "aggressive_distance":100.0,
     "type": "land-small",
     "acceleration": 9,
     "brake": 9,

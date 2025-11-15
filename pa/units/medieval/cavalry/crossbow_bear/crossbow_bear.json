@@ -3,6 +3,8 @@
   "description": "!LOC:Heavy Cavalry. Medium range. Piercing shot. Ignores Shields and Armour",
   "TEMP_texelinfo": 13,
   "armor_type": "AT_Custom5",
+   "build_metal_cost": 1500,
+   "max_health": 1500,
   "has_death_effects": true,
   "attachable": {
     "offsets": {
@@ -33,7 +35,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 1700,
+ 
   "events": {
     "died": {
       "effect_scale": 1.5
@@ -71,12 +73,13 @@
     }
   ],
   "lamps": [],
-  "max_health": 4000,
+  
   "mesh_bounds": [
     10,
     12,
     12
   ],
+  
   "model": {
     "animations": {
       "idle": "/pa/units/medieval/cavalry/crossbow_bear/l_bot_artillery_adv_idle.papa",

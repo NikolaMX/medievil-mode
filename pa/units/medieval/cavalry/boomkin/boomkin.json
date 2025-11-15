@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Pumpkin Bomb",
   "description": "!LOC:Undead. Self-Destructs to blind nearby enemy units, making them unable to fight. 4x damage to buildigs.",
-  "armor_type": "AT_Custom9",
+  "armor_type": "AT_Custom7",
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
@@ -147,12 +147,13 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Bomber",
     "UNITTYPE_Offense",
     "UNITTYPE_SelfDestruct"
   ],

@@ -142,7 +142,7 @@
   ],
   "unit_name": "Land Mine",
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
     "UNITTYPE_Structure",
     "UNITTYPE_Land",
     "UNITTYPE_Naval",

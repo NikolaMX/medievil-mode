@@ -215,28 +215,50 @@ _.delay(delayedAssign,5000)
 if (model.BuildSet && model.BuildSet.tabsTemplate) {
     model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
         
+
+//Imperia
         ["i_l_factory", "!LOC:imperia lightning"],
-        ["i_f_factory", "!LOC:imperia fire"],
         ["i_w_factory", "!LOC:imperia wind"],
-
-        ["t_i_factory", "!LOC:imperia mercenaries"],
-        
-        ["i_i_factory", "!LOC:imperia infantry"],
-        ["a_factory", "!LOC:imperia archers"],
+        ["t_t_factory", "!LOC:imperia mercenaries"],
+    
+        ["i_i_factory", "!LOC:imperia infantry"],    
         ["c_factory", "!LOC:imperia cavalry"],
-        
 
+        ["i_research", "!LOC:imperia research"],
+        ["i_upgrades", "!LOC:cabal upgrades"],
+
+
+
+//Vesperin    
+        ["v_research", "!LOC:vesperin research"],
+      
+        ["a_factory", "!LOC:vesperin archers"],
+
+        ["i_f_factory", "!LOC:vesperin firemage"],
+        ["c_b_factory", "!LOC:vesperin pumpkins"],
+        ["c_s_factory", "!LOC:vesperin spiders"],
+        ["v_s_factory", "!LOC:vesperin snakes"],
+
+
+
+    
+
+
+//Cabal
         ["c_m_factory", "!LOC:cabal mages"],        
         ["c_g_factory", "!LOC:cabal specters"],
-        ["c_s_factory", "!LOC:cabal spiders"],
-        ["c_b_factory", "!LOC:cabal pumpkins"],
-
+        
         ["c_i_factory", "!LOC:cabal infantry"],
         ["c_a_factory", "!LOC:cabal archers"],
         ["c_c_factory", "!LOC:cabal cavalry"],
 
+        ["c_research", "!LOC:cabal unit unlocks"],
+        ["c_upgrades", "!LOC:cabal upgrades"]
 
-        ["c_research", "!LOC:cabal unit unlocks"]
+
+
+
+
     ]);
 }
 

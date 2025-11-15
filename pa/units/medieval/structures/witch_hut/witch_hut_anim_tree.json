@@ -105,12 +105,12 @@
                                     "transition_forward": {
                                         "func": "not_moving",
                                         "target": "walk_stop",
-                                        "duration": 0.4
+                                        "duration": 1
                                     },
                                     "transition_reverse": {
                                         "func": "not_moving",
                                         "target": "walk_stop",
-                                        "duration": 0.4
+                                        "duration": 1
                                     }
                                 }
                             ],
@@ -151,11 +151,13 @@
                                 {
                                     "transition_forward": {
                                         "func": "anim_complete",
-                                        "target": "idle"
+                                        "target": "idle",
+                                        "duration": 1
                                     },
                                     "transition_reverse": {
                                         "func": "anim_complete",
-                                        "target": "idle"
+                                        "target": "idle",
+                                        "duration": 1
                                     }
                                 },
                                 {

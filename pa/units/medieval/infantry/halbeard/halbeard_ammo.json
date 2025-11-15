@@ -14,7 +14,7 @@
     "filename": ""
   },
   "splash_damage": 120,
-  "splash_radius": 5,
+  "splash_radius": 1,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",

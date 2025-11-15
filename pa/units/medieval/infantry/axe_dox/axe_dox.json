@@ -28,21 +28,20 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1
   },
-  "guard_radius": 100,
+  "guard_radius": 60,
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "aggressive_distance": 5.0,
     "type": "land-small",
     "acceleration": 50,
     "brake": -1,
-    "move_speed": 10,
-    "turn_speed": 720,
+    "move_speed": 8,
+    "turn_speed": 120,
     "group_preference": "front"
   },
   "physics": {

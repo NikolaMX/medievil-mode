@@ -22,12 +22,12 @@
     }
   },
   "unit_types": [
-    "UNITTYPE_Custom8",
-    "UNITTYPE_Tank",
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Tactical",
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
@@ -64,9 +64,11 @@
       ]
     }
   },
+  "has_death_effects": true,
   "model": {
     "filename": "/pa/units/medieval/infantry/halbeard/halbeard.papa",
     "animations": {
+      "death": "/pa/units/medieval/infantry/composite/composite_anim_dead.papa",
       "walk": "/pa/units/medieval/infantry/halbeard/halbeard_anim_walk.papa",
       "idle": "/pa/units/medieval/infantry/halbeard/halbeard_anim_idle.papa",
       "firing": "/pa/units/medieval/infantry/halbeard/halbeard_anim_slash.papa"
@@ -120,7 +122,7 @@
   "TEMP_texelinfo": 4.07719,
    "death": {
     "decals": [
-      "/pa/effects/decal/scorch_red_decal.json"
+      "/pa/effects/decal/scorch_darkred_decal.json"
     ]
   }
 }

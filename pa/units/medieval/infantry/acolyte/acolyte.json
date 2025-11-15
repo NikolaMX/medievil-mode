@@ -5,7 +5,7 @@
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,
     "max_health": 200,
-    "build_metal_cost": 500,
+    "build_metal_cost": 350,
     "show_in_orbital_layer": true,
     "armor_type": "AT_Custom9",
     "attachable": {
@@ -25,8 +25,8 @@
     "buildable_types": "(Land & Structure & Basic | Land & Structure & Advanced | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom9",
     "unit_types": [
         "UNITTYPE_Custom9",
-        "UNITTYPE_Bot",
-        "UNITTYPE_Tactical",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Heavy",
         "UNITTYPE_Important",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",

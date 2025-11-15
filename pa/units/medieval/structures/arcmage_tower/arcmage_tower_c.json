@@ -31,7 +31,7 @@
         "ORDER_Use",
         "ORDER_FireSecondaryWeapon"
     ],
-    "buildable_types": "Custom9 & Advanced & FactoryBuild & (Bot | Air) & Tactical",
+    "buildable_types": "Custom9 & Advanced & FactoryBuild & (Tank | Air) & Heavy",
     "rolloff_dirs": [
         [
             0,

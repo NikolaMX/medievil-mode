@@ -13,10 +13,6 @@
   
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
 
-  "replaceable_units": [
-        "/pa/units/medieval/structures/mana_shrine/mana_shrine.json"
-    ],
-    "area_build_type": "Sphere",
   
   "rolloff_dirs": [
     
@@ -33,7 +29,7 @@
   ],
 
 
-  "buildable_types": "Tank & Mobile & Tactical & FactoryBuild & (Custom8)",
+  "buildable_types": "Tank & Mobile & Fighter & FactoryBuild & (Custom8)",
   "factory_cooldown_time": 3,
   "wait_to_rolloff_time": 1,
   "factory": {

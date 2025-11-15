@@ -116,7 +116,7 @@
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction"
   ],
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom8",
+  "buildable_types": "(Land & Structure | Factory | Factory & Advanced & Bot & Land | FabBuild) & Custom8",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

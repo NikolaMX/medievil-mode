@@ -15,21 +15,75 @@
     "alt_area_build_separation": 2.0,
     "unit_types": [
         "UNITTYPE_Custom8",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Factory",
         "UNITTYPE_Structure",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_Land",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FabBuild",
         "UNITTYPE_CmdBuild"
     ],
+
+
+ "buildable_types": "Economy & SelfDestruct & Custom8",
+  "factory_cooldown_time": 0,
+  "wait_to_rolloff_time": 0,
+  "factory": {
+    "store_units": false,
+    "spawn_points": [
+      "bone_root"
+    ]
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/medieval/structures/observatory/observatory_build_arm.json",
+      "aim_bone": "bone_root"
+    }
+  ],
+
+
+
+
+
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "rolloff_dirs": [
+    
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+
+
+
+
+
     "recon": {
+        "observable": {
+            "always_visible": true
+          },
         "observer": {
             "items": [
                 {
                     "layer": "surface_and_air",
                     "channel": "sight",
                     "shape": "capsule",
-                    "radius": 100
+                    "radius": 150
                 }
             ]
         }

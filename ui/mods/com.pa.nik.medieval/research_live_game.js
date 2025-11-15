@@ -9,15 +9,41 @@ model.newUnits = []//replaces the id if an old unit is hotkeyed
 //factory map will link each factory id to a buildqueue
 //in order to track correctly this will be done on orders issued rather than factory selection
 factorySpecs = [
+
+//Cabal
     "/pa/units/medieval/structures/mage_tower/mage_tower_c.json",
+
     "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
-    "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
 
     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
     "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",
     "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
-    "/pa/units/medieval/structures/lair/lair.json"
+    
+
+//Imperia
+    "/pa/units/medieval/structures/observatory/observatory.json",
+
+
+    "/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json",
+    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+    "/pa/units/medieval/structures/tavern/tavern.json",
+    
+    "/pa/units/medieval/structures/factory_infantry/factory_infantry.json",
+    "/pa/units/medieval/structures/factory_cav/factory_cav.json",
+
+
+//Vesperin
+"/pa/units/medieval/structures/mage_tower/mage_tower.json",
+
+
+    "/pa/units/medieval/structures/lair/lair.json",
+    "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+    "/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json",
+
+    "/pa/units/medieval/structures/factory_ranged/factory_ranged.json",
+    "/pa/units/medieval/structures/firemage_tower/firemage_tower.json",
+    
 ]
 
 model.factoryMap = {}
@@ -178,6 +204,67 @@ handlers.replaceQueue = function(unitPair){
     model.replaceUnitQueue(facsToQueue,oldUnit,newUnit,maxAmount);
 }
 
+// Handler for when a unit completes building.
+// This is where we'll cancel any remaining queues for a completed research unit.
+handlers.unitCompleted = function(payload) {
+    var completedUnitSpec = payload.unit_spec;
+
+    console.log("Research unit completed, attempting to clear its queue:", completedUnitSpec);
+
+    var factoriesWithUnitQueued = [];
+
+    // First, identify all factories that currently have this unit in their internal map
+    // We iterate through a copy of keys, as we might modify the map
+    var facKeys = _.keys(model.factoryMap);
+    _.forEach(facKeys, function(facIdStr) {
+        var facId = parseInt(facIdStr); // Ensure ID is integer
+        if (model.factoryMap[facId] && model.factoryMap[facId][completedUnitSpec] > 0) {
+            factoriesWithUnitQueued.push(facId);
+        }
+    });
+
+    if (factoriesWithUnitQueued.length > 0) {
+        console.log("Found factories with completed research unit in queue:", factoriesWithUnitQueued);
+
+        // Save current selection to restore it later
+        var originalSelection = null;
+        if (api.selection.has()) {
+            originalSelection = api.selection.get();
+        }
+
+        // Select the factories that have the unit in queue
+        api.select.unitsById(factoriesWithUnitQueued);
+
+        // Cancel all instances of this research unit in the queue.
+        // Using '100' is a common way to cancel "all" queued items,
+        // and 'false' for urgent means it's a normal cancellation.
+        api.unit.cancelBuild(completedUnitSpec, 100, false);
+        console.log("Issued cancelBuild for", completedUnitSpec, "in factories:", factoriesWithUnitQueued);
+        
+        // Restore original selection
+        if (originalSelection) {
+            api.select.empty(); // Clear current selection before restoring
+            api.select.set(originalSelection);
+        } else {
+            api.select.empty(); // Deselect the factories if nothing was originally selected
+        }
+
+        // After issuing the cancel, update our internal model.factoryMap
+        // to reflect that these units are no longer considered queued.
+        _.forEach(factoriesWithUnitQueued, function(facId) {
+            if (model.factoryMap[facId]) {
+                delete model.factoryMap[facId][completedUnitSpec];
+                console.log("Updated model.factoryMap for factory", facId, "removing", completedUnitSpec);
+            }
+        });
+        
+        // It might be beneficial to explicitly trigger a UI refresh if the build bar doesn't update,
+        // though `api.unit.cancelBuild` usually handles this.
+        // api.Panel.message(api.Panel.parentId, 'refreshBuildBar'); // This is a hypothetical message, might not exist or be needed.
+    } else {
+        console.log("No factories found with", completedUnitSpec, "in queue.");
+    }
+};
+
+
 var noSelect = []
-
-

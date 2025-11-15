@@ -27,9 +27,16 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
+    "UNITTYPE_FactoryBuild"
   ],
+  "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use",
+        "ORDER_FireSecondaryWeapon"
+    ],
   "transportable": {
     "size": 1
   },
@@ -92,7 +99,8 @@
       "muzzle_bone": [
         "bone_root"
       ],
-      "show_range": false
+      "show_range": false,
+       "secondary_weapon": true
     }
   ],
   "events": {

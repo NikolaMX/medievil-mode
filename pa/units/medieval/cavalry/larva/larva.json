@@ -117,11 +117,12 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction"
   ],
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom9",
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild) & Custom7",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

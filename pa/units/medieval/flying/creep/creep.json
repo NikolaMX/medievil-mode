@@ -22,9 +22,10 @@
     },
     "unit_types": [
         "UNITTYPE_Custom9",
-        "UNITTYPE_Bomber",
+        "UNITTYPE_Gunship",
         "UNITTYPE_Offense",
         "UNITTYPE_Air",
+        "UNITTYPE_Heavy",
         
        
         

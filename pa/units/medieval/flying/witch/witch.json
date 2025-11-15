@@ -5,14 +5,14 @@
     "description": "!LOC:Flying. Throws pumpkin bombs that blind and hurt the enemy.",
     "max_health": 80,
     "build_metal_cost": 300,
-    "armor_type": "AT_Custom9",
+    "armor_type": "AT_Custom7",
     "unit_types": [
-        "UNITTYPE_Custom9",
+        "UNITTYPE_Custom7",
     "UNITTYPE_Air",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_Land",
     "UNITTYPE_Advanced",
+    "UNITTYPE_Bomber",
     "UNITTYPE_FactoryBuild"
     
     ],

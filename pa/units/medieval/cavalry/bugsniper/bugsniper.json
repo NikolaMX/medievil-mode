@@ -201,8 +201,10 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
+
+    "UNITTYPE_Tactical",
     "UNITTYPE_LaserPlatform",
-    "UNITTYPE_Advanced",
+    
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom8"
   ]

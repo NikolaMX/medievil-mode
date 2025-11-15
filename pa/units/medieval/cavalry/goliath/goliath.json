@@ -130,12 +130,16 @@
   "transportable": {
     "size": 1
   },
-  "unit_types": [
+   "unit_types": [
     "UNITTYPE_Custom8",
+
+    "UNITTYPE_Tank",
+    "UNITTYPE_Fighter",
+    
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Amphibious"
+    "UNITTYPE_FactoryBuild"
   ],
   "headlights": [
     {

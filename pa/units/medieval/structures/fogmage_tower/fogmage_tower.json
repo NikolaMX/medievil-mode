@@ -37,7 +37,7 @@
    "feature_requirements": [
     "control_point"
   ],
-    "buildable_types": "Custom8 & FactoryBuild & Important & Tactical & Bomber",
+    "buildable_types": "Custom8 & FactoryBuild & Heavy & Tactical & Bomber",
     "rolloff_dirs": [
         [
             0,
@@ -111,22 +111,22 @@
     },
     "fx_offsets": [
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_center_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/fogmage_tower/edison_center_bulb.pfx",
             "bone": "bone_pfx_0",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/fogmage_tower/edison_aux_bulb.pfx",
             "bone": "bone_pfx_1",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/fogmage_tower/edison_aux_bulb.pfx",
             "bone": "bone_pfx_2",
             "type": "idle"
         },
         {
-            "filename": "/pa/units/medieval/structures/arcmage_tower/edison_aux_bulb.pfx",
+            "filename": "/pa/units/medieval/structures/fogmage_tower/edison_aux_bulb.pfx",
             "bone": "bone_pfx_3",
             "type": "idle"
         },

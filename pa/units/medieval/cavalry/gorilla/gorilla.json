@@ -32,6 +32,7 @@
         "size": 1
     },
     "guard_layer": "WL_AnySurface",
+     "guard_radius": 100,
     "navigation": {
         "type": "amphibious-large",
         "acceleration": 120,

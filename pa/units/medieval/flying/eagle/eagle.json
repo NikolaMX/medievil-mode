@@ -8,7 +8,11 @@
     "armor_type": "AT_Air",
     "unit_types": [
         "UNITTYPE_Custom8",
+        
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Tactical",
         "UNITTYPE_Bomber",
+        
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Air",

@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "ArLightning Mage Tower",
-    "display_name": "!LOC:ArLightning Mage Tower",
-    "description": "!LOC:Summons Legendary Mages and conducts T3 research.",
+    "unit_name": "Lightning Mage Tower",
+    "display_name": "!LOC:Lightning Mage Tower",
+    "description": "!LOC:Summons Lighning Mages and conducts T3 research.",
     "si_name": "arcmage_tower",
     "max_health": 5000,
     "build_metal_cost": 3000,
@@ -37,7 +37,7 @@
    "feature_requirements": [
     "control_point"
   ],
-    "buildable_types": "Custom8 & FactoryBuild & Important & Tactical & LaserPlatform",
+    "buildable_types": "Custom8 & FactoryBuild & Tactical & LaserPlatform",
     "rolloff_dirs": [
         [
             0,

@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Ghost Mage",
+    "display_name": "Lich Ghost",
     "description": "!LOC:Ghost. Get it back to an Arcmage Tower to revive a Lich.",
     "strategic_icon_priority": 0,
     "wreckage_health_frac": 0,

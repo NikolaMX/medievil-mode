@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 4000,
+ 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
@@ -35,6 +35,8 @@
     
   ],
   "guard_layer": "WL_AnySurface",
+  "guard_rradius": 50,
+   "build_metal_cost": 4000,
   "max_health": 3000,
   "mesh_bounds": [
     8.5,
@@ -59,7 +61,7 @@
     "turn_speed": 110,
     "dodge_radius": 0,
     "dodge_multiplier": 0.0,
-    "aggressive_distance": 50.0,
+    "aggressive_distance": 30.0,
     "aggressive_height": 100.0,
     "wobble_factor": 0.05,
     "wobble_speed": 0.1,
@@ -103,10 +105,12 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
         "UNITTYPE_Air",
+        
         "UNITTYPE_Mobile",
         "UNITTYPE_Basic",
+        "UNITTYPE_Fighter",
         "UNITTYPE_Offense",
         "UNITTYPE_FactoryBuild"
   ]

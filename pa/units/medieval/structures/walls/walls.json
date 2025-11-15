@@ -76,7 +76,6 @@
         ]
     ],
     "unit_types": [
-        "UNITTYPE_Custom9",
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabAdvBuild",
         "UNITTYPE_Structure",

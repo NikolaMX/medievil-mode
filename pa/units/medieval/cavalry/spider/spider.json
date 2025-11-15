@@ -4,7 +4,7 @@
     "description": "!LOC:Spider. Can detect traps and invisible enemies. Very Fast. Long Reach.",
     "armor_type": "AT_Custom8",
     "max_health": 100,
-    "build_metal_cost": 90,
+    "build_metal_cost": 150,
     "wreckage_health_frac": 0.0,
     "spawn_layers": "WL_LandHorizontal",
     "attachable": {
@@ -22,12 +22,13 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom9",
+        "UNITTYPE_Custom7",
         "UNITTYPE_Tank",
         "UNITTYPE_Tactical",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
        
+        "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Offense"
     ],
@@ -79,7 +80,7 @@
             "firing": "/pa/units/medieval/cavalry/spider/spider_anim_attack.papa"
         },
         "animtree": "/pa/units/medieval/cavalry/spider/spider_anim_tree.json",
-        "walk_speed": 25
+        "walk_speed": 40
     },
     "tools": [
         {

@@ -23,10 +23,13 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom8",
-        "UNITTYPE_Bot",
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Tank",
+        
         "UNITTYPE_Tactical",
-        "UNITTYPE_Heavy",
+        "UNITTYPE_Artillery",
+        
+        "UNITTYPE_Offense",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
         "UNITTYPE_Advanced",

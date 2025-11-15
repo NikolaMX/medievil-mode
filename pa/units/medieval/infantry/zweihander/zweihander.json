@@ -4,8 +4,8 @@
   "display_name": "Zweihander Mercenary",
   "description": "!LOC:Heavy Armor. Fast. Medium reach with AoE. Bonus damage against light and medium.",
   "armor_type": "AT_Custom2",
-  "max_health": 400,
-  "build_metal_cost": 300,
+  "max_health": 350,
+  "build_metal_cost": 500,
   "wreckage_health_frac": 1,
   "attachable": {
     "offsets": {
@@ -23,11 +23,13 @@
   },
   "unit_types": [
     "UNITTYPE_Custom8",
+
     "UNITTYPE_Tank",
+    "UNITTYPE_Fighter",
+    
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-    "UNITTYPE_Tactical",
     "UNITTYPE_FactoryBuild"
   ],
   "transportable": {

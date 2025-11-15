@@ -21,11 +21,11 @@
                         "transitions": [
                             {
                                 "transition_forward": {
-                                    "func": "has_energy",
+                                    "func": "has_build_target",
                                     "target": "deploy_seq"
                                 },
                                 "transition_reverse": {
-                                    "func": "anim_complete",
+                                    "func": "has_build_target",
                                     "target": "undeploy_seq"
                                 }
                             }
@@ -65,11 +65,11 @@
                         "transitions": [
                             {
                                 "transition_forward": {
-                                    "func": "no_energy_and_anim_complete",
+                                    "func": "no_build_target_and_anim_complete",
                                     "target": "undeploy_seq"
                                 },
                                 "transition_reverse": {
-                                    "func": "no_energy_and_anim_complete",
+                                    "func": "no_build_target_and_anim_complete",
                                     "target": "deploy_seq"
                                 }
                             }

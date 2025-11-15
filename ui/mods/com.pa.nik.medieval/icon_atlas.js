@@ -10,6 +10,7 @@ var paeiouIcons = [
     "mace",
     "zweihander",
     "halbeard",
+    "guardian",
     "champion",
 
     "ghost",
@@ -22,6 +23,7 @@ var paeiouIcons = [
     
     // Ranged
     "javelin",
+    "composite",
     "crossbow",
     "recurve",
     "longbow",
@@ -115,6 +117,7 @@ var paeiouIcons = [
     "fogmage_tower",
 
     "arcmage_tower_c",
+    "serpent_shrine",
     "spectral_shrine",
     "blood_shrine",
     "lair",

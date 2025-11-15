@@ -10,14 +10,14 @@ model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_chargin
 model.unitsToLock = [
     //Cabal Initial Factories
                     "/pa/units/medieval/structures/factory_infantry/factory_infantry_c.json",
-                    "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",
-                    "/pa/units/medieval/structures/factory_cav/factory_cav_c.json",
+                    "/pa/units/medieval/structures/factory_ranged/factory_ranged_c.json",   
     //Cabal Infantry
                     "/pa/units/medieval/infantry/sword_dox/sword_dox.json",           
                     "/pa/units/medieval/infantry/assassin/assassin.json",
                     "/pa/units/medieval/infantry/assassin/assassin_upg.json",
                     "/pa/units/medieval/infantry/axe_dox/axe_dox.json",
                     "/pa/units/medieval/infantry/axe_dox/axe_dox_upg.json",
+                    "/pa/units/medieval/infantry/halbeard/halbeard.json",
     //Cabal Archers
                     "/pa/units/medieval/infantry/crossbow/crossbow.json",
                     "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
@@ -33,33 +33,34 @@ model.unitsToLock = [
                     "/pa/units/medieval/structures/arcmage_tower/arcmage_tower_c.json",
                     "/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
                     "/pa/units/medieval/structures/spectral_shrine/spectral_shrine.json",
-                    "/pa/units/medieval/structures/lair/lair.json",
+                    "/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json",
 
     //Cabal Spiders
                     "/pa/units/medieval/cavalry/big_spider/big_spider.json",
                     "/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
-                    
     //Cabal SpiderWeb
                     "/pa/units/medieval/structures/web_mine/web_mine.json",
 
 
     //Spider Research
-                    "/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
-                    "/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
+                    "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
+                    "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
     //Cabal Cav Research
                     "/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
-                    "/pa/units/medieval/research/cabal/cavalry/snake.json",
+                    "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
+            
     //Cabal Ranged Research
                     "/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
                     "/pa/units/medieval/research/cabal/ranged/ranged_t3.json",
 
     //Cabal Stealth/Infantry Research
                     "/pa/units/medieval/research/cabal/infantry/assassin.json",
-                    "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
+                    "/pa/units/medieval/research/cabal/infantry/halbeard.json",
+                    
 
     //Cabal Pumpkins
-                    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
-                    "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json",
+                    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
+                    "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json",
 
     //Cabal Pumpkins
                     "/pa/units/medieval/cavalry/pumpkin/pumpkin.json",
@@ -84,8 +85,74 @@ model.unitsToLock = [
 
 
     //Cabal Snakes
+                    
                     "/pa/units/medieval/cavalry/snake/snake.json",
-                    "/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
+                    "/pa/units/medieval/flying/flying_snake/flying_snake.json",
+     //Cabal Snakes Research
+
+                    "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
+                    "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
+
+
+
+                    //---------------------------IMPERIA----------------------------
+
+    //Imperia Factories
+                    "/pa/units/medieval/structures/tavern/tavern.json",
+   
+
+    //Imperia Lightning Mages
+                    "/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+                    "/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
+                    "/pa/units/medieval/infantry/arcanist/arcanist.json",
+            //Lightning Research            
+                            
+                            "/pa/units/medieval/research/imperia/lightning/lightning_t2.json",
+                            "/pa/units/medieval/research/imperia/lightning/lightning_t3.json",
+
+    //Imperia Fog Mages
+                    "/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json",
+                    "/pa/units/medieval/cavalry/wind_elemental/wind_elemental.json",
+                    "/pa/units/medieval/flying/eagle/eagle.json",
+             //Fog Research            
+                            
+                            "/pa/units/medieval/research/imperia/fog/fog_t2.json",
+                            "/pa/units/medieval/research/imperia/fog/fog_t3.json",
+
+    //Imperia Mercenaries
+                    
+                    "/pa/units/medieval/infantry/champion/champion.json",
+                    "/pa/units/medieval/infantry/guardian/guardian.json",
+                    "/pa/units/medieval/infantry/javelin/javelin.json",
+                    "/pa/units/medieval/cavalry/goliath/goliath.json",
+            //Merc Research
+                            
+                            "/pa/units/medieval/research/imperia/merc/merc_t2.json",
+                            "/pa/units/medieval/research/imperia/merc/merc_t3.json",
+                            "/pa/units/medieval/research/imperia/merc/merc_t4.json",
+
+
+    //Imperia Infantry
+                    "/pa/units/medieval/infantry/dual_sword/dual_sword.json",
+                    "/pa/units/medieval/infantry/shield/shield.json",
+                    "/pa/units/medieval/infantry/mace/mace.json",
+                    "/pa/units/medieval/infantry/pike/pike.json",
+            //Infantry Research
+                            
+                            "/pa/units/medieval/research/imperia/infantry/infantry_t2.json",
+                            "/pa/units/medieval/research/imperia/infantry/infantry_t3.json",
+    //Imperia Cav
+                    "/pa/units/medieval/cavalry/light_cav/light_cav.json",
+                    "/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json",
+                    "/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json",
+            //Cav Research
+                            
+                            "/pa/units/medieval/research/imperia/cavalry/cavalry_t2.json",
+                            "/pa/units/medieval/research/imperia/cavalry/cavalry_t3.json",
+    //Imperia 
+
+
+     
                     ];
 
 //tracks locked units
@@ -119,7 +186,6 @@ model.unlockPairs = [
  //Cabal Axe
     ["/pa/units/medieval/research/cabal/infantry/axe.json",
     ["/pa/units/medieval/infantry/axe_dox/axe_dox.json",
-    "/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
     "/pa/units/medieval/research/cabal/infantry/assassin.json"
                 ],
     ["/pa/units/medieval/research/cabal/infantry/axe.json"],
@@ -127,15 +193,15 @@ model.unlockPairs = [
 //Cabal Assassin
 ["/pa/units/medieval/research/cabal/infantry/assassin.json",
     ["/pa/units/medieval/infantry/assassin/assassin.json",
-        "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"
+       "/pa/units/medieval/research/cabal/infantry/halbeard.json",
                 ],
     ["/pa/units/medieval/research/cabal/infantry/assassin.json"],
     false],
-//Cabal Burrow Bear
-["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
-    ["/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json",
+//Cabal Halberd
+["/pa/units/medieval/research/cabal/infantry/halbeard.json",
+    ["/pa/units/medieval/infantry/halbeard/halbeard.json",
                 ],
-    ["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"],
+    ["/pa/units/medieval/research/cabal/infantry/halbeard.json"],
     false],
 
 
@@ -151,15 +217,15 @@ model.unlockPairs = [
 //Cabal Cav T2
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json",
     ["/pa/units/medieval/cavalry/gorilla_big/gorilla_big.json",
-        "/pa/units/medieval/research/cabal/cavalry/snake.json"
+        "/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"
                 ],
     ["/pa/units/medieval/research/cabal/cavalry/gorilla_t2.json"],
     false],
 //Cabal Cav T3
-    ["/pa/units/medieval/research/cabal/cavalry/snake.json",
-    ["/pa/units/medieval/cavalry/snake/snake.json"
+    ["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json",
+    ["/pa/units/medieval/cavalry/burrow_bear/burrow_bear.json"
                 ],
-    ["/pa/units/medieval/research/cabal/cavalry/snake.json"],
+    ["/pa/units/medieval/research/cabal/cavalry/burrow_bear.json"],
     false],
 
 //Cabal Ranged T1
@@ -171,7 +237,7 @@ model.unlockPairs = [
     false],
 //Cabal Ranged T2
     ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json",
-    ["/pa/units/medieval/cavalry/mini_snake/mini_snake.json",
+    ["/pa/units/medieval/infantry/axe_thrower/axe_thrower.json",
         "/pa/units/medieval/research/cabal/ranged/ranged_t3.json"
                 ],
     ["/pa/units/medieval/research/cabal/ranged/ranged_t2.json"],
@@ -185,25 +251,24 @@ model.unlockPairs = [
 
 
      //Cabal Spiders T1
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t1.json",
-    ["/pa/units/medieval/structures/lair/lair.json",
-    "/pa/units/medieval/research/cabal/spiders/spiders_t2.json"
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t1.json",
+    ["/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
+    "/pa/units/medieval/research/vesperin/spiders/spiders_t2.json"
                 ],
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t1.json"],
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t1.json"],
     false],
      //Cabal Spiders T2
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t2.json",
-    ["/pa/units/medieval/cavalry/jumping_spider/jumping_spider.json",
-        "/pa/units/medieval/structures/web_mine/web_mine.json",
-        "/pa/units/medieval/research/cabal/spiders/spiders_t3.json"    
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t2.json",
+    [        "/pa/units/medieval/structures/web_mine/web_mine.json",
+        "/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"    
                 ],
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t2.json"],
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t2.json"],
     false],
      //Cabal Spiders T3
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json",
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json",
     ["/pa/units/medieval/cavalry/big_spider/big_spider.json"   
                 ],
-    ["/pa/units/medieval/research/cabal/spiders/spiders_t3.json"],
+    ["/pa/units/medieval/research/vesperin/spiders/spiders_t3.json"],
     false],
 
 
@@ -232,25 +297,25 @@ model.unlockPairs = [
 
 //Pumpkins
     //Pumpkin Shrine T1
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json",
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json",
     ["/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
-        "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json"
+        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"
                 ],
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t1.json"],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json"],
     false],
     //Pumpkin Witch T2
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json",
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
     ["/pa/units/medieval/flying/witch/witch.json",
         "/pa/units/medieval/structures/witch_hut/witch_hut.json",
-        "/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json"
+        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"
                 ],
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t2.json"],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"],
     false],
     //Pumpkin Guardian T3
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json",
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json",
     ["/pa/units/medieval/cavalry/pumpkin/pumpkin.json" 
                 ],
-    ["/pa/units/medieval/research/cabal/pumpkin/pumpkin_t3.json"],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"],
     false],
 
 
@@ -320,6 +385,165 @@ model.unlockPairs = [
                 ],
     ["/pa/units/medieval/infantry/longbow/longbow_c.json", "/pa/units/medieval/upgrades/cabal/infantry/longbow.json"],
     true],           
+
+
+//--------------------------------IMPERIA--------------------------------
+//--------------------------------IMPERIA--------------------------------
+
+//Infantry
+
+//Shield T1
+ ["/pa/units/medieval/research/imperia/infantry/infantry_t1.json",
+    ["/pa/units/medieval/infantry/shield/shield.json",
+    "/pa/units/medieval/research/imperia/infantry/infantry_t2.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/infantry/infantry_t1.json"],
+    false],  
+
+//Mace T2
+    ["/pa/units/medieval/research/imperia/infantry/infantry_t2.json",
+    ["/pa/units/medieval/infantry/mace/mace.json",
+    "/pa/units/medieval/research/imperia/infantry/infantry_t3.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/infantry/infantry_t2.json"],
+    false],  
+
+//Pike T3    
+    ["/pa/units/medieval/research/imperia/infantry/infantry_t3.json",
+    ["/pa/units/medieval/infantry/pike/pike.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/infantry/infantry_t3.json"],
+    false],  
+               
+    
+    //Cavalry
+
+//Light Cav
+ ["/pa/units/medieval/research/imperia/cavalry/cavalry_t1.json",
+    ["/pa/units/medieval/cavalry/light_cav/light_cav.json",
+    "/pa/units/medieval/research/imperia/cavalry/cavalry_t2.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/cavalry/cavalry_t1.json"],
+    false],  
+//Recurve Cav                   
+["/pa/units/medieval/research/imperia/cavalry/cavalry_t2.json",
+    ["/pa/units/medieval/cavalry/recurve_cav/recurve_cav.json",
+    "/pa/units/medieval/research/imperia/cavalry/cavalry_t3.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/cavalry/cavalry_t2.json"],
+    false],
+//Heavy Cav                   
+["/pa/units/medieval/research/imperia/cavalry/cavalry_t3.json",
+    ["/pa/units/medieval/cavalry/heavy_cav/heavy_cav.json" 
+                ],
+    ["/pa/units/medieval/research/imperia/cavalry/cavalry_t3.json"],
+    false],  
+
+    //Mercs
+
+//Zweihander
+["/pa/units/medieval/research/imperia/merc/merc_t1.json",
+    ["/pa/units/medieval/structures/tavern/tavern.json",
+         "/pa/units/medieval/research/imperia/merc/merc_t2.json"
+                ],
+    ["/pa/units/medieval/research/imperia/merc/merc_t1.json"],
+    false],  
+//Javelin Thrower
+["/pa/units/medieval/research/imperia/merc/merc_t2.json",
+    ["/pa/units/medieval/infantry/javelin/javelin.json",
+         "/pa/units/medieval/research/imperia/merc/merc_t3.json"
+                ],
+    ["/pa/units/medieval/research/imperia/merc/merc_t2.json"],
+    false],  
+//Javelin Thrower
+["/pa/units/medieval/research/imperia/merc/merc_t3.json",
+    ["/pa/units/medieval/infantry/guardian/guardian.json",
+         "/pa/units/medieval/research/imperia/merc/merc_t4.json"
+                ],
+    ["/pa/units/medieval/research/imperia/merc/merc_t3.json"],
+    false],  
+//Goliath
+["/pa/units/medieval/research/imperia/merc/merc_t4.json",
+    ["/pa/units/medieval/cavalry/goliath/goliath.json"
+                ],
+    ["/pa/units/medieval/research/imperia/merc/merc_t4.json"],
+    false],  
+
+//Wind Mage
+
+//Fogmage
+["/pa/units/medieval/research/imperia/fog/fog_t1.json",
+    ["/pa/units/medieval/structures/fogmage_tower/fogmage_tower.json",
+         "/pa/units/medieval/research/imperia/fog/fog_t2.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fog/fog_t1.json"],
+    false],  
+//Wind Elemental
+["/pa/units/medieval/research/imperia/fog/fog_t2.json",
+    ["/pa/units/medieval/cavalry/wind_elemental/wind_elemental.json",
+         "/pa/units/medieval/research/imperia/fog/fog_t3.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fog/fog_t2.json"],
+    false],  
+//Eagle
+["/pa/units/medieval/research/imperia/fog/fog_t3.json",
+    ["/pa/units/medieval/flying/eagle/eagle.json"
+                ],
+    ["/pa/units/medieval/research/imperia/fog/fog_t3.json"],
+    false],  
+
+//Lightning Mage
+
+//Lightning
+["/pa/units/medieval/research/imperia/lightning/lightning_t1.json",
+    ["/pa/units/medieval/structures/arcmage_tower/arcmage_tower.json",
+         "/pa/units/medieval/research/imperia/lightning/lightning_t2.json"
+                ],
+    ["/pa/units/medieval/research/imperia/lightning/lightning_t1.json"],
+    false],  
+//Lightning Elemental
+["/pa/units/medieval/research/imperia/lightning/lightning_t2.json",
+    ["/pa/units/medieval/cavalry/bugsniper/bugsniper.json",
+         "/pa/units/medieval/research/imperia/lightning/lightning_t3.json"
+                ],
+    ["/pa/units/medieval/research/imperia/lightning/lightning_t2.json"],
+    false],  
+//Arcanist
+["/pa/units/medieval/research/imperia/lightning/lightning_t3.json",
+    ["/pa/units/medieval/infantry/arcanist/arcanist.json"
+                ],
+    ["/pa/units/medieval/research/imperia/lightning/lightning_t3.json"],
+    false],  
+
+
+//--------------------------------VESPERIN--------------------------------
+//--------------------------------VESPERIN--------------------------------
+
+//Snakes
+
+//Serpent Shrine
+["/pa/units/medieval/research/vesperin/snakes/snakes_t1.json",
+    ["/pa/units/medieval/structures/serpent_shrine/serpent_shrine.json",
+         "/pa/units/medieval/research/vesperin/snakes/snakes_t2.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t1.json"],
+    false],  
+//Lightning Elemental
+["/pa/units/medieval/research/vesperin/snakes/snakes_t2.json",
+    ["/pa/units/medieval/cavalry/snake/snake.json",
+         "/pa/units/medieval/research/vesperin/snakes/snakes_t3.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t2.json"],
+    false],  
+//Arcanist
+["/pa/units/medieval/research/vesperin/snakes/snakes_t3.json",
+    ["/pa/units/medieval/flying/flying_snake/flying_snake.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/snakes/snakes_t3.json"],
+    false],  
+
+
+
 
 ]
 
@@ -397,19 +621,24 @@ researchLoop = function(){
                        
                         if(result[0].built_frac == undefined){
                       
-                       
+                            // *** NEW: Send message to research_live_game to handle cancellation for this specific research unit ***
+                            api.Panel.message("research_live_game", 'unitCompleted', {
+                                unit_spec: pair[0],
+                                factory_id: result[0].id // Assuming the first unit's ID is sufficient to identify the factory
+                            });
+                            // *** END NEW ***
 
                         //if the unlock should actually be a replace
                         if(pair[3] !== true){
                         pair[1].forEach(function(unit){
-                            console.log("unlocking ",+unit)
+                            console.log("unlocking ",unit) // Corrected logging
                             api.Panel.message("build_bar", 'unlockUnit',unit)
                             api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                      
                         })
                         if(pair[2] !== undefined){
                             pair[2].forEach(function(unit){
-                                console.log("locking ",+unit)
+                                console.log("locking ",unit) // Corrected logging
                                 api.Panel.message("build_bar", 'lockUnit',unit)
                                 model.lockedUnits.push(unit)
                             })

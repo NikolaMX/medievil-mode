@@ -1,7 +1,7 @@
 {
     "si_name": "mini_snake",
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Mini Serpent",
+    "display_name": "Snek",
     "description": "!LOC:Light Cavalry. Fast. Double damage against Cavalry and Spiders",
     "armor_type": "AT_Custom4",
     "max_health": 300,
@@ -22,12 +22,20 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Custom9",
-        "UNITTYPE_Bot",
-        "UNITTYPE_Mobile",
+        "UNITTYPE_Custom7",
+   
+    "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
+   
+    
+   
+    "UNITTYPE_Land",
+ 
+
+    "UNITTYPE_Mobile",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Fighter",
         "UNITTYPE_Offense",
-        "UNITTYPE_Land",
-        "UNITTYPE_Artillery",
         "UNITTYPE_FactoryBuild"
     ],
     "transportable": {

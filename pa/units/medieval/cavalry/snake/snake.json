@@ -22,13 +22,21 @@
     }
   },
   "unit_types": [
-    "UNITTYPE_Custom9",
-    "UNITTYPE_Bot",
-    "UNITTYPE_Heavy",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
+    "UNITTYPE_Custom7",
+   
+    "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
+   
+    
+   
     "UNITTYPE_Land",
-    "UNITTYPE_FactoryBuild"
+ 
+
+    "UNITTYPE_Mobile",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Fighter",
+        "UNITTYPE_Offense",
+        "UNITTYPE_FactoryBuild"
   ],
   "transportable": {
     "size": 1

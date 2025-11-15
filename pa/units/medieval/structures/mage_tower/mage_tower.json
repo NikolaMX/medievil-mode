@@ -1,34 +1,22 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "unit_name": "Mage Tower",
-    "si_name": "mage_tower",
-    "display_name": "Mage Tower",
-    "description": "Recruit and upgrade mages",
-    "max_health": 4000,
-    "build_metal_cost": 1600,
+    "unit_name": "Research Laboratory",
+    "si_name": "mage_tower_c",
+    "display_name": "Research Laboratory",
+    "description": "Unlock new units and Buildings",
+    "max_health": 3000,
+    "build_metal_cost": 600,
     "atrophy_rate": 7.5,
     "atrophy_cool_down": 15.0,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "area_build_type": "Sphere",
-  "rolloff_dirs": [
     
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
-  ],
     
 
 
- "buildable_types": "Land & Factory & Construction & Advanced & Heavy & Custom8",
-  "factory_cooldown_time": 2,
-  "wait_to_rolloff_time": 1,
+ "buildable_types": "(Economy & SelfDestruct & FactoryBuild & Custom7)",
+  "factory_cooldown_time": 5,
+  "wait_to_rolloff_time": 0,
   "factory": {
     "store_units": false,
     "spawn_points": [
@@ -52,23 +40,36 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-"placement_size": [
-        50,
-        50
+  "rolloff_dirs": [
+    
+    [
+      0,
+      1,
+      0
     ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+
+
+
+
+
 
 
 
     "unit_types": [
-        "UNITTYPE_Custom8",
+        "UNITTYPE_Custom7",
         "UNITTYPE_Structure",
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
         "UNITTYPE_Bot",
         "UNITTYPE_Basic",
         "UNITTYPE_FabBuild",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_Shield"
+        "UNITTYPE_CmdBuild"
     ],
     "recon": {
         "observable": {
@@ -251,10 +252,13 @@
         "diameter": 55
     },
     "mesh_bounds": [
-      20,
-        20,
-        15
+        35,
+        35,
+        20
     ],
- 
+    "placement_size": [
+        50,
+        50
+    ],
     "TEMP_texelinfo": 30
 }

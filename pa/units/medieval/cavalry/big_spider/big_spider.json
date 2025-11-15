@@ -6,14 +6,14 @@
   "wreckage_health_frac": 1.0,
   "spawn_layers": "WL_LandHorizontal",
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
     "UNITTYPE_Tank",
     "UNITTYPE_Tactical",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
     "UNITTYPE_Offense"
   ],
   "attachable": {

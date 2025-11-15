@@ -196,9 +196,13 @@
   },
   "unit_types": [
     "UNITTYPE_Custom8",
-    "UNITTYPE_Bot",
+    "UNITTYPE_Tank",
+    
     "UNITTYPE_Tactical",
+    "UNITTYPE_Heavy",
     "UNITTYPE_Bomber",
+
+    "UNITTYPE_Offense",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
