@@ -1,7 +1,7 @@
 {
-  "display_name": "Winged Cobra",
-  "description": "!LOC:Beast. Fast. Durable. Attacks land and air targets.",
-  "armor_type": "AT_Custom6",
+  "display_name": "Spectral Wyrm",
+  "description": "!LOC:Ghost. Fast. Durable. Attacks land and sea targets.",
+  "armor_type": "AT_Custom7",
   "audio": {
     "loops": {
       "move": {
@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
- 
+  "build_metal_cost": 4000,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
@@ -35,8 +35,6 @@
     
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_rradius": 50,
-   "build_metal_cost": 4000,
   "max_health": 3000,
   "mesh_bounds": [
     8.5,
@@ -44,12 +42,12 @@
     3.6193
   ],
   "model": {
-    "filename": "/pa/units/medieval/flying/flying_snake/flying_snake.papa",
+    "filename": "/pa/units/medieval/flying/flying_serpent/phantom.papa",
     "animations": {
-      "walk": "/pa/units/medieval/flying/flying_snake/flying_serpent_anim_fly.papa",
-      "idle": "/pa/units/medieval/flying/flying_snake/flying_serpent_anim_idle.papa",
-      "aim_up": "/pa/units/medieval/flying/flying_snake/flying_serpent_anim_aim_up.papa",
-      "aim_down": "/pa/units/medieval/flying/flying_snake/flying_serpent_anim_aim_down.papa"
+      "walk": "/pa/units/medieval/flying/flying_serpent/flying_serpent_anim_fly.papa",
+      "idle": "/pa/units/medieval/flying/flying_serpent/flying_serpent_anim_idle.papa",
+      "aim_up": "/pa/units/medieval/flying/flying_serpent/flying_serpent_anim_aim_up.papa",
+      "aim_down": "/pa/units/medieval/flying/flying_serpent/flying_serpent_anim_aim_down.papa"
     },
     "animtree": "/pa/units/medieval/flying/flying_serpent/flying_serpent_anim_tree.json"
   },
@@ -57,11 +55,11 @@
     "type": "air",
     "acceleration": 30,
     "brake": 10,
-    "move_speed": 20,
+    "move_speed": 30,
     "turn_speed": 110,
     "dodge_radius": 0,
     "dodge_multiplier": 0.0,
-    "aggressive_distance": 30.0,
+    "aggressive_distance": 50.0,
     "aggressive_height": 100.0,
     "wobble_factor": 0.05,
     "wobble_speed": 0.1,
@@ -99,18 +97,16 @@
   "spawn_layers": "WL_Air",
   "tools": [
     {
-      "spec_id": "/pa/units/medieval/flying/flying_snake/flying_snake_tool_weapon.json",
+      "spec_id": "/pa/units/medieval/flying/flying_serpent/flying_serpent_tool_weapon.json",
       "aim_bone": "bone_head",
       "muzzle_bone": "bone_head"
     }
   ],
   "unit_types": [
-    "UNITTYPE_Custom10",
+    "UNITTYPE_Custom9",
         "UNITTYPE_Air",
-        
         "UNITTYPE_Mobile",
         "UNITTYPE_Basic",
-        "UNITTYPE_Fighter",
         "UNITTYPE_Offense",
         "UNITTYPE_FactoryBuild"
   ]

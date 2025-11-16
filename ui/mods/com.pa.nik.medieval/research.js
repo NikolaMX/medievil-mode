@@ -295,28 +295,7 @@ model.unlockPairs = [
     ["/pa/units/medieval/research/cabal/mages/mages_t3.json"],
     false],
 
-//Pumpkins
-    //Pumpkin Shrine T1
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json",
-    ["/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
-        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"
-                ],
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json"],
-    false],
-    //Pumpkin Witch T2
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
-    ["/pa/units/medieval/flying/witch/witch.json",
-        "/pa/units/medieval/structures/witch_hut/witch_hut.json",
-        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"
-                ],
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"],
-    false],
-    //Pumpkin Guardian T3
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json",
-    ["/pa/units/medieval/cavalry/pumpkin/pumpkin.json" 
-                ],
-    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"],
-    false],
+
 
 
     
@@ -518,6 +497,31 @@ model.unlockPairs = [
 
 //--------------------------------VESPERIN--------------------------------
 //--------------------------------VESPERIN--------------------------------
+
+
+//Pumpkins
+    //Pumpkin Shrine T1
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json",
+    ["/pa/units/medieval/structures/blood_shrine/blood_shrine.json",
+        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t1.json"],
+    false],
+    //Pumpkin Witch T2
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json",
+    ["/pa/units/medieval/flying/witch/witch.json",
+        "/pa/units/medieval/structures/witch_hut/witch_hut.json",
+        "/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t2.json"],
+    false],
+    //Pumpkin Guardian T3
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json",
+    ["/pa/units/medieval/cavalry/pumpkin/pumpkin.json" 
+                ],
+    ["/pa/units/medieval/research/vesperin/pumpkin/pumpkin_t3.json"],
+    false],
+
 
 //Snakes
 

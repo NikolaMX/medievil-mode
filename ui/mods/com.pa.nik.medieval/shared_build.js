@@ -194,10 +194,9 @@ var newBuild = {
 
 //Vesperin  
         //Archers
-        "/pa/units/medieval/infantry/longbow/longbow.json": ["a_factory", 0, { row: 2, column: 0 }],
-        "/pa/units/medieval/infantry/recurve/recurve.json": ["a_factory", 0, { row: 2, column: 1 }],
+        "/pa/units/medieval/infantry/recurve/recurve.json": ["a_factory", 0, { row: 2, column: 0 }],
+        "/pa/units/medieval/infantry/longbow/longbow.json": ["a_factory", 0, { row: 2, column: 1 }],
         "/pa/units/medieval/infantry/composite/composite.json": ["a_factory", 0, { row: 2, column: 2 }],
-
 
          //Spiders
         "/pa/units/medieval/cavalry/larva/larva.json": ["c_s_factory", 0, { row: 2, column: 0 }],

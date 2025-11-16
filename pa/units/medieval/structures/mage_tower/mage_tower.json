@@ -14,7 +14,7 @@
     
 
 
- "buildable_types": "(Economy & SelfDestruct & FactoryBuild & Custom7)",
+ "buildable_types": "(Economy & SelfDestruct & FactoryBuild & Custom10)",
   "factory_cooldown_time": 5,
   "wait_to_rolloff_time": 0,
   "factory": {
@@ -62,7 +62,7 @@
 
 
     "unit_types": [
-        "UNITTYPE_Custom7",
+        "UNITTYPE_Custom10",
         "UNITTYPE_Structure",
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",

@@ -7,7 +7,7 @@
     "build_metal_cost": 300,
     "armor_type": "AT_Custom7",
     "unit_types": [
-        "UNITTYPE_Custom7",
+        "UNITTYPE_Custom10",
     "UNITTYPE_Air",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",

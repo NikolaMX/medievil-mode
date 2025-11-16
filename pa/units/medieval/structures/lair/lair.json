@@ -10,7 +10,7 @@
   "atrophy_cool_down": 15,
   "area_build_type": "Line",
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "buildable_types": "Tank & Mobile & Tactical & Basic & FactoryBuild & (Custom7)",
+  "buildable_types": "Tank & Mobile & Tactical & Basic & FactoryBuild & (Custom10)",
   "factory_cooldown_time": 2,
   "wait_to_rolloff_time": 1,
   "factory": {
@@ -21,7 +21,7 @@
     "default_build_stance": "Continuous"
   },
   "unit_types": [
-    "UNITTYPE_Custom7",
+    "UNITTYPE_Custom10",
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
     "UNITTYPE_Bot",
