@@ -2,7 +2,12 @@ var newBuild = {
 
 
 
-   
+   //Economy
+    "/pa/units/medieval/structures/mana_shrine/mana_shrine.json": ["z_economy", 0, { row: 1, column: 3 }],
+    "/pa/units/medieval/structures/pylon/pylon.json": ["z_economy", 0, { row: 2, column: 3 }],
+
+    "/pa/units/medieval/structures/catalyst/catalyst.json": ["z_economy", 0, { row: 1, column: 4 }],
+    "/pa/units/medieval/structures/metal_storage/metal_storage.json": ["z_economy", 0, { row: 2, column: 4 }],
 
     
     
@@ -117,12 +122,7 @@ var newBuild = {
 //Structures
 
 
-//Economy
-    "/pa/units/medieval/structures/mana_shrine/mana_shrine.json": ["i_economy", 0, { row: 1, column: 3 }],
-    "/pa/units/medieval/structures/pylon/pylon.json": ["i_economy", 0, { row: 2, column: 3 }],
 
-    "/pa/units/medieval/structures/catalyst/catalyst.json": ["i_economy", 0, { row: 1, column: 4 }],
-    "/pa/units/medieval/structures/metal_storage/metal_storage.json": ["i_economy", 0, { row: 2, column: 4 }],
 // Production
     
     "/pa/units/medieval/structures/spawn_cav/spawn_cav.json": ["i_build", 0, { row: 1, column: 1 }],
@@ -229,14 +229,14 @@ var newBuild = {
     "/pa/units/medieval/research/cabal/cavalry/gorilla_t1.json": ["c_research", 0, { row: 2, column: 3 }],
 
     //Dark Mages
-    "/pa/units/medieval/research/cabal/mages/mages_t3.json": ["c_research", 0, { row: 0, column: 1 }],
-    "/pa/units/medieval/research/cabal/mages/mages_t2.json": ["c_research", 0, { row: 1, column: 1 }],
-    "/pa/units/medieval/research/cabal/mages/mages_t1.json": ["c_research", 0, { row: 2, column: 1 }],
+    "/pa/units/medieval/research/cabal/mages/mages_t3.json": ["c_research", 0, { row: 0, column: 4 }],
+    "/pa/units/medieval/research/cabal/mages/mages_t2.json": ["c_research", 0, { row: 1, column: 4 }],
+    "/pa/units/medieval/research/cabal/mages/mages_t1.json": ["c_research", 0, { row: 2, column: 4 }],
     
     //Ghosts
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json": ["c_m_factory", 0, { row: 0, column: 2 }],
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json": ["c_m_factory", 0, { row: 1, column: 2 }],
-    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_m_factory", 0, { row: 2, column: 2 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t3.json": ["c_m_factory", 0, { row: 0, column: 5 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t2.json": ["c_m_factory", 0, { row: 1, column: 5 }],
+    "/pa/units/medieval/research/cabal/ghosts/ghosts_t1.json": ["c_m_factory", 0, { row: 2, column: 5 }],
 
 
 
