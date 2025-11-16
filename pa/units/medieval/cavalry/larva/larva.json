@@ -111,7 +111,7 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Custom9",
+    "UNITTYPE_Custom7",
     "UNITTYPE_Tank",
     "UNITTYPE_Tactical",
     "UNITTYPE_Mobile",
