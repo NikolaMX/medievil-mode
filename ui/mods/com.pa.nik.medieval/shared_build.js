@@ -3,11 +3,11 @@ var newBuild = {
 
 
    //Economy
-    "/pa/units/medieval/structures/mana_shrine/mana_shrine.json": ["z_economy", 0, { row: 1, column: 3 }],
-    "/pa/units/medieval/structures/pylon/pylon.json": ["z_economy", 0, { row: 2, column: 3 }],
+    "/pa/units/medieval/structures/mana_shrine/mana_shrine.json": ["z_economy", 1, { row: 1, column: 3 }],
+    "/pa/units/medieval/structures/pylon/pylon.json": ["z_economy", 1, { row: 2, column: 3 }],
 
-    "/pa/units/medieval/structures/catalyst/catalyst.json": ["z_economy", 0, { row: 1, column: 4 }],
-    "/pa/units/medieval/structures/metal_storage/metal_storage.json": ["z_economy", 0, { row: 2, column: 4 }],
+    "/pa/units/medieval/structures/catalyst/catalyst.json": ["z_economy", 1, { row: 1, column: 4 }],
+    "/pa/units/medieval/structures/metal_storage/metal_storage.json": ["z_economy", 1, { row: 2, column: 4 }],
 
     
     

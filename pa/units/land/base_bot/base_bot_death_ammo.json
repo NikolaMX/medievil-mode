@@ -3,7 +3,7 @@
   "armor_damage_map": {
     "AT_Orbital": 0,
     "AT_Commander": 0,
-
+    "AT_Bot": 0,
     "AT_Custom0": 0,
     "AT_Custom1": 0,
     "AT_Custom2": 0,

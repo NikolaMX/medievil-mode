@@ -59,9 +59,10 @@
     ],
     "default_build_stance": "Continuous"
   },
-"placement_size": [
-        0.1,
-        0.1
+"feature_snap_ignores_pathability": true,
+ "placement_size": [
+        65,
+        65
     ],
 
 

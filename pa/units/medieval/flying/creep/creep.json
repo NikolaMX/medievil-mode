@@ -4,7 +4,7 @@
     "display_name": "Omen",
     "description": "!LOC:Flying. Extremly Durable. Devastating single target damage.",
     "max_health": 2000,
-    "build_metal_cost": 2500,
+    "build_metal_cost": 1500,
     "armor_type": "AT_Custom9",
     "attachable": {
         "offsets": {
@@ -53,7 +53,7 @@
         "type": "air",
         "acceleration": 75,
         "brake": 20,
-        "move_speed": 15,
+        "move_speed": 20,
         "turn_speed": 110,
         "dodge_radius": 0,
         "dodge_multiplier": 0.0,

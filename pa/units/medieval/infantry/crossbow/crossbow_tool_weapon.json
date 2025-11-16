@@ -8,7 +8,7 @@
     ],
     "rate_of_fire": 0.2,
     "idle_aim_delay": 1.0,
-    "max_range": 60,
+    "max_range": 75,
     "fire_delay": 0.0,
     "yaw_rate": 60,
     "pitch_rate": 360,
